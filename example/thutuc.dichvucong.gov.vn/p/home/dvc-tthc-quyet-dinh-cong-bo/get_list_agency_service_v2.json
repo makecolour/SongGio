@@ -1,0 +1,344 @@
+[
+    {
+        "ID": "6369",
+        "AGENCY_NAME": "Bộ Công an",
+        "NAME": "Bộ Công an",
+        "CODE": "000.00.00.G01"
+    },
+    {
+        "ID": "94",
+        "AGENCY_NAME": "Bộ Công thương",
+        "NAME": "Bộ Công thương",
+        "CODE": "000.00.00.G02"
+    },
+    {
+        "ID": "5096",
+        "AGENCY_NAME": "Bộ Dân tộc và Tôn giáo",
+        "NAME": "Bộ Dân tộc và Tôn giáo",
+        "CODE": "000.00.00.G21"
+    },
+    {
+        "ID": "2",
+        "AGENCY_NAME": "Bộ Giáo dục và Đào tạo",
+        "NAME": "Bộ Giáo dục và Đào tạo",
+        "CODE": "G03"
+    },
+    {
+        "ID": "734",
+        "AGENCY_NAME": "Bộ Khoa học  và  Công nghệ",
+        "NAME": "Bộ Khoa học  và  Công nghệ",
+        "CODE": "G06"
+    },
+    {
+        "ID": "857",
+        "AGENCY_NAME": "Bộ Ngoại giao",
+        "NAME": "Bộ Ngoại giao",
+        "CODE": "000.00.00.G08"
+    },
+    {
+        "ID": "924",
+        "AGENCY_NAME": "Bộ Nội vụ",
+        "NAME": "Bộ Nội vụ",
+        "CODE": "G09"
+    },
+    {
+        "ID": "1053",
+        "AGENCY_NAME": "Bộ Nông nghiệp và Môi trường",
+        "NAME": "Bộ Nông nghiệp và Môi trường",
+        "CODE": "G10"
+    },
+    {
+        "ID": "6407",
+        "AGENCY_NAME": "Bộ Quốc phòng",
+        "NAME": "Bộ Quốc phòng",
+        "CODE": "000.00.00.G11"
+    },
+    {
+        "ID": "1301",
+        "AGENCY_NAME": "Bộ Tài chính",
+        "NAME": "Bộ Tài chính",
+        "CODE": "000.00.00.G12"
+    },
+    {
+        "ID": "4019",
+        "AGENCY_NAME": "Bộ Tư pháp",
+        "NAME": "Bộ Tư pháp",
+        "CODE": "000.00.00.G15"
+    },
+    {
+        "ID": "5119",
+        "AGENCY_NAME": "Bộ Văn hóa, Thể thao và Du lịch",
+        "NAME": "Bộ Văn hóa, Thể thao và Du lịch",
+        "CODE": "G16"
+    },
+    {
+        "ID": "4851",
+        "AGENCY_NAME": "Bộ Xây dựng",
+        "NAME": "Bộ Xây dựng",
+        "CODE": "G17"
+    },
+    {
+        "ID": "4881",
+        "AGENCY_NAME": "Bộ Y tế",
+        "NAME": "Bộ Y tế",
+        "CODE": "000.00.00.G18"
+    },
+    {
+        "ID": "363963",
+        "AGENCY_NAME": "Ngân hàng Chính sách xã hội",
+        "NAME": "Ngân hàng Chính sách xã hội",
+        "CODE": "000.00.00.G66"
+    },
+    {
+        "ID": "4983",
+        "AGENCY_NAME": "Ngân hàng Nhà nước Việt Nam",
+        "NAME": "Ngân hàng Nhà nước Việt Nam",
+        "CODE": "G19"
+    },
+    {
+        "ID": "363973",
+        "AGENCY_NAME": "Ngân hàng phát triển Việt Nam",
+        "NAME": "Ngân hàng phát triển Việt Nam",
+        "CODE": "000.00.00.G67"
+    },
+    {
+        "ID": "6468",
+        "AGENCY_NAME": "Thanh tra Chính phủ",
+        "NAME": "Thanh tra Chính phủ",
+        "CODE": "000.00.00.G20"
+    },
+    {
+        "ID": "431093",
+        "AGENCY_NAME": "Tòa án nhân dân",
+        "NAME": "Tòa án nhân dân",
+        "CODE": "D01"
+    },
+    {
+        "ID": "364400",
+        "AGENCY_NAME": "Tập đoàn Điện lực Việt Nam",
+        "NAME": "Tập đoàn Điện lực Việt Nam",
+        "CODE": "0100100079"
+    },
+    {
+        "ID": "409587",
+        "AGENCY_NAME": "UBND Thành phố Cần Thơ",
+        "NAME": "UBND Thành phố Cần Thơ",
+        "CODE": "H13"
+    },
+    {
+        "ID": "426100",
+        "AGENCY_NAME": "UBND Thành phố Đà Nẵng",
+        "NAME": "UBND Thành phố Đà Nẵng",
+        "CODE": "H17"
+    },
+    {
+        "ID": "411312",
+        "AGENCY_NAME": "UBND Thành phố Hồ Chí Minh",
+        "NAME": "UBND Thành phố Hồ Chí Minh",
+        "CODE": "H29"
+    },
+    {
+        "ID": "389181",
+        "AGENCY_NAME": "UBND Thành phố Hà Nội",
+        "NAME": "UBND Thành phố Hà Nội",
+        "CODE": "H26"
+    },
+    {
+        "ID": "387628",
+        "AGENCY_NAME": "UBND Thành phố Hải Phòng",
+        "NAME": "UBND Thành phố Hải Phòng",
+        "CODE": "H24"
+    },
+    {
+        "ID": "374087",
+        "AGENCY_NAME": "UBND Thành phố Huế",
+        "NAME": "UBND Thành phố Huế",
+        "CODE": "H57"
+    },
+    {
+        "ID": "398126",
+        "AGENCY_NAME": "UBND tỉnh An Giang",
+        "NAME": "UBND tỉnh An Giang",
+        "CODE": "H01"
+    },
+    {
+        "ID": "401621",
+        "AGENCY_NAME": "UBND tỉnh Bắc Ninh",
+        "NAME": "UBND tỉnh Bắc Ninh",
+        "CODE": "H05"
+    },
+    {
+        "ID": "408562",
+        "AGENCY_NAME": "UBND tỉnh Cà Mau",
+        "NAME": "UBND tỉnh Cà Mau",
+        "CODE": "H12"
+    },
+    {
+        "ID": "410516",
+        "AGENCY_NAME": "UBND tỉnh Cao Bằng",
+        "NAME": "UBND tỉnh Cao Bằng",
+        "CODE": "H14"
+    },
+    {
+        "ID": "383348",
+        "AGENCY_NAME": "UBND tỉnh Điện Biên",
+        "NAME": "UBND tỉnh Điện Biên",
+        "CODE": "H18"
+    },
+    {
+        "ID": "381137",
+        "AGENCY_NAME": "UBND tỉnh Đắk Lắk",
+        "NAME": "UBND tỉnh Đắk Lắk",
+        "CODE": "H15"
+    },
+    {
+        "ID": "426101",
+        "AGENCY_NAME": "UBND tỉnh Đồng Nai",
+        "NAME": "UBND tỉnh Đồng Nai",
+        "CODE": "H19"
+    },
+    {
+        "ID": "374613",
+        "AGENCY_NAME": "UBND tỉnh Đồng Tháp",
+        "NAME": "UBND tỉnh Đồng Tháp",
+        "CODE": "H20"
+    },
+    {
+        "ID": "384251",
+        "AGENCY_NAME": "UBND tỉnh Gia Lai",
+        "NAME": "UBND tỉnh Gia Lai",
+        "CODE": "H21"
+    },
+    {
+        "ID": "390693",
+        "AGENCY_NAME": "UBND tỉnh Hà Tĩnh",
+        "NAME": "UBND tỉnh Hà Tĩnh",
+        "CODE": "H27"
+    },
+    {
+        "ID": "426108",
+        "AGENCY_NAME": "UBND tỉnh Hưng Yên",
+        "NAME": "UBND tỉnh Hưng Yên",
+        "CODE": "H31"
+    },
+    {
+        "ID": "415139",
+        "AGENCY_NAME": "UBND tỉnh Khánh Hòa",
+        "NAME": "UBND tỉnh Khánh Hòa",
+        "CODE": "H32"
+    },
+    {
+        "ID": "420192",
+        "AGENCY_NAME": "UBND tỉnh Lai Châu",
+        "NAME": "UBND tỉnh Lai Châu",
+        "CODE": "H35"
+    },
+    {
+        "ID": "426105",
+        "AGENCY_NAME": "UBND tỉnh Lào Cai",
+        "NAME": "UBND tỉnh Lào Cai",
+        "CODE": "H38"
+    },
+    {
+        "ID": "421149",
+        "AGENCY_NAME": "UBND tỉnh Lâm Đồng",
+        "NAME": "UBND tỉnh Lâm Đồng",
+        "CODE": "H36"
+    },
+    {
+        "ID": "417489",
+        "AGENCY_NAME": "UBND tỉnh Lạng Sơn",
+        "NAME": "UBND tỉnh Lạng Sơn",
+        "CODE": "000.00.00.H37"
+    },
+    {
+        "ID": "418979",
+        "AGENCY_NAME": "UBND tỉnh Nghệ An",
+        "NAME": "UBND tỉnh Nghệ An",
+        "CODE": "H41"
+    },
+    {
+        "ID": "393975",
+        "AGENCY_NAME": "UBND tỉnh Ninh Bình",
+        "NAME": "UBND tỉnh Ninh Bình",
+        "CODE": "H42"
+    },
+    {
+        "ID": "422607",
+        "AGENCY_NAME": "UBND tỉnh Phú Thọ",
+        "NAME": "UBND tỉnh Phú Thọ",
+        "CODE": "H44"
+    },
+    {
+        "ID": "365792",
+        "AGENCY_NAME": "UBND tỉnh Quảng Ngãi",
+        "NAME": "UBND tỉnh Quảng Ngãi",
+        "CODE": "H48"
+    },
+    {
+        "ID": "426106",
+        "AGENCY_NAME": "UBND tỉnh Quảng Ninh",
+        "NAME": "UBND tỉnh Quảng Ninh",
+        "CODE": "H49"
+    },
+    {
+        "ID": "6715",
+        "AGENCY_NAME": "UBND tỉnh Quảng Trị",
+        "NAME": "UBND tỉnh Quảng Trị",
+        "CODE": "H50"
+    },
+    {
+        "ID": "426103",
+        "AGENCY_NAME": "UBND tỉnh Sơn La",
+        "NAME": "UBND tỉnh Sơn La",
+        "CODE": "H52"
+    },
+    {
+        "ID": "369810",
+        "AGENCY_NAME": "UBND tỉnh Tây Ninh",
+        "NAME": "UBND tỉnh Tây Ninh",
+        "CODE": "H53"
+    },
+    {
+        "ID": "370865",
+        "AGENCY_NAME": "UBND tỉnh Thái Nguyên",
+        "NAME": "UBND tỉnh Thái Nguyên",
+        "CODE": "H55"
+    },
+    {
+        "ID": "371854",
+        "AGENCY_NAME": "UBND tỉnh Thanh Hóa",
+        "NAME": "UBND tỉnh Thanh Hóa",
+        "CODE": "H56"
+    },
+    {
+        "ID": "384979",
+        "AGENCY_NAME": "UBND tỉnh Tuyên Quang",
+        "NAME": "UBND tỉnh Tuyên Quang",
+        "CODE": "H60"
+    },
+    {
+        "ID": "377087",
+        "AGENCY_NAME": "UBND tỉnh Vĩnh Long",
+        "NAME": "UBND tỉnh Vĩnh Long",
+        "CODE": "H61"
+    },
+    {
+        "ID": "456442",
+        "AGENCY_NAME": "Văn phòng Chính phủ",
+        "NAME": "Văn phòng Chính phủ",
+        "CODE": "000.00.00.G99"
+    },
+    {
+        "ID": "6491",
+        "AGENCY_NAME": "Văn phòng Chính phủ",
+        "NAME": "Văn phòng Chính phủ",
+        "CODE": "000.00.00.G22"
+    },
+    {
+        "ID": "463832",
+        "AGENCY_NAME": "Văn phòng Trung ương Đảng",
+        "NAME": "Văn phòng Trung ương Đảng",
+        "CODE": "A80"
+    }
+]

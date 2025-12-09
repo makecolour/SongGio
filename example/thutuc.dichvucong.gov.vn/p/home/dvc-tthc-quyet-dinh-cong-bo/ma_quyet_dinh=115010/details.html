@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cổng Dịch vụ c&ocirc;ng Quốc gia</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />
+    <meta name="description"
+        content="Cổng Dịch vụ c&ocirc;ng Quốc gia hỗ trợ th&ocirc;ng tin, đăng k&yacute; thủ tục h&agrave;nh ch&iacute;nh như đổi giấy ph&eacute;p l&aacute;i xe, nộp thuế điện tử, th&ocirc;ng b&aacute;o khuyến mại, cấp lại thẻ BHYT, cấp điện mới..." />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />
+    <meta content="index, follow" name="ROBOTS" />
+    <link rel="stylesheet" href="theme/vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="theme/vendor/ap8/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="theme/vendor/slick/slick.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="theme/vendor/typeahead/style.css" />
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrapValidator.min.css" />
+    <link rel="stylesheet" type="text/css" href="theme/vendor/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-timepicker/css/timepicker.css" />
+    <link rel="stylesheet" href="theme/css/style.css?version=9" />
+    <link rel="shortcut icon" href="img/header/quoc_huy.png" />
+    <script type="text/javascript" src="theme/vendor/jquery/jquery.2.1.1.min.js"></script>
+    <script type="text/javascript" src="theme/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="theme/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="theme/vendor/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="theme/vendor/highchart/modules/variable-pie.js"></script>
+    <script type="text/javascript" src="theme/vendor/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="vendor/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="vendor/slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="vendor/jq-paginator.js"></script>
+    <script type="text/javascript" src="vendor/bootbox.all.min.js"></script>
+    <script type="text/javascript" src="vendor/select2.min.js"></script>
+    <script type="text/javascript" src="vendor/mime.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery-iframe-auto-height.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.browser.js"></script>
+    <link rel="stylesheet" href="vendor/select2.min.css" />
+    <script src="./js/ApiService.js?version=18"></script>
+    <script src="./js/CommonUtil.js?version=16"></script>
+    <script src="./js/Constants.js"></script>
+    <script type="text/javascript" src="vendor/typeahead/index.js"></script>
+    <script type="text/javascript" src="vendor/typeahead/handlebars.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+    <script src="./js/base64.js"></script>
+    <script type="text/javascript" src="vendor/d3.v4.min.js"></script>
+    <script>
+        initApiService();
+    </script>
+</head>
+
+<body>
+    <div class="loading-all" id="loading-all" style="display:none">
+        <div class="icon">
+            <img src="img/loading.png" alt="" />
+            <span style="color:blue">Đang xử l&yacute;...<span> </span></span>
+        </div>
+        <style type="text/css">
+            .loading-all {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                z-index: 10000;
+                background: #dbdcdc40;
+            }
+
+            .loading-all .icon {
+                width: 100px;
+                position: absolute;
+                top: 0px;
+                height: 100px;
+                bottom: 0px;
+                right: 0px;
+                margin: auto;
+                left: 0px;
+            }
+        </style>
+    </div>
+    <!--DEFINE CONSTANT -->
+    <!--END CONSTANT-->
+    <div class="overlay-common"></div>
+    <!-- /mtv/ Log propertise-->
+    <div class="header">
+        <div class="container">
+            <div class="relative content">
+                <div class="logo-text">
+                    <a href="https://dichvucong.gov.vn/p/home/dvc-trang-chu.html" class="logo"> <img src="theme/img/header/logo.png" alt="" />
+                    </a>
+                </div>
+                <div class="nav-toggle">
+                    <span class="-ap icon icon-menu"></span>
+                </div>
+                <!-- <div class="header-account">
+					<div class="buttons">
+						<a href="https://dangky.dichvucong.gov.vn/register" class="btn btn-login">Đăng ký</a>
+						<a href="https://xacthuc.dichvucong.gov.vn/oauth2/authorize?response_type=code&client_id=Np0ahpF4exnI6DS_4KuMK_TLHLEa&scope=openid&redirect_uri=https://dichvucong.gov.vn/p/home/dvc-trang-chu.html" class="btn btn-register">Đăng nhập</a>
+					</div>
+				</div> -->
+            </div>
+        </div>
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <ul id="main-menu" class="pull-left menus">
+                <li id="home-page"><a
+                        href="https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"><span class="-ap icon icon-home4"></span></a>
+                </li>
+                <li><a href="dvc-tthc-trang-chu.html">Tra cứu TTHC</a></li>
+                <li><a href="dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục h&agrave;nh ch&iacute;nh</a></li>
+                <li><a href="dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html">Thủ tục h&agrave;nh ch&iacute;nh li&ecirc;n
+                        th&ocirc;ng</a></li>
+                <li><a href="dvc-tthc-quyet-dinh-cong-bo.html">Quyết định c&ocirc;ng bố</a></li>
+                <li><a href="dvc-tthc-co-quan.html">Cơ quan</a></li>
+                <!-- <li><a href="dvc-gioi-thieu.html">Giới thiệu</a></li>
+				<li>
+					<a href="#">Thông tin và dịch vụ</a>
+					<ul class="dropdown-menu">
+						<li><a href="dvc-trang-chu-cong-dan.html">Công dân</a></li>
+						<li><a href="dvc-trang-chu-doanh-nghiep.html">Doanh nghiệp</a></li>
+						<li><a href="dvc-dich-vu-cong-truc-tuyen.html">Dịch vụ công trực tuyến</a></li>
+						<li><a href="dvc-dich-vu-cong-noi-bat.html">Dịch vụ công nổi bật</a></li>
+						<li><a href="dvc-tra-cuu-ho-so.html">Tra cứu hồ sơ</a></li>
+						<li><a href="dvc-tra-cuu-ban-an.html">Tòa án nhân dân</a></li>
+						<li><a href="dvc-cau-hoi-pho-bien.html">Câu hỏi thường gặp</a></li>
+					</ul>
+				</li> -->
+                <!-- <li>
+					<a href="dvc-thanh-toan-truc-tuyen.html">Thanh toán trực tuyến</a> -->
+                <!-- <ul class="dropdown-menu">
+						<li><a href="dvc-thanh-toan.html">Nộp thuế doanh nghiệp</a></li>
+						<li><a href="dvc-thanh-toan-thue-ca-nhan.html">Nộp thuế cá nhân/Trước bạ</a></li>
+						<li>
+							<a href="#">Thanh toán vi phạm hành chính</a>
+							<ul class="dropdown-menu">
+								<li><a href="dvc-thanh-toan-vi-pham-giao-thong.html">Tra cứu/Thanh toán vi phạm giao thông</a></li>
+								<li><a href="dvc-thanh-toan-vi-pham-xay-dung.html">Tra cứu/Thanh toán vi phạm xây dựng</a></li>
+							</ul>
+						</li>
+						<li><a href="dvc-thanh-toan-phi-le-phi-ho-so.html">Thanh toán phí/lệ phí dịch vụ công</a></li>
+						<li><a href="dvc-thanh-toan-bhxh-bhyt.html">Đóng tiếp BHXH tự nguyện, gia hạn BHYT</a></li>
+						<li><a href="dvc-thanh-toan-bhxh-doanh-nghiep.html">Đóng BHXH, BHYT, BHTN, BHTNLĐ-BNN</a></li>
+						<li><a href="dvc-thanh-toan-thue-dat-dai.html">Thanh toán nghĩa vụ tài chính về đất đai</a></li>
+						<li><a href="dvc-thanh-toan-dien.html">Thanh toán tiền điện</a></li>
+						<li><a href="dvc-thanh-toan-vien-phi.html">Thanh toán viện phí</a></li>
+						<li><a href="dvc-thanh-toan-an-phi.html">Thanh toán tạm ứng án phí</a></li>
+					</ul> -->
+                <!-- </li> -->
+                <!-- <li>
+				  <a href="#">Phản ánh kiến nghị</a>
+				  <ul class="dropdown-menu">
+					<li><a href="/p/phananhkiennghi/pakn-gui-pakn.html">Gửi PAKN</a></li>
+					<li><a href="/p/phananhkiennghi/pakn-search.html">Tra cứu kết quả trả lời</a></li>
+				  </ul>
+				</li> -->
+                <!-- <li> -->
+                <!-- <a href="#">Thủ tục hành chính</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                <!-- <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-trang-chu.html">Tra cứu TTHC</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục hành chính</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html">Thủ tục hành chính liên thông</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-quyet-dinh-cong-bo.html">Quyết định công bố</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-co-quan.html">Cơ quan</a></li> -->
+                <!-- <li id="coquan"><a href="dvc-tthc-co-quan.html">Cơ quan</a></li>
+					<li hidden id="bn-ttp"><a href="dvc-tthc-bonganh-tinhtp.html">TTHC Bộ ngành Tỉnh thành phố</a></li> -->
+                <!-- </ul> -->
+                <!-- </li> -->
+                <!-- <li class="">
+					<a href="#">Hỗ trợ</a>
+					<ul class="dropdown-menu">
+						<li><a href="dvc-dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+						<li><a href="dvc-huong-dan-cong-dan-doanh-nghiep.html">Hướng dẫn sử dụng</a></li>
+						<li><a href="dvc-tin-tuc.html">Thông báo</a></li>
+					</ul>
+				</li> -->
+            </ul>
+            <div class="header-account mobile-ds">
+                <!-- <div class="buttons">
+					<a href="https://xacthuc.dichvucong.gov.vn/oauth2/authorize?response_type=code&client_id=Np0ahpF4exnI6DS_4KuMK_TLHLEa&scope=openid&redirect_uri=https://dichvucong.gov.vn/p/home/dvc-trang-chu.html" class="btn btn-login">Đăng nhập</a>
+					<a href="https://dangky.dichvucong.gov.vn/register" class="btn btn-register">Đăng ký</a>
+				</div> -->
+            </div>
+        </div>
+    </nav>
+    <div class="header-bottom">
+        <div class="container">
+            <ul id="list-dropdown">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<html>
+
+<head></head>
+
+<body>
+    <div class="tthc">
+        <div class="main-wrapper">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="dvc-tthc-trang-chu.html">Trang chủ</a></li>
+                    <li><a href="dvc-tthc-quyet-dinh-cong-bo.html">Quyết định c&ocirc;ng bố</a></li>
+                    <li><a href="#">Chi tiết</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-sm-9 col-xs-12">
+                        <div class="box">
+                            <h2 class="main-title">Số quyết định: 2751/QĐ-UBND</h2>
+                            <ul class="tabs style2">
+                                <li class="active"><a href="#qdcb" data-toggle="tab">TT Quyết định c&ocirc;ng bố</a>
+                                </li>
+                                <li><a href="#tthckt" data-toggle="tab">TTHC k&egrave;m theo</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="qdcb" class="tab-pane active">
+                                    <table class="table-info-row">
+                                        <tbody>
+                                            <tr>
+                                                <td class="key">Số quyết định</td>
+                                                <td class="value">2751/QĐ-UBND</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">Tr&iacute;ch yếu</td>
+                                                <td class="value">Về việc c&ocirc;ng bố Danh mục thủ tục h&agrave;nh
+                                                    ch&iacute;nh được sửa đổi, bổ sung trong lĩnh vực Thi&ecirc;́t bị y
+                                                    tế thuộc thẩm quyền giải quyết của Sở Y tế tỉnh Điện Bi&ecirc;n</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">Ng&agrave;y quyết định</td>
+                                                <td class="value">03-12-2025</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">Lĩnh vực</td>
+                                                <td id="content-fields" class="value"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">File d&iacute;nh k&egrave;m</td>
+                                                <td id="content-attachments" class="value"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="key">Cơ quan ban h&agrave;nh</td>
+                                                <td class="value">UBND tỉnh Điện Bi&ecirc;n</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="tthckt" class="tab-pane">
+                                    <ul class="tabs">
+                                        <li class="active"><a href="#nhomckmoi" data-toggle="tab">Nh&oacute;m c&ocirc;ng
+                                                khai mới</a></li>
+                                        <li><a href="#suadoibosung" data-toggle="tab">Sửa đổi bổ sung</a></li>
+                                        <li><a href="#baibo" data-toggle="tab">B&atilde;i bỏ</a></li>
+                                    </ul>
+                                    <div class="box tab-content">
+                                        <div class="tab-pane active" id="nhomckmoi">
+                                            <div class="table-content">
+                                                <table id="table-main" class="table-data table" style="width: 100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 75%">T&ecirc;n thủ tục h&agrave;nh
+                                                                ch&iacute;nh</th>
+                                                            <th style="width: 25%">Cơ quan ban h&agrave;nh</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div id="paginationPanel" class="bottom" hidden="">
+                                                <div class="pull-left">
+                                                    <b>Số h&agrave;ng mỗi trang</b>
+                                                    <div class="select-custom inline">
+                                                        <select name="" id="paginationRecsPerPage" class="form-control"> <option value="5" selected="">5</option> <option value="10">10</option> <option value="20">20</option> <option value="50">50</option> </select>
+                                                    </div>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <ul id="paginationTableDVC" class="pagination">
+                                                    </ul>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="suadoibosung">
+                                            <div class="table-content">
+                                                <table id="table-main-suadoi" class="table-data table"
+                                                    style="width: 100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 75%">T&ecirc;n thủ tục h&agrave;nh
+                                                                ch&iacute;nh</th>
+                                                            <th style="width: 25%">Cơ quan ban h&agrave;nh</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div id="paginationPanel-suadoi" class="bottom" hidden="">
+                                                <div class="pull-left">
+                                                    <b>Số h&agrave;ng mỗi trang</b>
+                                                    <div class="select-custom inline">
+                                                        <select name="" id="paginationRecsPerPage-suadoi" class="form-control"> <option value="5" selected="">5</option> <option value="10">10</option> <option value="20">20</option> <option value="50">50</option> </select>
+                                                    </div>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <ul id="paginationTableDVC-suadoi" class="pagination">
+                                                    </ul>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="baibo">
+                                            <div class="table-content">
+                                                <table id="table-main-baibo" class="table-data table"
+                                                    style="width: 100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th style="width: 75%">T&ecirc;n thủ tục h&agrave;nh
+                                                                ch&iacute;nh</th>
+                                                            <th style="width: 25%">Cơ quan ban h&agrave;nh</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div id="paginationPanel-baibo" class="bottom" hidden="">
+                                                <div class="pull-left">
+                                                    <b>Số h&agrave;ng mỗi trang</b>
+                                                    <div class="select-custom inline">
+                                                        <select name="" id="paginationRecsPerPage-baibo" class="form-control"> <option value="5" selected="">5</option> <option value="10">10</option> <option value="20">20</option> <option value="50">50</option> </select>
+                                                    </div>
+                                                </div>
+                                                <div class="pull-right">
+                                                    <ul id="paginationTableDVC-baibo" class="pagination">
+                                                    </ul>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side bar -->
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="sidebar">
+                            <div class="head">
+                                T&igrave;m kiếm nhiều nhất
+                            </div>
+                            <div class="body">
+                                <ul class="links">
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1480"
+                                            title="Cấp Giấy x&aacute;c nhận nh&acirc;n sự của c&ocirc;ng d&acirc;n Việt Nam ở nước ngo&agrave;i (thực hiện tại cấp Trung ương)">Cấp
+                                            Giấy x&aacute;c nhận nh&acirc;n sự của c&ocirc;ng d&acirc;n Việt Nam ở nước
+                                            ngo&agrave;i (thực hiện tại cấp Trung ương)</a>
+                                        <p class="unit">Bộ C&ocirc;ng an</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1330"
+                                            title="Cấp giấy ph&eacute;p xuất khẩu, nhập khẩu h&oacute;a chất Bảng 1">Cấp
+                                            giấy ph&eacute;p xuất khẩu, nhập khẩu h&oacute;a chất Bảng 1</a>
+                                        <p class="unit">Bộ C&ocirc;ng thương</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1399"
+                                            title="Cấp lại Giấy ph&eacute;p th&agrave;nh lập Văn ph&ograve;ng đại diện của thương nh&acirc;n nước ngo&agrave;i tại Việt Nam">Cấp
+                                            lại Giấy ph&eacute;p th&agrave;nh lập Văn ph&ograve;ng đại diện của thương
+                                            nh&acirc;n nước ngo&agrave;i tại Việt Nam</a>
+                                        <p class="unit">Bộ C&ocirc;ng thương</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1393"
+                                            title="Cấp lại giấy ph&eacute;p hoạt động dự b&aacute;o, cảnh b&aacute;o kh&iacute; tượng thủy văn (cấp tỉnh)">Cấp
+                                            lại giấy ph&eacute;p hoạt động dự b&aacute;o, cảnh b&aacute;o kh&iacute;
+                                            tượng thủy văn (cấp tỉnh)</a>
+                                        <p class="unit">Bộ N&ocirc;ng nghiệp v&agrave; M&ocirc;i trường</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1243"
+                                            title="Thủ tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với m&ocirc;n Judo">Thủ
+                                            tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với
+                                            m&ocirc;n Judo</a>
+                                        <p class="unit">Bộ Văn h&oacute;a, Thể thao v&agrave; Du lịch</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1241"
+                                            title="Thủ tục cấp Giấy miễn thị thực tại Cơ quan đại diện VIệt Nam ở nước ngo&agrave;i">Thủ
+                                            tục cấp Giấy miễn thị thực tại Cơ quan đại diện VIệt Nam ở nước
+                                            ngo&agrave;i</a>
+                                        <p class="unit">Bộ Ngoại giao</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1484"
+                                            title="Thủ tục gia hạn Giấy chứng nhận đăng k&yacute; th&agrave;nh lập v&agrave; hoạt động của cơ sở văn h&oacute;a nước ngo&agrave;i tại Việt Nam">Thủ
+                                            tục gia hạn Giấy chứng nhận đăng k&yacute; th&agrave;nh lập v&agrave; hoạt
+                                            động của cơ sở văn h&oacute;a nước ngo&agrave;i tại Việt Nam</a>
+                                        <p class="unit">Bộ Văn h&oacute;a, Thể thao v&agrave; Du lịch</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1338"
+                                            title="Thủ tục ph&ecirc; duyệt cho hộ ngh&egrave;o, hộ cận ngh&egrave;o, hộ mới tho&aacute;t ngh&egrave;o bị rủi ro do nguy&ecirc;n nh&acirc;n kh&aacute;ch quan vay bổ sung vốn để kh&ocirc;i phục sản xuất, kinh doanh">Thủ
+                                            tục ph&ecirc; duyệt cho hộ ngh&egrave;o, hộ cận ngh&egrave;o, hộ mới
+                                            tho&aacute;t ngh&egrave;o bị rủi ro do nguy&ecirc;n nh&acirc;n kh&aacute;ch
+                                            quan vay bổ sung vốn để kh&ocirc;i phục sản xuất, kinh doanh</a>
+                                        <p class="unit">Ng&acirc;n h&agrave;ng Ch&iacute;nh s&aacute;ch x&atilde; hội
+                                        </p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1483"
+                                            title="Thủ tục trả nợ, trả l&atilde;i trực tiếp bằng tiền mặt của người vay l&agrave; tổ vi&ecirc;n Tổ Tiết kiệm v&agrave; vay vốn">Thủ
+                                            tục trả nợ, trả l&atilde;i trực tiếp bằng tiền mặt của người vay l&agrave;
+                                            tổ vi&ecirc;n Tổ Tiết kiệm v&agrave; vay vốn</a>
+                                        <p class="unit">Ng&acirc;n h&agrave;ng Ch&iacute;nh s&aacute;ch x&atilde; hội
+                                        </p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1392"
+                                            title="Trả lại giấy ph&eacute;p nhận ch&igrave;m (cấp tỉnh)">Trả lại giấy
+                                            ph&eacute;p nhận ch&igrave;m (cấp tỉnh)</a>
+                                        <p class="unit">Bộ N&ocirc;ng nghiệp v&agrave; M&ocirc;i trường</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="sidebar -statis">
+    <div class="head">Số liệu thống kê </div>
+    <div class="body">
+                <div class="info">
+            <span class="value" style="color: #7C964C;">
+                                5769
+                            </span>
+            <div class="key">Tổng số TTHC</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                2948
+                            </span>
+            <div class="key">TTHC thực hiện tại Bộ, cơ quan</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                989
+                            </span>
+            <div class="key">TTHC thực hiện tại địa phương</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                1637
+                            </span>
+            <div class="key">TTHC ngành dọc tại địa phương</div>
+        </div>
+    </div>
+</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popupChitietTTHC" class="modal fade popupChitietTTHC box-chitiettthc-phienban" role="dialog">
+            <div class="modal-dialog" style="max-width: 991px;width: 100%;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="close" data-dismiss="modal">
+                            <span class="-ap icon icon-close"></span>
+                        </div>
+                        <h2 class="main-title">Chi tiết thủ tục h&agrave;nh ch&iacute;nh:</h2>
+                        <div class="content">
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    M&atilde; thủ tục:
+                                </div>
+                                <div id="info-procedure-code" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Số quyết định:
+                                </div>
+                                <div id="info-decision-code" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    T&ecirc;n thủ tục:
+                                </div>
+                                <div id="info-procedure-name" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cấp thực hiện:
+                                </div>
+                                <div id="info-impl-levels" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Loại thủ tục:
+                                </div>
+                                <div id="info-procedure-type" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Lĩnh vực:
+                                </div>
+                                <div id="info-fields" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Tr&igrave;nh tự thực hiện:
+                                </div>
+                                <div id="info-impl-order" class="col-sm-9 col-xs-12" style="white-space: pre-line;">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    C&aacute;ch thức thực hiện:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <div class="table-content">
+                                        <table id="info-impl-methods" style="width: 100%;" class="table-data">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:10%;">H&igrave;nh thức nộp</th>
+                                                    <th style="width:15%;">Thời hạn giải quyết</th>
+                                                    <th style="width:25%;">Ph&iacute;, lệ ph&iacute;</th>
+                                                    <th style="width:50%;">M&ocirc; tả</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Th&agrave;nh phần hồ sơ:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <div class="table-content">
+                                        <table id="info-documents" style="width: 100%;" class="table-data">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:65%;">T&ecirc;n giấy tờ</th>
+                                                    <th style="width:15%;">Mẫu đơn, tờ khai</th>
+                                                    <th style="width:20%;">Số lượng</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Đối tượng thực hiện:
+                                </div>
+                                <div id="info-objects" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cơ quan thực hiện:
+                                </div>
+                                <div id="info-impl-agencies" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cơ quan c&oacute; thẩm quyền:
+                                </div>
+                                <div id="info-authority-agencies" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Địa chỉ tiếp nhận HS:
+                                </div>
+                                <div id="info-reception-address" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cơ quan được ủy quyền:
+                                </div>
+                                <div id="info-authorised-agencies" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cơ quan phối hợp:
+                                </div>
+                                <div id="info-coordination-agencies" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Kết quả thực hiện:
+                                </div>
+                                <div id="info-impl-results" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Căn cứ ph&aacute;p l&yacute;:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <div class="table-content">
+                                        <table id="info-legal-grounds" class="table-data">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 20%;">Số k&yacute; hiệu</th>
+                                                    <th style="width: 45%;">Tr&iacute;ch yếu</th>
+                                                    <th style="width: 10%;">Ng&agrave;y ban h&agrave;nh</th>
+                                                    <th style="width: 25%;">Cơ quan ban h&agrave;nh</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Y&ecirc;u cầu, điều kiện thực hiện:
+                                </div>
+                                <div id="info-requires" class="col-sm-9 col-xs-12" style="white-space: pre-line;">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Từ kh&oacute;a:
+                                </div>
+                                <div id="info-keywords" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    M&ocirc; tả:
+                                </div>
+                                <div id="info-description" class="col-sm-9 col-xs-12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var listAttackments = [];
+
+    var ID = -1;
+    var searchedAmount = 0;
+    var currentPage = 1;
+    var recordPerPage = 5;
+
+    var searchedAmount_Suadoi = 0;
+    var currentPage_Suadoi = 1;
+    var recordPerPage_Suadoi = 5;
+
+    var searchedAmount_Baibo = 0;
+    var currentPage_Baibo = 1;
+    var recordPerPage_Baibo = 5;
+
+    $(document).ready(() => {
+
+        $("#li-qdcb").addClass("active");
+
+        formatAttachments();
+
+        $("#paginationRecsPerPage").change(() => {
+            recordPerPageAfterChanged = Number.parseInt($("#paginationRecsPerPage").val(), 10);
+            // currentPage = Math.ceil(currentPage * recordPerPage / recordPerPageAfterChanged);
+            currentPage = Math.ceil(((currentPage - 1) * recordPerPage + 1) / recordPerPageAfterChanged);
+            recordPerPage = recordPerPageAfterChanged;
+            loadProcedures(currentPage);
+        });
+
+        $("#paginationRecsPerPage-suadoi").change(() => {
+            recordPerPageAfterChanged = Number.parseInt($("#paginationRecsPerPage-suadoi").val(), 10);
+            currentPage_Suadoi = Math.ceil(((currentPage_Suadoi - 1) * recordPerPage_Suadoi + 1) / recordPerPageAfterChanged);
+            recordPerPage_Suadoi = recordPerPageAfterChanged;
+            loadProcedures_Suadoi(currentPage_Suadoi);
+        });
+
+        $("#paginationRecsPerPage-baibo").change(() => {
+            recordPerPageAfterChanged = Number.parseInt($("#paginationRecsPerPage-baibo").val(), 10);
+            currentPage_Baibo = Math.ceil(((currentPage_Baibo - 1) * recordPerPage_Baibo + 1) / recordPerPageAfterChanged);
+            recordPerPage_Baibo = recordPerPageAfterChanged;
+            loadProcedures_Baibo(currentPage_Baibo);
+        });
+
+        ID = parseInt(getUrlParameter("ma_quyet_dinh"), 10);
+        getFields(ID);
+
+        loadProcedures(1);
+        loadProcedures_Suadoi(1);
+        loadProcedures_Baibo(1);
+    });
+
+    function loadProcedures(pageIndex) {
+
+        currentPage = pageIndex;
+
+        var obj = new Object();
+        obj.service = "get_procedures_by_dp_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = ID;
+        obj.recordPerPage = recordPerPage;
+        obj.pageIndex = pageIndex;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        dataToView(result);
+    }
+
+    function loadProcedures_Suadoi(pageIndex) {
+
+        currentPage = pageIndex;
+
+        var obj = new Object();
+        obj.service = "get_modified_procedures_by_dp_id_service_v2"
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = ID;
+        obj.recordPerPage = recordPerPage_Suadoi;
+        obj.pageIndex = pageIndex;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        dataToView_Suadoi(result);
+    }
+
+    function loadProcedures_Baibo(pageIndex) {
+
+        currentPage = pageIndex;
+
+        var obj = new Object();
+        obj.service = "get_rescinded_procedures_by_dp_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = ID;
+        obj.recordPerPage = recordPerPage_Baibo;
+        obj.pageIndex = pageIndex;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        dataToView_Baibo(result);
+    }
+
+    function dataToView(result) {
+
+        $("#paginationPanel").hide();
+
+        if (result && result.length > 0) {
+
+            searchedAmount = result[0].AMOUNT;
+
+            var htmlText = '';
+            result.forEach(item => {
+                
+                htmlText += '<tr><td><a data-toggle="modal" onclick="fetchData(' + item.ID + ');" href="#popupChitietTTHC">' + item.PROCEDURE_NAME +'</a></td><td>' //
+                                + item.PUBLISHED_AGENCY + '</td></tr>';
+            });
+
+            $("#table-main > tbody").html(htmlText);
+
+            loadPagination(parseInt(searchedAmount, 10), currentPage, "paginationTableDVC", "doChangePageTableDVC", [], recordPerPage);
+
+        } else {
+            searchedAmount = 0;
+            $("#nhomckmoi .bottom").remove();
+            $("#table-main").html("Không có thông tin");
+        }
+
+        // if (searchedAmount > recordPerPage)
+        if (searchedAmount > 0)
+            $("#paginationPanel").show();
+
+    }
+
+    function dataToView_Suadoi(result) {
+
+        $("#paginationPanel-suadoi").hide();
+
+        if (result && result.length > 0) {
+
+            searchedAmount_Suadoi = result[0].AMOUNT;
+
+            var htmlText = '';
+            result.forEach(item => {
+                
+                htmlText += '<tr><td><a data-toggle="modal" onclick="fetchData(' + item.ID + ');" href="#popupChitietTTHC">' + item.PROCEDURE_NAME +'</a></td><td>' //
+                                + item.PUBLISHED_AGENCY + '</td></tr>';
+            });
+
+            $("#table-main-suadoi > tbody").html(htmlText);
+
+            loadPagination(parseInt(searchedAmount_Suadoi, 10), currentPage_Suadoi, "paginationTableDVC-suadoi", "doChangePageTableDVC_Suadoi", [], recordPerPage_Suadoi);
+
+        } else {
+            searchedAmount_Suadoi = 0;
+            $("#suadoibosung .bottom").remove();
+            $("#table-main-suadoi").html("Không có thông tin");
+        }
+
+        // if (searchedAmount_Suadoi > recordPerPage_Suadoi)
+        if (searchedAmount_Suadoi > 0)
+            $("#paginationPanel-suadoi").show();
+
+    }
+
+    function dataToView_Baibo(result) {
+
+        $("#paginationPanel-baibo").hide();
+
+        if (result && result.length > 0) {
+
+            searchedAmount_Baibo = result[0].AMOUNT;
+
+            var htmlText = '';
+            result.forEach(item => {
+                
+                htmlText += '<tr><td><a data-toggle="modal" onclick="fetchData(' + item.ID + ');" href="#popupChitietTTHC">' + item.PROCEDURE_NAME +'</a></td><td>' //
+                                + item.PUBLISHED_AGENCY + '</td></tr>';
+            });
+
+            $("#table-main-baibo > tbody").html(htmlText);
+
+            loadPagination(parseInt(searchedAmount_Baibo, 10), currentPage_Baibo, "paginationTableDVC-baibo", "doChangePageTableDVC_Baibo", [], recordPerPage_Baibo);
+
+        } else {
+            searchedAmount_Baibo = 0;
+            $("#baibo .bottom").remove();
+            $("#table-main-baibo").html("Không có thông tin");
+        }
+
+        // if (searchedAmount_Baibo > recordPerPage_Baibo)
+        if (searchedAmount_Baibo > 0)
+            $("#paginationPanel-baibo").show();
+
+    }
+
+    function formatAttachments() {
+
+        var str = '[{"tenTep":"275103.12.2025_15h07p28_signed.pdf","code":"3fd9456cb33031aa","tepDinhKemId":"2025/12/05/3fd9456cb33031aa.pdf"}]';//$("#content-attachments").html();
+        var objList = JSON.parse(str);
+        var htmlText = '';
+
+        var index = 0;
+        
+        objList.forEach(item => {
+            var code= "11aaaa";
+            listAttackments.push(item.tepDinhKemId);
+            htmlText += '<div data-id="'+ index + '" class="link" style="cursor: pointer;" onclick="downloadMaudon_Old(this,\''+item.code+'\')">' + item.tenTep + '</div><br />';
+            index++;
+        });
+        
+
+        if (htmlText != undefined && htmlText != null && htmlText.trim() != '')
+            $("#content-attachments").html(htmlText);
+        else
+        $("#content-attachments").html("Không có thông tin");
+    }
+
+    function listToString(list) {
+        var ret = '';
+        list.forEach(item => {
+            ret += ', ' + item.NAME;
+        });
+
+        return ret.substring(2);
+    }
+
+    function getFields(id) {
+
+        var obj = new Object();
+        obj.service = "get_fields_by_dp_id_services_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = id;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+
+        htmlText = '';
+        if (result && result.length > 0) {
+
+            htmlText = listToString(result);
+        
+        } else {
+            htmlText = "Không có thông tin";
+        }
+
+        $("#content-fields").html(htmlText);
+    }
+
+    function stringToFormatedDateTime(dateTimeString) {
+
+        var date = new Date(dateTimeString);
+        var ret = date.getDate() + '-' + date.getUTCMonth() + '-' + date.getFullYear();
+
+        return ret;
+    }
+
+    function fetchData(procedureId) {
+
+        var obj = new Object();
+        obj.service = "procedure_get_procedure_by_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = procedureId;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        viewing(procedureId, result);
+    }
+
+    function getImplOrder(procedureId, parentId) {
+
+        var obj = new Object();
+        obj.service = "procedure_get_impl_orders_by_proc_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = procedureId;
+        obj.parent_id = parentId;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+        
+        result.sort((a,b) => (a.CONTENT.trim() > b.CONTENT.trim()) ? 1 : ((b.CONTENT.trim() > a.CONTENT.trim()) ? -1 : 0));
+        return result;
+    }
+
+    function getDocuments(procedureId, parentId) {
+
+        var obj = new Object();
+        obj.service = "procedure_get_documents_by_proc_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = procedureId;
+        obj.parent_id = parentId;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+        return result;
+    }
+
+    function getImplMethods(procedureId, parentId) {
+
+        var obj = new Object();
+        obj.service = "procedure_get_impl_methods_by_proc_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = procedureId;
+        obj.parent_id = parentId;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        return result;
+    }
+
+    function getLegalGrounds(procedureId) {
+
+        var obj = new Object();
+        obj.service = "procedure_get_legal_grounds_by_procedure_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = procedureId;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        return result;
+    }
+
+    function getProcedureAttachments(documentId) {
+
+        var obj = new Object();
+        obj.service = "procedure_get_attachments_by_doc_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.document_id = documentId;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        return result;
+    }
+
+    function getFees(procedureId, channelId) {
+
+        var obj = new Object();
+        obj.service = "procedure_get_fees_by_channel_proc_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.procedure_id = procedureId;
+        obj.channel_id = channelId;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        return result;
+    }
+
+    function getRequires(procedureId, parentId) {
+
+        var obj = new Object();
+        obj.service = "procedure_get_requires_by_procedure_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = procedureId;
+        obj.parent_id = parentId;
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        return result;
+    }
+
+    function viewing(procedureId, result) {
+
+        if (result && result.length > 0) {
+
+            obj = result[0];
+            
+            if (obj.PROCEDURE_CODE)
+                $("#info-procedure-code").html(obj.PROCEDURE_CODE);
+            else 
+            $("#info-procedure-code").html("Không có thông tin");
+
+            if (obj.DECISION_PUBLISHMENT_CODE)
+                $("#info-decision-code").html(obj.DECISION_PUBLISHMENT_CODE);
+            else 
+            $("#info-decision-code").html("Không có thông tin");
+
+            if (obj.PROCEDURE_NAME)
+                $("#info-procedure-name").html(obj.PROCEDURE_NAME);
+            else 
+            $("#info-procedure-name").html("Không có thông tin");
+
+            if (obj.IMPLEMENTATION_LEVELS)
+                $("#info-impl-levels").html(obj.IMPLEMENTATION_LEVELS);
+            else 
+            $("#info-impl-levels").html("Không có thông tin");
+
+            if (obj.PROCEDURE_TYPE)
+                $("#info-procedure-type").html(obj.PROCEDURE_TYPE);
+            else 
+            $("#info-procedure-type").html("Không có thông tin");
+
+            if (obj.FIELDS)
+                $("#info-fields").html(obj.FIELDS);
+            else 
+            $("#info-fields").html("Không có thông tin");
+
+            if (obj.IMPLEMENTATION_OBJECTS)
+                $("#info-objects").html(obj.IMPLEMENTATION_OBJECTS);
+            else
+            $("#info-objects").html("Không có thông tin");
+
+            if (obj.IMPLEMENTATION_AGENCIES)
+                $("#info-impl-agencies").html(obj.IMPLEMENTATION_AGENCIES);
+            else 
+            $("#info-impl-agencies").html("Không có thông tin");
+
+            if (obj.AUTHORITY_AGENCIES)
+                $("#info-authority-agencies").html(obj.AUTHORITY_AGENCIES);
+            else 
+            $("#info-authority-agencies").html("Không có thông tin");
+
+            if (obj.RECEPTION_ADDRESS)
+                $("#info-reception-address").html(obj.RECEPTION_ADDRESS);
+            else 
+            $("#info-reception-address").html("Không có thông tin");
+
+            if (obj.RECEPTION_ADDRESS)
+                $("#info-reception-address").html(obj.RECEPTION_ADDRESS);
+            else 
+            $("#info-reception-address").html("Không có thông tin");
+
+            if (obj.AUTHORISED_AGENCIES)
+                $("#info-authorised-agencies").html(obj.AUTHORISED_AGENCIES);
+            else 
+            $("#info-authorised-agencies").html("Không có thông tin");
+
+            if (obj.COORDINATION_AGENCIES)
+                $("#info-coordination-agencies").html(obj.COORDINATION_AGENCIES);
+            else 
+            $("#info-coordination-agencies").html("Không có thông tin");
+
+            if (obj.IMPLEMENTATION_RESULTS)
+                $("#info-impl-results").html(obj.IMPLEMENTATION_RESULTS);
+            else 
+            $("#info-impl-results").html("Không có thông tin");
+
+            if (obj.KEYWORD)
+                $("#info-keywords").html(obj.KEYWORD);
+            else 
+            $("#info-keywords").html("Không có thông tin");
+
+            if (obj.DESCRIPTION)
+                $("#info-description").html(obj.DESCRIPTION);
+            else 
+            $("#info-description").html("Không có thông tin");
+
+            // trình tự thực hiện
+            var implOrder = getImplOrder(procedureId, obj.PARENT_ID ? obj.PARENT_ID : '');
+            if (implOrder && implOrder.length > 0) {
+
+                var htmlText = '';
+                implOrder.forEach(item => {
+                    htmlText += item.CONTENT + '<br /><br />';
+                });
+                $("#info-impl-order").html(htmlText);
+
+            } else {
+                $("#info-impl-order").html("Không có thông tin");
+            }
+
+            // cách thức thực hiện
+            // info-impl-methods
+            var implMethod = getImplMethods(procedureId, obj.PARENT_ID ? obj.PARENT_ID : '');
+            if (implMethod && implMethod.length > 0) {
+
+                var htmlText = '';
+                implMethod.forEach(item => {
+                    htmlText += '<tr><td>' + item.CHANNEL_NAME + '</td>';
+                    htmlText += '<td>' + item.TIME_RESOLVE + '</td>';
+                    htmlText += '<td>';
+                    var fees = getFees(procedureId, item.CHANNEL_ID);
+                    if (fees && fees.length > 0) {
+
+                        fees.forEach(i => {
+                            if(i.NAME && i.FEE){
+                                htmlText += i.NAME + ': ' + i.FEE; 
+                                if (i.DESCRIPTION)
+                                    htmlText += ' (' + i.DESCRIPTION + ')';
+                                htmlText += '<br />';
+                            }
+                        });
+                    }
+                    htmlText += '</td>';
+
+                    if (item.DESCRIPTION)
+                        htmlText += '<td>' + item.DESCRIPTION + '</td></tr>';
+                    else
+                        htmlText += '<td></td></tr>';
+
+                });
+                $("#info-impl-methods > tbody").html(htmlText);
+
+            } else {
+                $("#info-impl-methods").html("Không có thông tin");
+            }
+
+            // Thành phần hồ sơ
+            var documents = getDocuments(procedureId, obj.PARENT_ID ? obj.PARENT_ID : '');
+            if (documents && documents.length > 0) {
+
+                var htmlText = '';
+                documents.forEach(item => {
+                    htmlText += '<tr><td>' + item.PROFILE_COMPONENT_NAME +'</td>';
+                    
+                    htmlText += '<td>';
+                    var attachments = getProcedureAttachments(item.PROFILE_COMPONENT_ID);
+                    if (attachments && attachments.length > 0){
+
+                        attachments.forEach(i => {
+                            htmlText += '<span class="link" style="cursor: pointer;" onclick="downloadMaudon(\'' + i.CODE + '\');">' + i.FILE_NAME + '</span><br />';
+                        });
+                    }
+                    htmlText += '</td>';
+                                            
+                    htmlText += '<td><p>Bản chính: ' + item.ORIGINAL_AMOUNT + '</p><p>Bản sao: ' + item.COPY_AMOUNT + '</p></td></tr>';        
+                });
+                $("#info-documents > tbody").html(htmlText);
+
+            } else {
+                $("#info-documents").html("Không có thông tin");
+            }
+
+            // căn cứ pháp lý
+            var legalGrounds = getLegalGrounds(procedureId);
+            if (legalGrounds && legalGrounds.length > 0) {
+
+                var htmlText = '';
+                legalGrounds.forEach(item => {
+                    htmlText += '<tr><td>' + item.DOCUMENT_CODE + '</td>';
+                    htmlText += '<td>' + item.LEGAL_GROUND_NAME + '</td>';
+                    htmlText += '<td>' + item.ISSUED_DATE + '</td>';
+                    if (item.AGENCY_NAME)
+                        htmlText += '<td>' + item.AGENCY_NAME + '</td></tr>';
+                    else
+                        htmlText += '<td></td></tr>';
+                        
+                });
+                $("#info-legal-grounds > tbody").html(htmlText);
+
+            } else {
+                $("#info-legal-grounds").html("Không có thông tin");
+            }
+
+            // Yêu cầu điều kiện
+            var requires = getRequires(procedureId, obj.PARENT_ID ? obj.PARENT_ID : '');
+            if (requires && requires.length > 0) {
+
+                var htmlText = '';
+                requires.forEach(item => {
+                    htmlText += item.REQUIRE_NAME + '<br />';
+                });
+                $("#info-requires").html(htmlText);
+
+            } else {
+                $("#info-requires").html("Không có thông tin");
+            }
+        }
+    }
+
+    function getUrlParameter(sParam) {
+
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+    };
+
+    function doChangePageTableDVC(currentPage) {
+        loadProcedures(currentPage);
+    }
+
+    function doChangePageTableDVC_Suadoi(currentPage) {
+        loadProcedures_Suadoi(currentPage);
+    }
+
+    function doChangePageTableDVC_Baibo(currentPage) {
+        loadProcedures_Baibo(currentPage);
+    }
+
+    function changePagination(tabNo) {
+        if (tabNo == 1) {
+            $('#paginationDVCChoTiepNhan').hide();
+            $('#paginationDVCHoanThanh').show();
+        } else {
+            $('#paginationDVCHoanThanh').hide();
+            $('#paginationDVCChoTiepNhan').show();
+        }
+    }
+
+    function getUrlDownload(procedureCode) {
+
+        var obj = new Object();
+        obj.service = "get_url_downfile";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+        return result[0].URL_DOWNLOAD;
+
+    }
+
+    function downloadMaudon(code){
+		// if (id == '' || id == undefined) return;
+		// var obj = {
+		// 	id: base64.encode(id)
+		// };
+		// var url = "/jsp/alfresco/download.jsp?" + $.param(obj);
+        // var url = "https://csdltest.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=" + code;
+        var url = getUrlDownload() + "?ma=" +code;
+		window.open(url, '_blank');
+	}
+    
+    function downloadMaudon_Old(_this,code){
+    // var index = Number.parseInt($(_this).attr('data-id'), 10);
+    // var filePath = listAttackments[index];
+    // var fileName = $(_this).text();
+    // if (filePath == '' || fileName == '') return;
+
+    // var obj = {
+    //     fpath: base64.encode(filePath),
+    //     fileName: base64.encode(fileName)
+    // };
+    
+    // var url = "/jsp/alfresco/path-download.jsp?" + $.param(obj);
+    // var url = "https://csdltest.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=" + code;
+    var url = getUrlDownload() + "?ma=" +code;
+    window.open(url, '_blank');
+    }
+    </script>
+</body>
+
+</html>
+<html>
+
+<head></head>
+
+<body>
+    <div class="loading" id="loading" style="display:none">
+        <div class="icon">
+            <img src="img/loading.svg" alt="" />
+        </div>
+        <style type="text/css">
+            .loading {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                z-index: 1000;
+            }
+
+            .loading .icon {
+                width: 100px;
+                position: absolute;
+                top: 0px;
+                height: 100px;
+                bottom: 0px;
+                right: 0px;
+                margin: auto;
+                left: 0px;
+            }
+        </style>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="add">
+                    <p>Cơ quan chủ quản: Văn ph&ograve;ng Ch&iacute;nh phủ</p>
+                </div>
+                <div class="add">
+                    <p>www.dichvucong.gov.vn</p>
+                </div>
+                <div class="add">
+                    <p>Tổng đ&agrave;i hỗ trợ: 18001096</p>
+                </div>
+                <div class="add">
+                    <p> Email: dichvucong@chinhphu.vn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="theme/vendor/typeahead/index.js"></script>
+    <script type="text/javascript" src="theme/vendor/typeahead/handlebars.js"></script>
+    <script type="text/javascript" src="theme/js/custom.js"></script>
+    <script type="text/javascript">
+        function showLoading() {
+        $("#loading-all").show();
+    }
+    function hideLoading(){
+        $("#loading-all").hide();
+    }
+
+    function goToPage(url){
+        window.location.href = url;
+    }
+
+    $(".targetgroup-box .btn-readmore").click(function(e){
+        e.preventDefault();
+        if($(this).hasClass("active")){
+            $(this).html('Xem tiếp <span class="-ap icon-chevron-thin-down icon"></span>');
+            $(this).parents(".targetgroup-box").find(".links").css({"height":"250px"});
+            $(this).removeClass("active");
+        }else{
+            $(this).html('Thu gọn <span class="-ap icon-chevron-thin-up icon"></span>');
+            $(this).parents(".targetgroup-box").find(".links").css({"height":"auto"});
+            $(this).addClass("active");
+        }
+    });
+    var links = [
+            
+        ];
+
+
+    function searchProcedure(){
+        var key = getWords($("#searchKeyWord").val(), 100);
+		console.log(key);
+        // if($("#searchKeyWord").val()) {
+        var href = 'dvc-ket-qua-thu-tuc.html?originKey=' + encodeURIComponent(key) + '&tukhoa=' + key.replace(/[&\/\\#,+()$~%'":*?<>{}^]/g, ' ').trim() + '&tinh_thanh=';
+        window.location.href = href;
+        //}
+    }
+
+function showAdvSearch() {
+    getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH");
+}
+
+function doAdvSearch(){
+
+    let mess = '';
+    let keyWord = $('#txtKEYWORD').val().trim();
+    keyWord = getWords(keyWord, 100);
+    if (!keyWord) {
+        mess += 'Bạn vui lòng nhập từ khóa tìm kiếm!\n';
+    }
+    let tinhThanhValue = $('#cboTINH_THANH').val();
+    let boNganhValue = $('#cboBO_NGANH').val();
+    var rdoBO = $("input[name='cap_thuc_hien']:checked").val();
+
+    if (((!tinhThanhValue || '-1' == tinhThanhValue) && rdoBO != 'bonganh') || (rdoBO == 'bonganh' && (!boNganhValue || '-1' == boNganhValue))) {
+        mess += 'Bạn phải chọn ít nhất một Tỉnh/ Thành phố hoặc một Bộ ngành!\n';
+    }
+
+    if (mess) {
+        toastr.warning(mess);
+        return;
+    }
+
+    var rdoSO = $("input[name='quan_huyen_or_so']:checked").val();
+    if (rdoBO != 'bonganh' && $('#cboTINH_THANH').val() && $('#cboTINH_THANH').val() != '-1' && ($('#cboQUAN_HUYEN').val() == '-1' || !$('#cboQUAN_HUYEN').val()) && ($('#cboSO').val() == '-1' || !$('#cboSO').val()) && ($('#cboPHUONG_XA').val() == '-1' || !$('#cboPHUONG_XA').val())) {
+
+        var params = 'originKey=' + encodeURIComponent(keyWord) + '&tukhoa=' + keyWord.replace(/[&\/\\#,+()$~%'":*?<>{}^]/g,' ').trim()
+        params+= "&tinh_thanh="+(($('#cboTINH_THANH').val() == '-1' || !$('#cboTINH_THANH').val()  || rdoBO == 'bonganh') ? "" : $('#cboTINH_THANH option:selected').text());
+        window.location = 'dvc-ket-qua-thu-tuc.html?' + params;
+    } else {
+
+        var params = "tu_khoa=" + keyWord;
+        //params += "&bo_nganh="+(($('#cboBO').val() != '-1' || !$('#cboBO').val() || rdoBO != 'bonganh') ? "" : $('#cboBO option:selected').text());
+        params += "&bo_nganh=" + ($('#cboBO_NGANH option:selected').text());
+        params += "&tinh_thanh=" + (($('#cboTINH_THANH').val() == '-1' || !$('#cboTINH_THANH').val() || rdoBO == 'bonganh') ? "" : $('#cboTINH_THANH option:selected').text());
+        params += "&so=" + (($('#cboSO').val() == '-1' || !$('#cboSO').val() || rdoSO != 'so') ? "" : $('#cboSO option:selected').text());
+        params += "&quan_huyen=" + (($('#cboQUAN_HUYEN').val() == '-1' || !$('#cboQUAN_HUYEN').val() || rdoSO == 'so') ? "" : $('#cboQUAN_HUYEN option:selected').text());
+        params += "&phuong_xa=" + (($('#cboPHUONG_XA').val() == '-1' || !$('#cboPHUONG_XA').val() || rdoSO == 'so') ? "" : $('#cboPHUONG_XA option:selected').text());
+        params += "&id_tinh_thanh=" + $('#cboTINH_THANH').val();
+        params += "&id_quan_huyen=" + $('#cboQUAN_HUYEN').val();
+        params += "&id_phuong_xa=" + $('#cboPHUONG_XA').val();
+        params += "&id_so=" + $('#cboSO').val();
+        params += "&id_bo_nganh=" + $('#cboBO_NGANH').val();
+        window.location = 'dvc-danh-sach-dich-vu-cong.html?' + params;
+    }
+
+    $('#advsearch').modal('hide');
+}
+$(document).ready(function(){
+    $("#searchKeyWord").keyup(function (e){
+        if (e.which == 13) {
+            searchProcedure();
+        }
+    });
+    bindEvent();
+});
+
+function changeHeight(){
+    var vl = 1 - $('#popupChange').attr('height');
+    $('#popupChange').attr('height', vl);
+    $('#popupChange').css('height', vl + "px");
+}
+
+function bindEvent(){
+    $('#searchKeyWord').keydown(function(e){
+        if (e.keyCode == 13) {
+            searchProcedure();
+        }
+    });
+    $('#advsearch').on('hidden.bs.modal', function () {
+        $('#divClosePopupSearch').click();
+    });
+    $('#divClosePopupSearch').click(function(){
+        $("#txtKEYWORD").val('');
+        $('#rdoTINH_THANH').click();
+        $('#rdoQUAN_HUYEN').click();
+        $("#cboTINH_THANH").change();
+        getLocation("dvcqg_get_phuong_xa_by_selected", "huyen_id", -1, "cboPHUONG_XA");
+        $('#advsearch').modal('hide');
+
+    });
+
+    $('#rdoTINH_THANH').click(function(){
+        changeHeight();
+        $('#hide_for_bo_nganh').show();
+        $('#cboBO_NGANH').select2().next().hide();
+        $('#cboTINH_THANH').select2().next().show();
+        getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH");
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", -1, "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", -1, "cboSO");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+        if ($("input[name='quan_huyen_or_so']:checked").val() == "so") {
+
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+            $('#cboSO').select2().next().show();
+        } else {
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+            $('#cboSO').select2().next().hide();
+
+        }
+    });
+    $('#rdoBO_NGANH').click(function(){
+        changeHeight();
+        $('#hide_for_bo_nganh').hide();
+        $('#cboBO_NGANH').select2().next().show();
+        $('#cboTINH_THANH').select2().next().hide();
+        getLocation("dvcqg_get_bo_nganh_by_selected_v2", null, null, "cboBO_NGANH");
+    });
+
+    $('#rdoQUAN_HUYEN').click(function(){
+        $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+        $('#cboSO').select2().next().hide();
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+    });
+
+    $('#rdoSO').click(function(){
+        $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+        $('#cboSO').select2().next().show();
+        getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboSO");
+    });
+
+    $("#cboTINH_THANH,#cboQUAN_HUYEN,#cboPHUONG_XA,#cboSO,#cboBO_NGANH").select2({
+        allowClear: true,
+        width: "100%",
+    });
+    $('#cboSO,#cboBO_NGANH').select2().next().hide();
+
+    $("#cboTINH_THANH").change(function () {
+        getLocation("dvcqg_get_so_by_selected", "tinh_id", $("#cboTINH_THANH").val(), "cboSO");
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+        if ($("input[name='quan_huyen_or_so']:checked").val() == "so") {
+
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+            $('#cboSO').select2().next().show();
+        } else {
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+            $('#cboSO').select2().next().hide();
+
+        }
+
+    });
+    $("#cboQUAN_HUYEN").change(function () {
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", $("#cboQUAN_HUYEN").val(), "cboPHUONG_XA");
+    });
+}
+
+//suggestion search
+function sugggestProcedure(keyword) {
+    var obj = new Object();
+    obj.key_search = 'al:"' + keyword +'"~5';
+    obj.page_size = 5;
+    obj.start_row = 0;
+    obj.source_data = "thu_tuc_v1";
+    obj.type = "fts";
+    var result = apiservice.AjaxJson.executeQuery(obj);
+    var dataMap = result.response.docs.map(function (i) {
+        return {
+            name: i.ten_thu_tuc,
+            link: i.ten_thu_tuc,
+            id: i.ma_thu_tuc
+        }
+    });
+
+    return dataMap;
+}
+
+jQuery(document).ready(function($) {
+
+    var engine = new Bloodhound({
+        remote: {
+            url: '/jsp/procedure-typehead.jsp?keyword=al:"%QUERY%"~5',
+            wildcard: '%QUERY%'
+        },
+        datumTokenizer: Bloodhound.tokenizers.whitespace('keyword'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace
+    });
+
+    $(".search-input").typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 3
+    }, {
+        source: engine.ttAdapter(),
+        displayKey: 'ten_thu_tuc',
+        name: 'usersList',
+        templates: {
+            empty: [
+                '<div class="list-group search-results-dropdown"><div class="list-group-item">Không có kết quả phù hợp.</div></div>'
+            ],
+            header: [
+                '<div class="list-group search-results-dropdown">'
+            ],
+            suggestion: function (data) {
+                console.log(data);
+                if (data.isnganhdoc == 1) {
+                    return '<a href="dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }
+                return '<a href="dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+            }
+        }
+    });
+    $('#searchKeyWord:text:visible:first').focus();
+});
+
+    </script>
+    <script type="text/javascript">
+        //
+    function autoSetmenu() {
+        var path = window.location.pathname;
+        var isRemoveDropdown = false;
+
+        // Cau hoi
+        if (path == '/p/home/dvc-chi-tiet-cau-hoi.html'){
+            path = '/p/home/dvc-cau-hoi-pho-bien.html';
+        }
+
+        // Huong dan su dung
+        if (path == '/p/home/dvc-huong-dan-bo-nganh-dia-phuong.html' || path == '/p/home/dvc-phan-mem-ho-tro.html' || path == '/p/home/dvc-thiet-ke-giao-dien.html' ||
+            path == '/p/home/dvc-nop-tien-dien.html' || path == '/p/home/dvc-liet-ket-giao-duc.html'
+            ){
+            path = '/p/dvc-huong-dan-cong-dan-doanh-nghiep.html';
+        }
+
+        // Thu tuc hanh hinh cong dan - doanh nghiep
+        if (path == '/p/home/dvc-ket-qua-thu-tuc-cho-cong-dan.html'
+                || path == '/p/home/dvc-chi-tiet-dich-vu-cho-cong-dan.html'
+                || path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-cong-dan.html'
+            ){
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+        }else if (path == '/p/home/dvc-ket-qua-thu-tuc-cho-doanh-nghiep.html'
+                || path == '/p/home/dvc-chi-tiet-dich-vu-cho-doanh-nghiep.html'
+                || path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-doanh-nghiep.html'
+            ){
+            path = '/p/home/dvc-trang-chu-doanh-nghiep.html';
+        }else if (path == '/p/home/dvc-danh-sach-thu-tuc-theo-nhom-su-kien.html'
+                || path == '/p/home/dvc-danh-sach-cau-hoi-theo-nhom-su-kien.html'
+            ) {
+            var objectId = GetURLParameter('objectId');
+            if (objectId == 1){
+                path = '/p/home/dvc-trang-chu-cong-dan.html';
+            }else if(objectId == 5){
+                path = '/p/home/dvc-trang-chu-doanh-nghiep.html';
+            }
+        }
+
+        // DVC trực tuyến & đăng ký xe
+        if (path == '/p/home/dvc-dich-vu-cong-truc-tuyen-ds.html'
+                || path == '/p/home/dvc-dich-vu-cong-truc-tuyen.html'
+                || path == '/p/home/dvc-dang-ky-xe.html'
+            ) {
+            path = '/p/home/dvc-dich-vu-cong-truc-tuyen.html';
+        }
+
+        // Chi tiet TTHC va DVC
+        if (path == '/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html' 
+                || path == '/p/home/dvc-danh-sach-dich-vu-cong.html'
+                || path == '/p/home/dvc-danh-sach-thu-tuc-theo-su-kien.html'
+                || path == '/p/home/dvc-ket-qua-thu-tuc.html'
+            ) {
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+            isRemoveDropdown = true;
+        }
+
+        // module TTHC
+        if (path == '/p/home/dvc-tthc-category.html') {
+            path = '/p/home/dvc-tthc-trang-chu.html';
+        }
+        if (path == '/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-thu-tuc-hanh-chinh.html';
+        }
+        if (path == '/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html';
+        }
+        if (path == '/p/home/dvc-tthc-quyet-dinh-cong-bo-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-quyet-dinh-cong-bo.html';
+        }
+        if (path == '/p/home/dvc-tthc-bonganh-tinhtp.html') {
+            path = '/p/home/dvc-tthc-co-quan.html';
+        }
+
+        if (path == '/p/home/dvc-chi-tiet-tin-tuc.html') {
+            path = '/p/home/dvc-tin-tuc.html';
+        }
+
+        // dvc-cap-ban-sao-tu-ban-chinh
+        if (path == '/p/home/dvc-cap-ban-sao-tu-ban-chinh.html'){
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+        }
+        //  Đặt lịch hẹn
+        if (path == '/p/home/dvc-cap-ban-sao-tu-ban-chinh-dlh.html'){
+            path = '/p/home/dvc-tra-cuu-ho-so.html';
+        }
+        // Active main menu
+        $("#main-menu li").each(function () {
+            var link = $(this).find(">a").attr("href");
+            if (path.indexOf(link) != -1) {
+                $(this).parents('li').siblings().removeClass("active");
+                $(this).parents('li').addClass("active");
+                $(this).parents('li').find("li").removeClass("active");
+                $(this).addClass("active");
+            }
+        });
+
+        // Active dropdownmenu
+        $("#main-menu > li").each(function () {
+            if ($(this).hasClass("active")) {
+                var html = $(this).find(">ul").html();
+                $(this).addClass("active");
+                $(this).find(">ul").addClass("hidden");
+                $("#list-dropdown").html(html);
+                if($("#bn-ttp").hasClass("active")){
+                    $("#coquan").addClass("active");
+                }
+            }
+        });
+
+        // Remove
+        if (isRemoveDropdown) {
+            $('#list-dropdown > li').removeClass('active');
+        }
+    }
+
+    var pathHDSD = window.location.pathname;
+    $("#regionleft-introduce li").removeClass('active');
+    $("#left-introduce li a").each(function () {
+        var href = $(this).attr('href');
+        if (pathHDSD.indexOf(href) != -1) {
+            $(this).parent().addClass('active');
+        }
+    });
+    $('#left-introduce li:first-child').removeClass('active');
+    $('.child-menus a').each(function(){
+        var href = $(this).attr('href');
+        if (pathHDSD.indexOf(href) != -1) {
+            $(this).parent().addClass('active');
+        }
+    });
+
+    $(document).ready(function(){
+        autoSetmenu();
+    })
+
+
+    </script>
+    <style>
+        .bootbox .modal-footer .btn+.btn {
+            margin-bottom: 0;
+            margin-left: 5px;
+            margin-top: 0px;
+        }
+
+        .input-captcha .code .number {
+            height: 100%;
+            padding: 2px;
+        }
+    </style>
+</body>
+
+</html>

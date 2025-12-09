@@ -1,0 +1,1958 @@
+[
+    {
+        "ID": "67",
+        "FIELD_NAME": "An toàn bức xạ và hạt nhân(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "13754",
+        "FIELD_NAME": "An toàn đập, hồ chứa thuỷ điện(Bộ Công Thương)"
+    },
+    {
+        "ID": "14422",
+        "FIELD_NAME": "An toàn lao động trong thi công xây dựng công trình(Bộ Xây dựng)"
+    },
+    {
+        "ID": "13",
+        "FIELD_NAME": "An toàn thực phẩm(Bộ Công Thương)"
+    },
+    {
+        "ID": "246",
+        "FIELD_NAME": "An toàn thực phẩm(Bộ Y tế)"
+    },
+    {
+        "ID": "72",
+        "FIELD_NAME": "An toàn, vệ sinh lao động(Bộ Nội vụ)"
+    },
+    {
+        "ID": "14",
+        "FIELD_NAME": "An toàn vệ sinh lao động(Bộ Công Thương)"
+    },
+    {
+        "ID": "16062",
+        "FIELD_NAME": "An toàn vệ sinh lao động(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "15143",
+        "FIELD_NAME": "Bộ Tài chính(Bộ Tài chính)"
+    },
+    {
+        "ID": "187",
+        "FIELD_NAME": "Báo chí(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "145",
+        "FIELD_NAME": "Báo chí(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "84",
+        "FIELD_NAME": "Báo chí(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "16042",
+        "FIELD_NAME": "Bậc kỹ thuật nghề(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "198",
+        "FIELD_NAME": "Bồi thường nhà nước(Bộ Tư pháp)"
+    },
+    {
+        "ID": "16025",
+        "FIELD_NAME": "Biên giới lãnh thổ(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "180",
+        "FIELD_NAME": "Biến đổi khí hậu(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "174",
+        "FIELD_NAME": "Biển và hải đảo(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "76",
+        "FIELD_NAME": "Bình đẳng giới(Bộ Nội vụ)"
+    },
+    {
+        "ID": "215",
+        "FIELD_NAME": "Bản quyền tác giả(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "15662",
+        "FIELD_NAME": "Bảo đảm an ninh hàng không(Bộ Công an)"
+    },
+    {
+        "ID": "15842",
+        "FIELD_NAME": "Bảo đảm trật tự, an toàn giao thông đường bộ(Bộ Công an)"
+    },
+    {
+        "ID": "162",
+        "FIELD_NAME": "Bảo hiểm(Bộ Tài chính)"
+    },
+    {
+        "ID": "16522",
+        "FIELD_NAME": "Bảo hiểm xã hội(Bộ Tài chính)"
+    },
+    {
+        "ID": "73",
+        "FIELD_NAME": "Bảo hiểm xã hội(Bộ Nội vụ)"
+    },
+    {
+        "ID": "16382",
+        "FIELD_NAME": "Bảo hiểm y tế(Bộ Y tế)"
+    },
+    {
+        "ID": "14602",
+        "FIELD_NAME": "Bảo tồn thiên nhiên và Đa dạng sinh học(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "74",
+        "FIELD_NAME": "Bảo trợ xã hội(Bộ Y tế)"
+    },
+    {
+        "ID": "16104",
+        "FIELD_NAME": "Bảo vệ Bí mật nhà nước(Bộ Y tế)"
+    },
+    {
+        "ID": "13851",
+        "FIELD_NAME": "Bảo vệ công trình quốc phòng và khu quân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "14622",
+        "FIELD_NAME": "Bảo vệ dữ liệu cá nhân(Bộ Công an)"
+    },
+    {
+        "ID": "15882",
+        "FIELD_NAME": "Bảo vệ môi trường ngành Công Thương(Bộ Công Thương)"
+    },
+    {
+        "ID": "15262",
+        "FIELD_NAME": "bảo vệ quyền lợi người tiêu dùng(Bộ Công Thương)"
+    },
+    {
+        "ID": "14968",
+        "FIELD_NAME": "Bảo vệ vành đai an toàn kho đạn dược(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "188",
+        "FIELD_NAME": "Bưu chính(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "13854",
+        "FIELD_NAME": "Các cơ sở giáo dục khác(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "13902",
+        "FIELD_NAME": "Các dịch vụ hỗ trợ(Điện Lực)"
+    },
+    {
+        "ID": "13711",
+        "FIELD_NAME": "Các hoạt động khác của NHPT(Ngân hàng phát triển)"
+    },
+    {
+        "ID": "116",
+        "FIELD_NAME": "Chế biến và phát triển thị trường Nông sản(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "16542",
+        "FIELD_NAME": "Chế độ, chính sách đối với nhà giáo(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "115",
+        "FIELD_NAME": "Chăn nuôi(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "13762",
+        "FIELD_NAME": "Chi trả các chế độ BHXH(Bộ Tài chính)"
+    },
+    {
+        "ID": "97",
+        "FIELD_NAME": "Chính quyền địa phương(Bộ Nội vụ)"
+    },
+    {
+        "ID": "3",
+        "FIELD_NAME": "Chính sách(Bộ Công an)"
+    },
+    {
+        "ID": "131",
+        "FIELD_NAME": "Chính sách(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "149",
+        "FIELD_NAME": "Chính sách Thuế(Bộ Tài chính)"
+    },
+    {
+        "ID": "150",
+        "FIELD_NAME": "Chứng khoán(Bộ Tài chính)"
+    },
+    {
+        "ID": "15562",
+        "FIELD_NAME": "Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường(Bộ Công an)"
+    },
+    {
+        "ID": "86",
+        "FIELD_NAME": "Chứng nhận lãnh sự, hợp pháp hóa lãnh sự(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "14442",
+        "FIELD_NAME": "Chứng nhận xuất trình(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "199",
+        "FIELD_NAME": "Chứng thực(Bộ Tư pháp)"
+    },
+    {
+        "ID": "132",
+        "FIELD_NAME": "Chứng thực điện tử(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "16362",
+        "FIELD_NAME": "chất lượng sản phẩm hàng hóa(Bộ Công Thương)"
+    },
+    {
+        "ID": "16562",
+        "FIELD_NAME": "Chuẩn tiếp cận pháp luật(Bộ Tư pháp)"
+    },
+    {
+        "ID": "15342",
+        "FIELD_NAME": "Chuyển đổi công ty nhà nước được thành lập và hoạt động theo Luật Doanh nghiệp nhà nước thành công ty trách nhiệm hữu hạn một thành viên tổ chức và hoạt động theo quy định tại Luật Doanh nghiệp(Bộ Tài chính)"
+    },
+    {
+        "ID": "14947",
+        "FIELD_NAME": "Chuyển nhượng vốn(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "96",
+        "FIELD_NAME": "Cải cách hành chính(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15202",
+        "FIELD_NAME": "Cụm Công nghiệp(Bộ Công Thương)"
+    },
+    {
+        "ID": "98",
+        "FIELD_NAME": "Công chức, viên chức(Bộ Nội vụ)"
+    },
+    {
+        "ID": "200",
+        "FIELD_NAME": "Công chứng(Bộ Tư pháp)"
+    },
+    {
+        "ID": "87",
+        "FIELD_NAME": "Công chứng, chứng thực(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "15764",
+        "FIELD_NAME": "Công chứng (nội bộ)(Bộ Tư pháp)"
+    },
+    {
+        "ID": "14967",
+        "FIELD_NAME": "Công nghệ thông tin(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "189",
+        "FIELD_NAME": "Công nghệ thông tin, điện tử(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "15282",
+        "FIELD_NAME": "Công nghệ thông tin và chuyển đổi số(Bộ Tài chính)"
+    },
+    {
+        "ID": "15",
+        "FIELD_NAME": "Công nghiệp địa phương(Bộ Công Thương)"
+    },
+    {
+        "ID": "16",
+        "FIELD_NAME": "Công nghiệp nặng(Bộ Công Thương)"
+    },
+    {
+        "ID": "16402",
+        "FIELD_NAME": "Công nghiệp quốc phòng, an ninh(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "17",
+        "FIELD_NAME": "Công nghiệp tiêu dùng(Bộ Công Thương)"
+    },
+    {
+        "ID": "15123",
+        "FIELD_NAME": "Công tác cán bộ(Bộ Công Thương)"
+    },
+    {
+        "ID": "16004",
+        "FIELD_NAME": "Công tác cán bộ(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "272",
+        "FIELD_NAME": "Công tác dân tộc(Dân tộc và Tôn giáo)"
+    },
+    {
+        "ID": "16302",
+        "FIELD_NAME": "Công tác dân tộc, tín ngưỡng, tôn giáo(Dân tộc và Tôn giáo)"
+    },
+    {
+        "ID": "13700",
+        "FIELD_NAME": "Công tác lãnh sự(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "15124",
+        "FIELD_NAME": "Công tác pháp chế(Bộ Công Thương)"
+    },
+    {
+        "ID": "14942",
+        "FIELD_NAME": "Công tác quân sự quốc phòng(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "99",
+        "FIELD_NAME": "Công tác thanh niên(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15502",
+        "FIELD_NAME": "Công tác văn phòng(Bộ Công Thương)"
+    },
+    {
+        "ID": "14862",
+        "FIELD_NAME": "Công tác Văn phòng(Văn phòng Chính phủ)"
+    },
+    {
+        "ID": "14965",
+        "FIELD_NAME": "Công tác văn phòng(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "15126",
+        "FIELD_NAME": "Công Thương địa phương(Bộ Công Thương)"
+    },
+    {
+        "ID": "36",
+        "FIELD_NAME": "Cơ sở vật chất và thiết bị trường học(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "133",
+        "FIELD_NAME": "Cơ yếu(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "85",
+        "FIELD_NAME": "Cấp hộ chiếu, giấy thông hành, công hàm đề nghị cấp thị thực(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "1",
+        "FIELD_NAME": "Cấp, quản lý căn cước(Bộ Công an)"
+    },
+    {
+        "ID": "13760",
+        "FIELD_NAME": "Cấp sổ BHXH, thẻ BHYT(Bộ Tài chính)"
+    },
+    {
+        "ID": "88",
+        "FIELD_NAME": "Cấp thị thực, gia hạn tạm trú(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "14948",
+        "FIELD_NAME": "Cung cấp thông tin về liệt sĩ, mộ liệt sĩ(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "16442",
+        "FIELD_NAME": "Dữ liệu(Bộ Công an)"
+    },
+    {
+        "ID": "158",
+        "FIELD_NAME": "Dự trữ(Bộ Tài chính)"
+    },
+    {
+        "ID": "16202",
+        "FIELD_NAME": "Dự trữ nhà nước(Bộ Tài chính)"
+    },
+    {
+        "ID": "134",
+        "FIELD_NAME": "Dân quân tự vệ(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "247",
+        "FIELD_NAME": "Dân số, Bà mẹ - Trẻ em(Bộ Y tế)"
+    },
+    {
+        "ID": "15862",
+        "FIELD_NAME": "Dịch vụ công trong Đảng(Văn phòng Trung ương Đảng)"
+    },
+    {
+        "ID": "13900",
+        "FIELD_NAME": "Dịch vụ cung cấp điện mới(Điện Lực)"
+    },
+    {
+        "ID": "14100",
+        "FIELD_NAME": "Dịch vụ du lịch khác(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "16203",
+        "FIELD_NAME": "Dịch vụ tài chính(Bộ Tài chính)"
+    },
+    {
+        "ID": "19",
+        "FIELD_NAME": "Dịch vụ thương mại(Bộ Công Thương)"
+    },
+    {
+        "ID": "13901",
+        "FIELD_NAME": "Dịch vụ trong quá trình thực hiện HĐMBĐ(Điện Lực)"
+    },
+    {
+        "ID": "216",
+        "FIELD_NAME": "Di sản văn hóa(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "16043",
+        "FIELD_NAME": "Doanh trại(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "18",
+        "FIELD_NAME": "Dầu khí(Bộ Công Thương)"
+    },
+    {
+        "ID": "15583",
+        "FIELD_NAME": "dầu khí(Bộ Công Thương)"
+    },
+    {
+        "ID": "14382",
+        "FIELD_NAME": "Du lịch(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "249",
+        "FIELD_NAME": "Dược phẩm(Bộ Y tế)"
+    },
+    {
+        "ID": "16005",
+        "FIELD_NAME": "Đào tạo bồi dưỡng(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "100",
+        "FIELD_NAME": "Đào tạo, bồi dưỡng cán bộ công chức, viên chức(Bộ Nội vụ)"
+    },
+    {
+        "ID": "248",
+        "FIELD_NAME": "Đào tạo và Nghiên cứu khoa học(Bộ Y tế)"
+    },
+    {
+        "ID": "49",
+        "FIELD_NAME": "Đăng kiểm(Bộ Xây dựng)"
+    },
+    {
+        "ID": "201",
+        "FIELD_NAME": "Đăng ký biện pháp bảo đảm(Bộ Tư pháp)"
+    },
+    {
+        "ID": "89",
+        "FIELD_NAME": "Đăng ký công dân(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "4",
+        "FIELD_NAME": "Đăng ký, quản lý con dấu(Bộ Công an)"
+    },
+    {
+        "ID": "5",
+        "FIELD_NAME": "Đăng ký, quản lý cư trú(Bộ Công an)"
+    },
+    {
+        "ID": "6",
+        "FIELD_NAME": "Đăng ký, quản lý phương tiện giao thông cơ giới, xe máy chuyên dùng(Bộ Công an)"
+    },
+    {
+        "ID": "16002",
+        "FIELD_NAME": "Đối ngoại(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "144",
+        "FIELD_NAME": "Đối ngoại quốc phòng(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "176",
+        "FIELD_NAME": "Địa chất và khoáng sản(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "20",
+        "FIELD_NAME": "Điện(Bộ Công Thương)"
+    },
+    {
+        "ID": "15462",
+        "FIELD_NAME": "Điện lực(Bộ Công Thương)"
+    },
+    {
+        "ID": "217",
+        "FIELD_NAME": "Điện ảnh(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "15642",
+        "FIELD_NAME": "Đảm bảo an toàn thông tin, an ninh mạng(Bộ Công an)"
+    },
+    {
+        "ID": "14962",
+        "FIELD_NAME": "Động viên công nghiệp(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "135",
+        "FIELD_NAME": "Động viên quân đội(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "14522",
+        "FIELD_NAME": "Định danh và xác thực điện tử(Bộ Công an)"
+    },
+    {
+        "ID": "177",
+        "FIELD_NAME": "Đo đạc, bản đồ và thông tin địa lý(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "175",
+        "FIELD_NAME": "Đất đai(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "197",
+        "FIELD_NAME": "Đấu giá tài sản(Bộ Tư pháp)"
+    },
+    {
+        "ID": "56",
+        "FIELD_NAME": "Đấu thầu(Bộ Tài chính)"
+    },
+    {
+        "ID": "13708",
+        "FIELD_NAME": "Đấu thầu lựa chọn nhà đầu tư(Bộ Tài chính)"
+    },
+    {
+        "ID": "151",
+        "FIELD_NAME": "Đầu tư(Bộ Tài chính)"
+    },
+    {
+        "ID": "15602",
+        "FIELD_NAME": "Đầu tư(Bộ Tài chính)"
+    },
+    {
+        "ID": "55",
+        "FIELD_NAME": "Đầu tư bằng vốn hỗ trợ phát triển chính thức (ODA) và viện trợ không hoàn lại không thuộc hỗ trợ phát triển chính thức(Bộ Tài chính)"
+    },
+    {
+        "ID": "58",
+        "FIELD_NAME": "Đầu tư từ Việt nam ra nước ngoài(Bộ Tài chính)"
+    },
+    {
+        "ID": "14262",
+        "FIELD_NAME": "Đầu tư theo phương thức đối tác công tư(Bộ Tài chính)"
+    },
+    {
+        "ID": "15082",
+        "FIELD_NAME": "Đầu tư theo phương thức đối tác công tư (PPP)(Bộ Tài chính)"
+    },
+    {
+        "ID": "57",
+        "FIELD_NAME": "Đầu tư tại Việt nam(Bộ Tài chính)"
+    },
+    {
+        "ID": "59",
+        "FIELD_NAME": "Đầu tư vào nông nghiệp, nông thôn(Bộ Tài chính)"
+    },
+    {
+        "ID": "50",
+        "FIELD_NAME": "Đường bộ(Bộ Xây dựng)"
+    },
+    {
+        "ID": "51",
+        "FIELD_NAME": "Đường sắt(Bộ Xây dựng)"
+    },
+    {
+        "ID": "218",
+        "FIELD_NAME": "Gia đình(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "250",
+        "FIELD_NAME": "Giám định(Bộ Y tế)"
+    },
+    {
+        "ID": "14362",
+        "FIELD_NAME": "Giám định thương mại(Bộ Công Thương)"
+    },
+    {
+        "ID": "14402",
+        "FIELD_NAME": "Giám định tư pháp(Bộ Xây dựng)"
+    },
+    {
+        "ID": "202",
+        "FIELD_NAME": "Giám định tư pháp(Bộ Tư pháp)"
+    },
+    {
+        "ID": "40",
+        "FIELD_NAME": "Giáo dục dân tộc(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "37",
+        "FIELD_NAME": "Giáo dục, đào tạo với nước ngoài(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "39",
+        "FIELD_NAME": "Giáo dục đại học(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "41",
+        "FIELD_NAME": "Giáo dục mầm non(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "38",
+        "FIELD_NAME": "Giáo dục nghề nghiệp(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "77",
+        "FIELD_NAME": "Giáo dục nghề nghiệp (G07-LĐ06)(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "42",
+        "FIELD_NAME": "Giáo dục quốc phòng và an ninh(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "16242",
+        "FIELD_NAME": "Giáo dục quốc phòng và an ninh(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "43",
+        "FIELD_NAME": "Giáo dục thường xuyên(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "44",
+        "FIELD_NAME": "Giáo dục tiểu học(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "45",
+        "FIELD_NAME": "Giáo dục trung học(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "46",
+        "FIELD_NAME": "Giáo dục và Đào tạo thuộc hệ thống giáo dục quốc dân(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "13853",
+        "FIELD_NAME": "Giao thông vận tải(Bộ Xây dựng)"
+    },
+    {
+        "ID": "268",
+        "FIELD_NAME": "Giải quyết khiếu nại(Thanh tra Chính phủ)"
+    },
+    {
+        "ID": "14502",
+        "FIELD_NAME": "Giải quyết tố cáo(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "269",
+        "FIELD_NAME": "Giải quyết tố cáo(Thanh tra Chính phủ)"
+    },
+    {
+        "ID": "15542",
+        "FIELD_NAME": "Giảm nghèo(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "203",
+        "FIELD_NAME": "Hộ tịch(Bộ Tư pháp)"
+    },
+    {
+        "ID": "90",
+        "FIELD_NAME": "Hộ tịch(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "14282",
+        "FIELD_NAME": "Hộ tịch - Đăng ký, quản lý cư trú - Tài chính y tế(Bộ Tư pháp)"
+    },
+    {
+        "ID": "14542",
+        "FIELD_NAME": "Hộ tịch - Đăng ký thường trú - Bảo trợ xã hội - Người có công(Văn phòng Chính phủ)"
+    },
+    {
+        "ID": "14562",
+        "FIELD_NAME": "Hộ tịch - Đăng ký thường trú - Quản lý thu, Sổ - thẻ(Văn phòng Chính phủ)"
+    },
+    {
+        "ID": "232",
+        "FIELD_NAME": "Hạ tầng kỹ thuật(Bộ Xây dựng)"
+    },
+    {
+        "ID": "60",
+        "FIELD_NAME": "Hỗ trợ doanh nghiệp nhỏ và vừa(Bộ Tài chính)"
+    },
+    {
+        "ID": "16462",
+        "FIELD_NAME": "Hỗ trợ đầu tư(Bộ Tài chính)"
+    },
+    {
+        "ID": "14050",
+        "FIELD_NAME": "Hỗ trợ pháp lý cho doanh nghiệp nhỏ và vừa(Bộ Tư pháp)"
+    },
+    {
+        "ID": "15362",
+        "FIELD_NAME": "Hỗ trợ tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã(Bộ Tài chính)"
+    },
+    {
+        "ID": "53",
+        "FIELD_NAME": "Hàng hải và đường thủy nội địa(Bộ Xây dựng)"
+    },
+    {
+        "ID": "54",
+        "FIELD_NAME": "Hàng không(Bộ Xây dựng)"
+    },
+    {
+        "ID": "164",
+        "FIELD_NAME": "Hành chính sự nghiệp(Bộ Tài chính)"
+    },
+    {
+        "ID": "93",
+        "FIELD_NAME": "Hồi hương(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "14202",
+        "FIELD_NAME": "Hội nghị, hội thảo quốc tế(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "152",
+        "FIELD_NAME": "Hải quan(Bộ Tài chính)"
+    },
+    {
+        "ID": "21",
+        "FIELD_NAME": "Hóa chất(Bộ Công Thương)"
+    },
+    {
+        "ID": "208",
+        "FIELD_NAME": "Hòa giải ở cơ sở(Bộ Tư pháp)"
+    },
+    {
+        "ID": "204",
+        "FIELD_NAME": "Hòa giải thương mại(Bộ Tư pháp)"
+    },
+    {
+        "ID": "91",
+        "FIELD_NAME": "Hoạt động của các tổ chức hợp tác, nghiên cứu song phương(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "92",
+        "FIELD_NAME": "Hoạt động của các tổ chức phi chính phủ nước ngoài(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "264",
+        "FIELD_NAME": "Hoạt động công nghệ thông tin ngân hàng(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "13706",
+        "FIELD_NAME": "Hoạt động khác(Ngân hàng chính sách)"
+    },
+    {
+        "ID": "266",
+        "FIELD_NAME": "Hoạt động khác(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "263",
+        "FIELD_NAME": "Hoạt động kho quỹ(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "68",
+        "FIELD_NAME": "Hoạt động khoa học và công nghệ(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14101",
+        "FIELD_NAME": "Hoạt động mua bán quốc tế chuyên ngành văn hóa(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "262",
+        "FIELD_NAME": "Hoạt động ngoại hối(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "260",
+        "FIELD_NAME": "Hoạt động thanh toán(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "265",
+        "FIELD_NAME": "Hoạt động thông tin tín dụng(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "13705",
+        "FIELD_NAME": "Hoạt động tín dụng(Ngân hàng chính sách)"
+    },
+    {
+        "ID": "259",
+        "FIELD_NAME": "Hoạt động tín dụng(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "261",
+        "FIELD_NAME": "Hoạt động tiền tệ(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "241",
+        "FIELD_NAME": "Hoạt động xây dựng(Bộ Xây dựng)"
+    },
+    {
+        "ID": "101",
+        "FIELD_NAME": "Hợp tác quốc tế(Bộ Nội vụ)"
+    },
+    {
+        "ID": "234",
+        "FIELD_NAME": "Hợp tác quốc tế(Bộ Xây dựng)"
+    },
+    {
+        "ID": "230",
+        "FIELD_NAME": "Hợp tác quốc tế(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "117",
+        "FIELD_NAME": "Hợp tác quốc tế(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "169",
+        "FIELD_NAME": "Hợp tác quốc tế(Bộ Tài chính)"
+    },
+    {
+        "ID": "14806",
+        "FIELD_NAME": "Hợp tác quốc tế về pháp luật(Bộ Tư pháp)"
+    },
+    {
+        "ID": "153",
+        "FIELD_NAME": "Kế hoạch - tài chính(Bộ Tài chính)"
+    },
+    {
+        "ID": "112",
+        "FIELD_NAME": "Kế hoạch - Tài chính(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15127",
+        "FIELD_NAME": "Kỹ thuật an toàn và Môi trường công nghiệp(Bộ Công Thương)"
+    },
+    {
+        "ID": "15182",
+        "FIELD_NAME": "Kế toán(Bộ Tài chính)"
+    },
+    {
+        "ID": "154",
+        "FIELD_NAME": "Kế toán, kiểm toán(Bộ Tài chính)"
+    },
+    {
+        "ID": "221",
+        "FIELD_NAME": "Karaoke, Vũ trường(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "220",
+        "FIELD_NAME": "Khách sạn(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "136",
+        "FIELD_NAME": "Khám bệnh, chữa bệnh(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "252",
+        "FIELD_NAME": "Khám bệnh, chữa bệnh(Bộ Y tế)"
+    },
+    {
+        "ID": "16322",
+        "FIELD_NAME": "Khen thưởng(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15243",
+        "FIELD_NAME": "Khen thưởng(Thanh tra Chính phủ)"
+    },
+    {
+        "ID": "148",
+        "FIELD_NAME": "Khen thưởng(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "16006",
+        "FIELD_NAME": "Khen thưởng đối ngoại(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "179",
+        "FIELD_NAME": "Khí tượng, thủy văn(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "146",
+        "FIELD_NAME": "Khiếu nại(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "7",
+        "FIELD_NAME": "Khiếu nại, tố cáo(Bộ Công an)"
+    },
+    {
+        "ID": "155",
+        "FIELD_NAME": "Kho bạc(Bộ Tài chính)"
+    },
+    {
+        "ID": "16502",
+        "FIELD_NAME": "Kho bạc nhà nước(Bộ Tài chính)"
+    },
+    {
+        "ID": "13714",
+        "FIELD_NAME": "Khoa học, công nghệ(Bộ Công Thương)"
+    },
+    {
+        "ID": "16183",
+        "FIELD_NAME": "Khoa học công nghệ(Bộ Tài chính)"
+    },
+    {
+        "ID": "235",
+        "FIELD_NAME": "Khoa học công nghệ và môi trường(Bộ Xây dựng)"
+    },
+    {
+        "ID": "14949",
+        "FIELD_NAME": "Khoa học quân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "118",
+        "FIELD_NAME": "Khoa học và Công nghệ(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "16282",
+        "FIELD_NAME": "Khoáng sản(Bộ Công Thương)"
+    },
+    {
+        "ID": "14955",
+        "FIELD_NAME": "Kiểm định an toàn kỹ thuật và bảo vệ môi trường của xe cơ giới, xe chuyên dùng(Bộ Công an)"
+    },
+    {
+        "ID": "137",
+        "FIELD_NAME": "Kiểm định an toàn lao động(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "14322",
+        "FIELD_NAME": "Kiểm định chất lượng giáo dục(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "14742",
+        "FIELD_NAME": "Kiểm định kỹ thuật an toàn lao động(Bộ Xây dựng)"
+    },
+    {
+        "ID": "14662",
+        "FIELD_NAME": "Kiểm lâm(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "14682",
+        "FIELD_NAME": "Kiểm ngư(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "14842",
+        "FIELD_NAME": "Kiểm soát thủ tục hành chính(Văn phòng Chính phủ)"
+    },
+    {
+        "ID": "15582",
+        "FIELD_NAME": "Kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ(Bộ Công an)"
+    },
+    {
+        "ID": "233",
+        "FIELD_NAME": "Kiến trúc(Bộ Xây dựng)"
+    },
+    {
+        "ID": "236",
+        "FIELD_NAME": "Kinh doanh bất động sản(Bộ Xây dựng)"
+    },
+    {
+        "ID": "22",
+        "FIELD_NAME": "Kinh doanh khí(Bộ Công Thương)"
+    },
+    {
+        "ID": "119",
+        "FIELD_NAME": "Kinh tế hợp tác và Phát triển nông thôn(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "237",
+        "FIELD_NAME": "Kinh tế xây dựng(Bộ Xây dựng)"
+    },
+    {
+        "ID": "14963",
+        "FIELD_NAME": "Kết hợp quốc phòng với kinh tế - xã hội(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "14970",
+        "FIELD_NAME": "Ký kết, gia nhập điều ước quốc tế, thoả thuận quốc tế(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "219",
+        "FIELD_NAME": "Lữ hành(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "222",
+        "FIELD_NAME": "Lễ hội(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "78",
+        "FIELD_NAME": "Lao động(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15962",
+        "FIELD_NAME": "Lao động, Thương binh và Xã hội(Bộ Công Thương)"
+    },
+    {
+        "ID": "16482",
+        "FIELD_NAME": "Lao động, tiền lương(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15702",
+        "FIELD_NAME": "Lao động, tiền lương, quan hệ lao động(Bộ Nội vụ)"
+    },
+    {
+        "ID": "16262",
+        "FIELD_NAME": "Lao động, tiền lương và bảo hiểm xã hội(Bộ Nội vụ)"
+    },
+    {
+        "ID": "120",
+        "FIELD_NAME": "Lâm nghiệp(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "16103",
+        "FIELD_NAME": "LĨNH VỰC CÔNG TÁC QUỐC PHÒNG Ở BỘ, NGÀNH TRUNG ƯƠNG, ĐỊA PHƯƠNG(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "191",
+        "FIELD_NAME": "Lĩnh vực khác(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "16162",
+        "FIELD_NAME": "LĨNH VỰC KẾT HỢP QUỐC PHÒNG VỚI KINH TẾ - XÃ HỘI(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "16142",
+        "FIELD_NAME": "LĨNH VỰC QUẢN LÝ HOẠT ĐỘNG KHẮC PHỤC HẬU QUẢ BOM MÌN VẬT NỔ SAU CHIẾN TRANH(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "205",
+        "FIELD_NAME": "Luật sư(Bộ Tư pháp)"
+    },
+    {
+        "ID": "23",
+        "FIELD_NAME": "Lưu thông hàng hóa trong nước(Bộ Công Thương)"
+    },
+    {
+        "ID": "15622",
+        "FIELD_NAME": "Lý lịch tư pháp(Bộ Công an)"
+    },
+    {
+        "ID": "253",
+        "FIELD_NAME": "Mỹ phẩm(Bộ Y tế)"
+    },
+    {
+        "ID": "223",
+        "FIELD_NAME": "Mỹ thuật, nhiếp ảnh, triển lãm(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "95",
+        "FIELD_NAME": "Miễn thị thực(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "182",
+        "FIELD_NAME": "Môi trường(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "13852",
+        "FIELD_NAME": "Mật mã dân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "24",
+        "FIELD_NAME": "Năng lượng(Bộ Công Thương)"
+    },
+    {
+        "ID": "15442",
+        "FIELD_NAME": "Ứng phó sự cố tràn dầu(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "156",
+        "FIELD_NAME": "Ngân sách Nhà nước(Bộ Tài chính)"
+    },
+    {
+        "ID": "15222",
+        "FIELD_NAME": "Nghề thủ công mỹ nghệ(Bộ Công Thương)"
+    },
+    {
+        "ID": "224",
+        "FIELD_NAME": "Nghệ thuật biểu diễn(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "138",
+        "FIELD_NAME": "Nghĩa vụ quân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "15142",
+        "FIELD_NAME": "Nghiên cứu khoa học(Bộ Tài chính)"
+    },
+    {
+        "ID": "80",
+        "FIELD_NAME": "Người có công(Bộ Nội vụ)"
+    },
+    {
+        "ID": "83",
+        "FIELD_NAME": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng(Bộ Nội vụ)"
+    },
+    {
+        "ID": "238",
+        "FIELD_NAME": "Nhà ở và công sở(Bộ Xây dựng)"
+    },
+    {
+        "ID": "16023",
+        "FIELD_NAME": "Nội vụ(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "13759",
+        "FIELD_NAME": "Nông nghiệp(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "15802",
+        "FIELD_NAME": "Nông nghiệp và Môi trường(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "14783",
+        "FIELD_NAME": "Nông thôn mới(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "207",
+        "FIELD_NAME": "Nuôi con nuôi(Bộ Tư pháp)"
+    },
+    {
+        "ID": "14803",
+        "FIELD_NAME": "Phổ biến, giáo dục pháp luật (nội bộ)(Bộ Tư pháp)"
+    },
+    {
+        "ID": "172",
+        "FIELD_NAME": "Pháp chế(Bộ Tài chính)"
+    },
+    {
+        "ID": "15422",
+        "FIELD_NAME": "Pháp chế(Bộ Xây dựng)"
+    },
+    {
+        "ID": "111",
+        "FIELD_NAME": "Pháp chế(Bộ Nội vụ)"
+    },
+    {
+        "ID": "14822",
+        "FIELD_NAME": "Pháp điển hệ thống quy phạm pháp luật(Bộ Tư pháp)"
+    },
+    {
+        "ID": "190",
+        "FIELD_NAME": "Phát thanh, truyền hình và thông tin điện tử(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "16422",
+        "FIELD_NAME": "Phát triển doanh nghiệp nhà nước(Bộ Tài chính)"
+    },
+    {
+        "ID": "239",
+        "FIELD_NAME": "Phát triển đô thị(Bộ Xây dựng)"
+    },
+    {
+        "ID": "257",
+        "FIELD_NAME": "Phòng bệnh(Bộ Y tế)"
+    },
+    {
+        "ID": "8",
+        "FIELD_NAME": "Phòng cháy, chữa cháy(Bộ Công an)"
+    },
+    {
+        "ID": "81",
+        "FIELD_NAME": "Phòng, chống tệ nạn xã hội(Bộ Y tế)"
+    },
+    {
+        "ID": "267",
+        "FIELD_NAME": "Phòng, chống tham nhũng(Thanh tra Chính phủ)"
+    },
+    {
+        "ID": "15944",
+        "FIELD_NAME": "Phòng chống tham nhũng(Bộ Công Thương)"
+    },
+    {
+        "ID": "25",
+        "FIELD_NAME": "Phòng vệ thương mại(Bộ Công Thương)"
+    },
+    {
+        "ID": "14002",
+        "FIELD_NAME": "QUÂN SỰ, QUỐC PHÒNG(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "168",
+        "FIELD_NAME": "Quốc phòng, an ninh(Bộ Tài chính)"
+    },
+    {
+        "ID": "14805",
+        "FIELD_NAME": "Quốc tịch(Bộ Tư pháp)"
+    },
+    {
+        "ID": "94",
+        "FIELD_NAME": "Quốc tịch(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "210",
+        "FIELD_NAME": "Quốc tịch(Bộ Tư pháp)"
+    },
+    {
+        "ID": "14582",
+        "FIELD_NAME": "Quản lý bán hàng đa cấp(Bộ Công Thương)"
+    },
+    {
+        "ID": "139",
+        "FIELD_NAME": "Quản lý biên giới(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "14945",
+        "FIELD_NAME": "Quản lý biên giới(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "13712",
+        "FIELD_NAME": "Quản lý bảo lãnh tín dụng của Nhà nước(Ngân hàng phát triển)"
+    },
+    {
+        "ID": "231",
+        "FIELD_NAME": "Quản lý chất lượng công trình xây dựng(Bộ Xây dựng)"
+    },
+    {
+        "ID": "122",
+        "FIELD_NAME": "Quản lý chất lượng nông lâm sản và thủy sản(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "16582",
+        "FIELD_NAME": "Quản lý chất lượng sản phẩm, hàng hoá(Bộ Công an)"
+    },
+    {
+        "ID": "26",
+        "FIELD_NAME": "Quản lý Cạnh tranh(Bộ Công Thương)"
+    },
+    {
+        "ID": "143",
+        "FIELD_NAME": "Quản lý công nghệ thông tin(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "157",
+        "FIELD_NAME": "Quản lý công sản(Bộ Tài chính)"
+    },
+    {
+        "ID": "14000",
+        "FIELD_NAME": "Quản lý công trình quốc phòng, khu quân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "240",
+        "FIELD_NAME": "Quản lý doanh nghiệp(Bộ Xây dựng)"
+    },
+    {
+        "ID": "123",
+        "FIELD_NAME": "Quản lý doanh nghiệp(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "121",
+        "FIELD_NAME": "Quản lý Đê điều và Phòng, chống thiên tai(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "15122",
+        "FIELD_NAME": "Quản lý, điều hành chính sách điện năng(Bộ Công Thương)"
+    },
+    {
+        "ID": "14964",
+        "FIELD_NAME": "Quản lý đất quốc phòng(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "15023",
+        "FIELD_NAME": "Quản lý đầu tư công(Bộ Tài chính)"
+    },
+    {
+        "ID": "15022",
+        "FIELD_NAME": "Quản lý đầu tư công (Vụ Tài chính - Kinh tế ngành)(Bộ Tài chính)"
+    },
+    {
+        "ID": "15042",
+        "FIELD_NAME": "Quản lý đầu tư công (Vụ Tổng hợp KTQD)(Bộ Tài chính)"
+    },
+    {
+        "ID": "159",
+        "FIELD_NAME": "Quản lý giá(Bộ Tài chính)"
+    },
+    {
+        "ID": "14943",
+        "FIELD_NAME": "Quản lý hoạt động khắc phục hậu quả bom mìn vật nổ sau chiến tranh(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "14004",
+        "FIELD_NAME": "Quản lý hoạt động vật liệu nổ công nghiệp, tiền chất thuốc nổ(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "14944",
+        "FIELD_NAME": "Quản lý khu kinh tế - quốc phòng(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "13752",
+        "FIELD_NAME": "Quản lý lao động ngoài nước(Bộ Nội vụ)"
+    },
+    {
+        "ID": "160",
+        "FIELD_NAME": "Quản lý nợ(Bộ Tài chính)"
+    },
+    {
+        "ID": "9",
+        "FIELD_NAME": "Quản lý ngành nghề đầu tư, kinh doanh có điều kiện về an ninh, trật tự(Bộ Công an)"
+    },
+    {
+        "ID": "13713",
+        "FIELD_NAME": "Quản lý ngân sách nhà nước(Bộ Tài chính)"
+    },
+    {
+        "ID": "15902",
+        "FIELD_NAME": "quản lý ngoại thương(Bộ Công Thương)"
+    },
+    {
+        "ID": "15084",
+        "FIELD_NAME": "Quản lý nhà nước về hỗ trợ doanh nghiệp nhỏ và vừa(Bộ Tài chính)"
+    },
+    {
+        "ID": "106",
+        "FIELD_NAME": "Quản lý nhà nước về hội, quỹ(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15025",
+        "FIELD_NAME": "Quản lý nhà nước về khu công nghiệp, khu kinh tế(Bộ Tài chính)"
+    },
+    {
+        "ID": "16003",
+        "FIELD_NAME": "Quản lý nhà nước về ký kết và thực hiện thoả thuận quốc tế(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "15762",
+        "FIELD_NAME": "Quản lý nhà nước về thi đua, khen thưởng(Bộ Tư pháp)"
+    },
+    {
+        "ID": "242",
+        "FIELD_NAME": "Quản lý nhà và thị trường bất động sản(Bộ Xây dựng)"
+    },
+    {
+        "ID": "13802",
+        "FIELD_NAME": "Quản lý quỹ ngân sách, quỹ dự trữ nhà nước và các quỹ tài chính khác của Nhà nước(Bộ Tài chính)"
+    },
+    {
+        "ID": "16204",
+        "FIELD_NAME": "Quản lý, sử dụng vốn hỗ trợ phát triển chính thức (ODA) và vốn vay ưu đãi của nhà tài trợ nước ngoài(Bộ Tài chính)"
+    },
+    {
+        "ID": "14200",
+        "FIELD_NAME": "Quản lý sử dụng vũ khí, súng săn, vật liệu nổ, công cụ hỗ trợ(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "14946",
+        "FIELD_NAME": "Quản lý sĩ quan dự bị(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "15682",
+        "FIELD_NAME": "Quản lý tài sản công(Bộ Tài chính)"
+    },
+    {
+        "ID": "15128",
+        "FIELD_NAME": "Quản lý thị trường(Bộ Công Thương)"
+    },
+    {
+        "ID": "13701",
+        "FIELD_NAME": "Quản lý thuế, phí, lệ phí và thu khác của ngân sách nhà nước(Bộ Tài chính)"
+    },
+    {
+        "ID": "13710",
+        "FIELD_NAME": "Quản lý Tín dụng của Nhà nước(Ngân hàng phát triển)"
+    },
+    {
+        "ID": "13709",
+        "FIELD_NAME": "Quản lý vốn uỷ thác(Ngân hàng phát triển)"
+    },
+    {
+        "ID": "10",
+        "FIELD_NAME": "Quản lý vũ khí, vật liệu nổ, công cụ hỗ trợ và pháo(Bộ Công an)"
+    },
+    {
+        "ID": "140",
+        "FIELD_NAME": "Quản lý vùng trời(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "124",
+        "FIELD_NAME": "Quản lý xây dựng công trình(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "14969",
+        "FIELD_NAME": "Quản lý xúc tiến đầu tư(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "11",
+        "FIELD_NAME": "Quản lý xuất nhập cảnh(Bộ Công an)"
+    },
+    {
+        "ID": "209",
+        "FIELD_NAME": "Quản tài viên(Bộ Tư pháp)"
+    },
+    {
+        "ID": "15822",
+        "FIELD_NAME": "Quản trị - Văn phòng(Bộ Y tế)"
+    },
+    {
+        "ID": "226",
+        "FIELD_NAME": "Quảng cáo(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "243",
+        "FIELD_NAME": "Quy  hoạch  đô thị  và  nông  thôn(Bộ Xây dựng)"
+    },
+    {
+        "ID": "15102",
+        "FIELD_NAME": "Quy chế làm việc(Văn phòng Chính phủ)"
+    },
+    {
+        "ID": "15302",
+        "FIELD_NAME": "Quy hoạch(Bộ Tài chính)"
+    },
+    {
+        "ID": "15024",
+        "FIELD_NAME": "Quy hoạch (Quản lý quy hoạch)(Bộ Tài chính)"
+    },
+    {
+        "ID": "27",
+        "FIELD_NAME": "Sở giao dịch hàng hóa(Bộ Công Thương)"
+    },
+    {
+        "ID": "69",
+        "FIELD_NAME": "Sở hữu trí tuệ(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "15623",
+        "FIELD_NAME": "Sát hạch, cấp giấy phép lái xe(Bộ Công an)"
+    },
+    {
+        "ID": "15782",
+        "FIELD_NAME": "Sản xuất, lắp ráp ô tô(Bộ Công Thương)"
+    },
+    {
+        "ID": "107",
+        "FIELD_NAME": "Tổ chức - Biên chế(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15003",
+        "FIELD_NAME": "Tổ chức bộ máy(Bộ Nội vụ)"
+    },
+    {
+        "ID": "16022",
+        "FIELD_NAME": "Tổ chức bộ máy(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "15763",
+        "FIELD_NAME": "Tổ chức bộ máy(Bộ Tư pháp)"
+    },
+    {
+        "ID": "15624",
+        "FIELD_NAME": "Tổ chức cai nghiên ma túy và quản lý sau cai nghiện(Bộ Công an)"
+    },
+    {
+        "ID": "12",
+        "FIELD_NAME": "Tổ chức, cán bộ(Bộ Công an)"
+    },
+    {
+        "ID": "13704",
+        "FIELD_NAME": "Tổ chức cán bộ(Ngân hàng chính sách)"
+    },
+    {
+        "ID": "15242",
+        "FIELD_NAME": "Tổ chức cán bộ(Thanh tra Chính phủ)"
+    },
+    {
+        "ID": "255",
+        "FIELD_NAME": "Tổ chức cán bộ(Bộ Y tế)"
+    },
+    {
+        "ID": "170",
+        "FIELD_NAME": "Tổ chức cán bộ(Bộ Tài chính)"
+    },
+    {
+        "ID": "13950",
+        "FIELD_NAME": "Tổ chức cán bộ(Bộ Nội vụ)"
+    },
+    {
+        "ID": "105",
+        "FIELD_NAME": "Tổ chức cán bộ(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15043",
+        "FIELD_NAME": "Tổ chức cán bộ/Đào tạo, bồi dưỡng/Thi đua khen thưởng/Sáng kiến(Bộ Tài chính)"
+    },
+    {
+        "ID": "14922",
+        "FIELD_NAME": "Tài chính - Kế toán(Bộ Nội vụ)"
+    },
+    {
+        "ID": "16182",
+        "FIELD_NAME": "Tài chính - Kinh tế ngành(Bộ Tài chính)"
+    },
+    {
+        "ID": "163",
+        "FIELD_NAME": "Tài chính doanh nghiệp(Bộ Tài chính)"
+    },
+    {
+        "ID": "15522",
+        "FIELD_NAME": "Tài chính đất đai(Bộ Tài chính)"
+    },
+    {
+        "ID": "165",
+        "FIELD_NAME": "Tài chính ngân hàng(Bộ Tài chính)"
+    },
+    {
+        "ID": "254",
+        "FIELD_NAME": "Tài chính y tế(Bộ Y tế)"
+    },
+    {
+        "ID": "183",
+        "FIELD_NAME": "Tài nguyên nước(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "15322",
+        "FIELD_NAME": "Tài sản kết cấu hạ tầng chợ do Nhà nước đầu tư, quản lý(Bộ Công Thương)"
+    },
+    {
+        "ID": "15162",
+        "FIELD_NAME": "Tài vụ - nội bộ(Bộ Tài chính)"
+    },
+    {
+        "ID": "15402",
+        "FIELD_NAME": "test3(Bảo hiểm xã hội)"
+    },
+    {
+        "ID": "228",
+        "FIELD_NAME": "Thể dục thể thao(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "14222",
+        "FIELD_NAME": "Thừa phát lại(Bộ Tư pháp)"
+    },
+    {
+        "ID": "61",
+        "FIELD_NAME": "Thành lập và hoạt động của doanh nghiệp(Bộ Tài chính)"
+    },
+    {
+        "ID": "62",
+        "FIELD_NAME": "Thành lập và hoạt động của hợp tác xã(Bộ Tài chính)"
+    },
+    {
+        "ID": "66",
+        "FIELD_NAME": "Thành lập và hoạt động của quỹ đầu tư khởi nghiệp sáng tạo(Bộ Tài chính)"
+    },
+    {
+        "ID": "14150",
+        "FIELD_NAME": "Thành lập và hoạt động của tổ hợp tác(Bộ Tài chính)"
+    },
+    {
+        "ID": "63",
+        "FIELD_NAME": "Thành lập và hoạt động của tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã(Bộ Tài chính)"
+    },
+    {
+        "ID": "64",
+        "FIELD_NAME": "Thành lập và hoạt động doanh nghiệp (hộ kinh doanh)(Bộ Tài chính)"
+    },
+    {
+        "ID": "65",
+        "FIELD_NAME": "Thành lập và hoạt động doanh nghiệp xã hội(Bộ Tài chính)"
+    },
+    {
+        "ID": "258",
+        "FIELD_NAME": "Thành lập và hoạt động ngân hàng(Ngân hàng Nhà nước Việt Nam)"
+    },
+    {
+        "ID": "14482",
+        "FIELD_NAME": "Thành lập và sắp xếp lại doanh nghiệp do Nhà nước nắm giữ 100 phần trăm vốn điều lệ(Bộ Tài chính)"
+    },
+    {
+        "ID": "16423",
+        "FIELD_NAME": "Thanh toán chi phí tố tụng(Bộ Tài chính)"
+    },
+    {
+        "ID": "15742",
+        "FIELD_NAME": "Thanh tra(Bộ Y tế)"
+    },
+    {
+        "ID": "171",
+        "FIELD_NAME": "Thanh tra(Bộ Tài chính)"
+    },
+    {
+        "ID": "15482",
+        "FIELD_NAME": "Thanh tra(Thanh tra Chính phủ)"
+    },
+    {
+        "ID": "102",
+        "FIELD_NAME": "Thanh tra Bộ(Bộ Nội vụ)"
+    },
+    {
+        "ID": "13761",
+        "FIELD_NAME": "Thực hiện chính sách BHXH(Bộ Tài chính)"
+    },
+    {
+        "ID": "13800",
+        "FIELD_NAME": "Thực hiện chính sách BHYT(Bộ Tài chính)"
+    },
+    {
+        "ID": "161",
+        "FIELD_NAME": "Thi đua - khen thưởng(Bộ Tài chính)"
+    },
+    {
+        "ID": "103",
+        "FIELD_NAME": "Thi đua - khen thưởng(Bộ Nội vụ)"
+    },
+    {
+        "ID": "229",
+        "FIELD_NAME": "Thi đua – Khen thưởng(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "14902",
+        "FIELD_NAME": "Thi đua - Khen thưởng(Bộ Nội vụ)"
+    },
+    {
+        "ID": "14303",
+        "FIELD_NAME": "Thi đua, khen thưởng(Bộ Y tế)"
+    },
+    {
+        "ID": "28",
+        "FIELD_NAME": "Thi đua, khen thưởng(Bộ Công Thương)"
+    },
+    {
+        "ID": "14903",
+        "FIELD_NAME": "Thi đua khen thưởng(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "211",
+        "FIELD_NAME": "Thi hành án dân sự(Bộ Tư pháp)"
+    },
+    {
+        "ID": "14804",
+        "FIELD_NAME": "Thi hành án dân sự(Bộ Tư pháp)"
+    },
+    {
+        "ID": "14966",
+        "FIELD_NAME": "Thi hành án dân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "245",
+        "FIELD_NAME": "Thí nghiệm chuyên ngành xây dựng(Bộ Xây dựng)"
+    },
+    {
+        "ID": "47",
+        "FIELD_NAME": "Thi, tuyển sinh(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "256",
+        "FIELD_NAME": "Thiết bị y tế(Bộ Y tế)"
+    },
+    {
+        "ID": "14762",
+        "FIELD_NAME": "Thông tin báo chí(Bộ Tư pháp)"
+    },
+    {
+        "ID": "193",
+        "FIELD_NAME": "Thông tin cơ sở(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "194",
+        "FIELD_NAME": "Thông tin đối ngoại(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "15982",
+        "FIELD_NAME": "Thông tin liên lạc quân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "15943",
+        "FIELD_NAME": "Thông tin và Truyền thông(Bộ Công Thương)"
+    },
+    {
+        "ID": "16105",
+        "FIELD_NAME": "Thông tin và Truyền thông(Bộ Y tế)"
+    },
+    {
+        "ID": "166",
+        "FIELD_NAME": "Thuế(Bộ Tài chính)"
+    },
+    {
+        "ID": "13763",
+        "FIELD_NAME": "Thu BHXH, BHYT, BHTN, BH tai nạn lao động, BNN(Bộ Tài chính)"
+    },
+    {
+        "ID": "125",
+        "FIELD_NAME": "Thú y(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "225",
+        "FIELD_NAME": "Thư viện(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "29",
+        "FIELD_NAME": "Thương mại biên giới và miền núi(Bộ Công Thương)"
+    },
+    {
+        "ID": "30",
+        "FIELD_NAME": "Thương mại điện tử(Bộ Công Thương)"
+    },
+    {
+        "ID": "31",
+        "FIELD_NAME": "Thương mại quốc tế(Bộ Công Thương)"
+    },
+    {
+        "ID": "126",
+        "FIELD_NAME": "Thủy lợi(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "127",
+        "FIELD_NAME": "Thủy sản(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "70",
+        "FIELD_NAME": "Tiêu chuẩn đo lường chất lượng(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "32",
+        "FIELD_NAME": "Tiêu chuẩn đo lường chất lượng(Bộ Công Thương)"
+    },
+    {
+        "ID": "48",
+        "FIELD_NAME": "Tiêu chuẩn nhà giáo, cán bộ quản lý giáo dục(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "167",
+        "FIELD_NAME": "Tin học - Thống kê(Bộ Tài chính)"
+    },
+    {
+        "ID": "79",
+        "FIELD_NAME": "Tiền lương(Bộ Nội vụ)"
+    },
+    {
+        "ID": "104",
+        "FIELD_NAME": "Tiền lương(Bộ Nội vụ)"
+    },
+    {
+        "ID": "108",
+        "FIELD_NAME": "Tín ngưỡng, tôn giáo(Dân tộc và Tôn giáo)"
+    },
+    {
+        "ID": "270",
+        "FIELD_NAME": "Tiếp công dân(Thanh tra Chính phủ)"
+    },
+    {
+        "ID": "15125",
+        "FIELD_NAME": "Tiết kiệm năng lượng(Bộ Công Thương)"
+    },
+    {
+        "ID": "192",
+        "FIELD_NAME": "Tần số vô tuyến điện(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "109",
+        "FIELD_NAME": "Tổng hợp(Bộ Nội vụ)"
+    },
+    {
+        "ID": "184",
+        "FIELD_NAME": "Tổng hợp(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "14242",
+        "FIELD_NAME": "Tòa án(Toàn án nhân dân tối cao)"
+    },
+    {
+        "ID": "16223",
+        "FIELD_NAME": "Trẻ em(Bộ Y tế)"
+    },
+    {
+        "ID": "212",
+        "FIELD_NAME": "Trợ giúp pháp lý(Bộ Tư pháp)"
+    },
+    {
+        "ID": "213",
+        "FIELD_NAME": "Trọng tài thương mại(Bộ Tư pháp)"
+    },
+    {
+        "ID": "128",
+        "FIELD_NAME": "Trồng trọt(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "114",
+        "FIELD_NAME": "Trồng trọt và Bảo vệ thực vật(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "14722",
+        "FIELD_NAME": "TTHCNOIBO-Chế độ chính sách cán bộ (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14727",
+        "FIELD_NAME": "TTHCNOIBO-Chuyển đổi số quốc gia và Chính phủ số (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14712",
+        "FIELD_NAME": "TTHCNOIBO-Đào tạo, bồi dưỡng (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14726",
+        "FIELD_NAME": "TTHCNOIBO-Đoàn ra (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14705",
+        "FIELD_NAME": "TTHCNOIBO-Hợp tác quốc tế (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14725",
+        "FIELD_NAME": "TTHCNOIBO-Kế hoạch - Tài chính (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "13702",
+        "FIELD_NAME": "TTHCNOIBO-Khoa học và Công nghệ (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14707",
+        "FIELD_NAME": "TTHCNOIBO-Kiểm soát thủ tục hành chính (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14709",
+        "FIELD_NAME": "TTHCNOIBO-Lưu trữ (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14703",
+        "FIELD_NAME": "TTHCNOIBO-Nhân sự (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14724",
+        "FIELD_NAME": "TTHCNOIBO-Pháp chế (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14711",
+        "FIELD_NAME": "TTHCNOIBO-Quản lý tài sản (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14704",
+        "FIELD_NAME": "TTHCNOIBO-Tổ chức (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14723",
+        "FIELD_NAME": "TTHCNOIBO-Thi đua - Khen thưởng (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14702",
+        "FIELD_NAME": "TTHCNOIBO-Thông tin, tuyên truyền (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14710",
+        "FIELD_NAME": "TTHCNOIBO-Tổng hợp (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "14708",
+        "FIELD_NAME": "TTHCNOIBO-Văn thư (Lĩnh vực TTHC nội bộ)(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "141",
+        "FIELD_NAME": "Tuyển sinh quân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "14782",
+        "FIELD_NAME": "Tư pháp(Bộ Tư pháp)"
+    },
+    {
+        "ID": "214",
+        "FIELD_NAME": "Tư vấn pháp luật(Bộ Tư pháp)"
+    },
+    {
+        "ID": "14642",
+        "FIELD_NAME": "Ưu đãi, miễn trừ(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "15083",
+        "FIELD_NAME": "v(Bộ Kế hoạch và Đầu tư)"
+    },
+    {
+        "ID": "13758",
+        "FIELD_NAME": "Văn bằng, chứng chỉ(Bộ Giáo dục và Đào tạo)"
+    },
+    {
+        "ID": "227",
+        "FIELD_NAME": "Văn hóa(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "16122",
+        "FIELD_NAME": "Văn phòng(Bộ Y tế)"
+    },
+    {
+        "ID": "173",
+        "FIELD_NAME": "Văn phòng(Bộ Tài chính)"
+    },
+    {
+        "ID": "113",
+        "FIELD_NAME": "Văn phòng(Bộ Nội vụ)"
+    },
+    {
+        "ID": "110",
+        "FIELD_NAME": "Văn thư và Lưu trữ nhà nước(Bộ Nội vụ)"
+    },
+    {
+        "ID": "82",
+        "FIELD_NAME": "Việc làm(Bộ Nội vụ)"
+    },
+    {
+        "ID": "15304",
+        "FIELD_NAME": "Viện Nghiên cứu Quản lý kinh tế Trung ương(Bộ Kế hoạch và Đầu tư)"
+    },
+    {
+        "ID": "185",
+        "FIELD_NAME": "Viễn thám(Bộ Nông nghiệp và Môi trường)"
+    },
+    {
+        "ID": "195",
+        "FIELD_NAME": "Viễn thông và Internet(Bộ Khoa học và Công nghệ)"
+    },
+    {
+        "ID": "15062",
+        "FIELD_NAME": "Viện trợ không hoàn lại không thuộc hỗ trợ phát triển chính thức của các cơ quan, tổ chức, cá nhân nước ngoài dành cho Việt Nam(Bộ Tài chính)"
+    },
+    {
+        "ID": "16342",
+        "FIELD_NAME": "Vận chuyển hàng hóa nguy hiểm(Bộ Công Thương)"
+    },
+    {
+        "ID": "33",
+        "FIELD_NAME": "Vật liệu nổ công nghiệp, tiền chất thuốc nổ(Bộ Công Thương)"
+    },
+    {
+        "ID": "244",
+        "FIELD_NAME": "Vật liệu xây dựng(Bộ Xây dựng)"
+    },
+    {
+        "ID": "271",
+        "FIELD_NAME": "Xử lý đơn thư(Thanh tra Chính phủ)"
+    },
+    {
+        "ID": "15942",
+        "FIELD_NAME": "Xử lý vi phạm hành chính(Bộ Công Thương)"
+    },
+    {
+        "ID": "15922",
+        "FIELD_NAME": "Xây dựng, ban hành văn bản QPPL(Bộ Công Thương)"
+    },
+    {
+        "ID": "16024",
+        "FIELD_NAME": "Xây dựng ngành(Bộ Ngoại giao)"
+    },
+    {
+        "ID": "15743",
+        "FIELD_NAME": "Xây dựng pháp luật(Bộ Y tế)"
+    },
+    {
+        "ID": "14802",
+        "FIELD_NAME": "Xây dựng pháp luật(Bộ Tư pháp)"
+    },
+    {
+        "ID": "15002",
+        "FIELD_NAME": "Xây dựng văn bản quy phạm pháp luật(Bộ Tư pháp)"
+    },
+    {
+        "ID": "142",
+        "FIELD_NAME": "Xe - máy quân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "16082",
+        "FIELD_NAME": "Xe - máy quân sự(Bộ Quốc phòng)"
+    },
+    {
+        "ID": "35",
+        "FIELD_NAME": "Xúc tiến thương mại(Bộ Công Thương)"
+    },
+    {
+        "ID": "196",
+        "FIELD_NAME": "Xuất Bản, In và Phát hành(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "34",
+        "FIELD_NAME": "Xuất nhập khẩu(Bộ Công Thương)"
+    },
+    {
+        "ID": "13803",
+        "FIELD_NAME": "Xuất nhập khẩu văn hóa phẩm không nhằm mục đích kinh doanh(Bộ Văn hóa, Thể thao và Du lịch)"
+    },
+    {
+        "ID": "14302",
+        "FIELD_NAME": "Y Dược cổ truyền(Bộ Y tế)"
+    }
+]

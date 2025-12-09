@@ -1,0 +1,502 @@
+[
+  {
+    "ID": "115187",
+    "CODE": "2193/QĐ-UBND.",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính trong một số lĩnh vực thuộc phạm vi chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch tỉnh Thái Nguyên",
+    "PUBLISHING_DATE": "09-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Thái Nguyên",
+    "AGENCY_ID": "370865",
+    "AMOUNT": "23039",
+    "ROW_STT": "1"
+  },
+  {
+    "ID": "115178",
+    "CODE": "2991/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính mới ban hành; được sửa đổi, bổ sung lĩnh vực Địa chất và Khoáng sản thuộc thẩm quyền giải quyết của Sở Nông nghiệp và Môi trường/UBND cấp xã tỉnh Thanh Hóa",
+    "PUBLISHING_DATE": "09-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Thanh Hóa",
+    "AGENCY_ID": "371854",
+    "AMOUNT": "23039",
+    "ROW_STT": "2"
+  },
+  {
+    "ID": "115218",
+    "CODE": "2998/QĐ-VP",
+    "NAME": "công bố Danh mục thủ tục hành chính mới ban hành và bị bãi bỏ trong lĩnh vực hoạt động khoa học và công nghệ thuộc thẩm quyền quản lý của Sở Khoa học và Công nghệ",
+    "PUBLISHING_DATE": "09-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Thanh Hóa",
+    "AGENCY_ID": "371854",
+    "AMOUNT": "23039",
+    "ROW_STT": "3"
+  },
+  {
+    "ID": "115125",
+    "CODE": "3072/QĐ-UBND",
+    "NAME": "Công bố Danh mục và Quy trình nội bộ thủ tục hành chính sửa đổi, bổ sung lĩnh vực Quảng cáo; Báo chí; Xuất bản, In và Phát hành; Du lịch;         \nMỹ thuật, Nhiếp ảnh và Triển lãm; Phát thanh truyền hình và Thông tin điện tử; Mua bán hàng hóa quốc tế chuyên ngành văn hóa; Thể dục thể thao thuộc phạm vi chức năng quản lý của ngành Văn hóa, Thể thao và Du lịch áp dụng tại cấp tỉnh và cấp xã trên địa bàn tỉnh Hà Tĩnh",
+    "PUBLISHING_DATE": "09-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Hà Tĩnh",
+    "AGENCY_ID": "390693",
+    "AMOUNT": "23039",
+    "ROW_STT": "4"
+  },
+  {
+    "ID": "115220",
+    "CODE": "3076/QĐ-UBND",
+    "NAME": "Công bố Danh mục và Quy trình nội bộ thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực Quy hoạch đô thị và nông thôn thuộc thẩm quyền giải quyết của Sở Xây dựng",
+    "PUBLISHING_DATE": "09-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Hà Tĩnh",
+    "AGENCY_ID": "390693",
+    "AMOUNT": "23039",
+    "ROW_STT": "5"
+  },
+  {
+    "ID": "115182",
+    "CODE": "2970/QĐ-UBND",
+    "NAME": "Quyết định về việc Công bố Danh mục thủ tục hành chính mới ban hành và phê duyệt quy trình nội bộ giải quyết thủ tục hành chính trong một số lĩnh vực thuộc phạm vi chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch tỉnh Vĩnh Long",
+    "PUBLISHING_DATE": "08-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Vĩnh Long",
+    "AGENCY_ID": "377087",
+    "AMOUNT": "23039",
+    "ROW_STT": "6"
+  },
+  {
+    "ID": "115121",
+    "CODE": "4063/QĐ-BKHCN",
+    "NAME": "Về việc công bố thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực hoạt động khoa học và công nghệ thuộc phạm vi chức năng quản lý của Bộ Khoa học và Công nghệ",
+    "PUBLISHING_DATE": "08-12-2025",
+    "AGENCY_NAME": "Bộ Khoa học  và  Công nghệ",
+    "AGENCY_ID": "734",
+    "AMOUNT": "23039",
+    "ROW_STT": "7"
+  },
+  {
+    "ID": "115142",
+    "CODE": "4063/QĐ-BKHCN",
+    "NAME": "Về việc công bố thủ tục hành chính mới ban hành và bị bãi bỏ lĩnh vực hoạt động khoa học và công nghệ thuộc phạm vi chức năng quản lý của Bộ Khoa học và Công nghệ",
+    "PUBLISHING_DATE": "08-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Cần Thơ",
+    "AGENCY_ID": "409587",
+    "AMOUNT": "23039",
+    "ROW_STT": "8"
+  },
+  {
+    "ID": "115219",
+    "CODE": "4093/QĐ-BTC",
+    "NAME": "Về việc công bố thủ tục hành chính bị bãi bỏ trong lĩnh vực phát triển doanh nghiệp nhà nước thuộc phạm vi chức năng quản lý của Bộ Tài chính",
+    "PUBLISHING_DATE": "08-12-2025",
+    "AGENCY_NAME": "Bộ Tài chính",
+    "AGENCY_ID": "1301",
+    "AMOUNT": "23039",
+    "ROW_STT": "9"
+  },
+  {
+    "ID": "115141",
+    "CODE": "4831/QĐ-UBND",
+    "NAME": "QUYẾT ĐỊNH Về việc công bố Danh mục thủ tục hành chính sửa đổi, bổ sung và phê duyệt nội dung tái cấu trúc quy trình, biểu mẫu điện tử thủ tục hành chính cung cấp dịch vụ công trực tuyến lĩnh vực địa chất và khoáng sản của ngành Nông nghiệp và Môi trường áp dụng trên địa bàn tỉnh Tuyên Quang",
+    "PUBLISHING_DATE": "08-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Tuyên Quang",
+    "AGENCY_ID": "384979",
+    "AMOUNT": "23039",
+    "ROW_STT": "10"
+  },
+  {
+    "ID": "115138",
+    "CODE": "2953/QĐ-UBND",
+    "NAME": "Công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung trong các lĩnh vực thuộc phạm vi chức năng quản lý của Sở Công Thương",
+    "PUBLISHING_DATE": "07-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Gia Lai",
+    "AGENCY_ID": "384251",
+    "AMOUNT": "23039",
+    "ROW_STT": "11"
+  },
+  {
+    "ID": "115140",
+    "CODE": "3060/QĐ-UBND",
+    "NAME": "Về việc công bố thủ tục hành chính được sửa đổi, bổ sung lĩnh vực Thiết bị y tế thuộc phạm vi chức năng quản lý của Sở Y tế",
+    "PUBLISHING_DATE": "06-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Hồ Chí Minh",
+    "AGENCY_ID": "411312",
+    "AMOUNT": "23039",
+    "ROW_STT": "12"
+  },
+  {
+    "ID": "115185",
+    "CODE": "3061/QĐ-UBND",
+    "NAME": "Về việc công bố danh mục nhóm thủ tục hành chính liên thông điện tử gồm: Đăng ký thành lập hộ kinh doanh - cấp Giấy chứng nhận đủ điều kiện về an ninh, trật tự - cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke",
+    "PUBLISHING_DATE": "06-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Hồ Chí Minh",
+    "AGENCY_ID": "411312",
+    "AMOUNT": "23039",
+    "ROW_STT": "13"
+  },
+  {
+    "ID": "115199",
+    "CODE": "3062/QĐ-UBND",
+    "NAME": "Về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực Giám định thuộc phạm vi chức năng quản lý của Sở Y tế",
+    "PUBLISHING_DATE": "06-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Hồ Chí Minh",
+    "AGENCY_ID": "411312",
+    "AMOUNT": "23039",
+    "ROW_STT": "14"
+  },
+  {
+    "ID": "114884",
+    "CODE": "02245/QĐ-UBND",
+    "NAME": "công bố thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực Thiết bị y tế quy định tại Thông tư số 44/2025/TT-BYT thuộc phạm vi chức năng quản lý của Bộ Y tế",
+    "PUBLISHING_DATE": "05-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Đắk Lắk",
+    "AGENCY_ID": "381137",
+    "AMOUNT": "23039",
+    "ROW_STT": "15"
+  },
+  {
+    "ID": "115158",
+    "CODE": "1470/QĐ-UBND",
+    "NAME": "QUYẾT ĐỊNH\nVề việc công bố Danh mục nhóm thủ tục hành chính liên thông điện tử và\nphê duyệt nội dung tái cấu trúc chuẩn hoá quy trình, biểu mẫu điện tử\nnhóm thủ tục hành chính liên thông điện tử gồm: Thủ tục đăng ký thành\nlập hộ kinh doanh; Thủ tục cấp Giấy chứng nhận đủ điều kiện về an ninh,\ntrật tự; Thủ tục cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaok\náp dụng trên địa bàn tỉnh Tuyên Quang",
+    "PUBLISHING_DATE": "05-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Tuyên Quang",
+    "AGENCY_ID": "384979",
+    "AMOUNT": "23039",
+    "ROW_STT": "16"
+  },
+  {
+    "ID": "115183",
+    "CODE": "2007/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính được sửa đổi từ lĩnh vực tổ chức cán bộ sang lĩnh vực giám định thuộc thẩm quyền giải quyết của Sở Y tế tỉnh Phú Thọ",
+    "PUBLISHING_DATE": "05-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Phú Thọ",
+    "AGENCY_ID": "422607",
+    "AMOUNT": "23039",
+    "ROW_STT": "17"
+  },
+  {
+    "ID": "115123",
+    "CODE": "2008/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực Thiết bị y tế thuộc thẩm quyền giải quyết của Sở Y tế tỉnh Phú Thọ",
+    "PUBLISHING_DATE": "05-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Phú Thọ",
+    "AGENCY_ID": "422607",
+    "AMOUNT": "23039",
+    "ROW_STT": "18"
+  },
+  {
+    "ID": "115143",
+    "CODE": "3740/QĐ-BYT",
+    "NAME": "Quyết định công bố thủ tục hành chính mới ban hành, được sửa đổi bổ sung và bị bãi bỏ trong lĩnh vực Dân số, Bà mẹ - Trẻ em và lĩnh vực khám bệnh, chữa bệnh thuộc phạm vi quản lý của Bộ Y tế quy định tại Nghị định số 207/2025/NĐ-CP; Nghị định số 96/2023/NĐ-CP và Nghị định số 148/2025/NĐ-CP",
+    "PUBLISHING_DATE": "05-12-2025",
+    "AGENCY_NAME": "Bộ Y tế",
+    "AGENCY_ID": "4881",
+    "AMOUNT": "23039",
+    "ROW_STT": "19"
+  },
+  {
+    "ID": "115126",
+    "CODE": "3740/QĐ-BYT",
+    "NAME": "Điều chỉnh giấy phép hoạt động khám bệnh, chữa bệnh",
+    "PUBLISHING_DATE": "05-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Cần Thơ",
+    "AGENCY_ID": "409587",
+    "AMOUNT": "23039",
+    "ROW_STT": "20"
+  },
+  {
+    "ID": "115238",
+    "CODE": "1801/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính cấp tỉnh mới ban hành và phê duyệt Quy trình nội bộ giải quyết thủ tục hành chính lĩnh vực Báo chí, Xuất bản thuộc phạm vi, chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Đồng Tháp",
+    "AGENCY_ID": "374613",
+    "AMOUNT": "23039",
+    "ROW_STT": "21"
+  },
+  {
+    "ID": "115159",
+    "CODE": "1994/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung mức phí các lĩnh vực: Trọng tài thương mại; Luật sư; Quản tài viên; Đấu giá tài sản thuộc thẩm quyền giải quyết của Sở Tư pháp tỉnh Phú Thọ",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Phú Thọ",
+    "AGENCY_ID": "422607",
+    "AMOUNT": "23039",
+    "ROW_STT": "22"
+  },
+  {
+    "ID": "115190",
+    "CODE": "2226/QĐ-UBND ngày 04/12/2025",
+    "NAME": "QUYẾT ĐỊNH Về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung trong một số lĩnh vực thuộc phạm vi chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch tỉnh Lào Cai",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Lào Cai",
+    "AGENCY_ID": "426105",
+    "AMOUNT": "23039",
+    "ROW_STT": "23"
+  },
+  {
+    "ID": "114658",
+    "CODE": "2228/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính sửa đổi, bổ sung trong lĩnh vực Thiết bị y tế thuộc phạm vi chức năng quản lý của Sở Y tế tỉnh An Giang",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh An Giang",
+    "AGENCY_ID": "398126",
+    "AMOUNT": "23039",
+    "ROW_STT": "24"
+  },
+  {
+    "ID": "114639",
+    "CODE": "2229/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính sửa đổi, bổ sung lĩnh vực tổ chức cán bộ sang lĩnh vực giám định thuộc phạm vi chức năng quản lý của Sở Y tế tỉnh An Giang",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh An Giang",
+    "AGENCY_ID": "398126",
+    "AMOUNT": "23039",
+    "ROW_STT": "25"
+  },
+  {
+    "ID": "115080",
+    "CODE": "2230/QĐ-UBND",
+    "NAME": "Công bố Danh mục nhóm thủ tục hành chính liên thông điện tử gồm: Thủ tục đăng ký thành lập hộ kinh doanh; Thủ tục cấp Giấy chứng nhận đủ điều kiện về an ninh, trật tự; Thủ tục cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh An Giang",
+    "AGENCY_ID": "398126",
+    "AMOUNT": "23039",
+    "ROW_STT": "26"
+  },
+  {
+    "ID": "115058",
+    "CODE": "2851/QĐ-UBND",
+    "NAME": "Về việc công bố danh mục nhóm thủ tục hành chính mới liên thông điện tử gồm:Thủ tục đăng ký thành lập hộ kinh doanh; Thủ tục cấp Giấy chứng nhận đủ điều kiện về an ninh, trật tự; Thủ tục cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke lĩnh vực văn hóa thuộc thẩm quyền giải quyết của UBND cấp xã",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Đà Nẵng",
+    "AGENCY_ID": "426100",
+    "AMOUNT": "23039",
+    "ROW_STT": "27"
+  },
+  {
+    "ID": "114957",
+    "CODE": "2944/QĐ-UBND",
+    "NAME": "Công bố Danh mục thủ tục hành chính được ban hành mới trong lĩnh vực Đăng kiểm thuộc thẩm quyền giải quyết của các đơn vị đăng kiểm thuộc Sở Xây dựng tỉnh Quảng Trị",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Quảng Trị",
+    "AGENCY_ID": "6715",
+    "AMOUNT": "23039",
+    "ROW_STT": "28"
+  },
+  {
+    "ID": "115079",
+    "CODE": "2946/QĐ-UBND",
+    "NAME": "Công bố Danh mục thủ tục hành chính được ban hành mới trong lĩnh vực Đường bộ thuộc thẩm quyền giải quyết của Sở Xây dựng tỉnh Quảng Trị",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Quảng Trị",
+    "AGENCY_ID": "6715",
+    "AMOUNT": "23039",
+    "ROW_STT": "29"
+  },
+  {
+    "ID": "115122",
+    "CODE": "2965/QĐ-UBND",
+    "NAME": "Quyết định Công bố thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực Xuất nhập khẩu thuộc thẩm quyền giải quyết của Sở Công Thương tỉnh Quảng Trị",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Quảng Trị",
+    "AGENCY_ID": "6715",
+    "AMOUNT": "23039",
+    "ROW_STT": "30"
+  },
+  {
+    "ID": "115009",
+    "CODE": "3688/QĐ-UBND",
+    "NAME": "Quyết định Công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực Du lịch thuộc thẩm quyền giải quyết của Sở Du lịch thành phố Huế",
+    "PUBLISHING_DATE": "04-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Huế",
+    "AGENCY_ID": "374087",
+    "AMOUNT": "23039",
+    "ROW_STT": "31"
+  },
+  {
+    "ID": "115039",
+    "CODE": "01964/QĐ-UBND",
+    "NAME": "Công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung lĩnh vực Văn hóa, Thể thao và Du lịch thuộc thẩm quyền giải quyết của Sở Văn hóa, Thể thao và Du lịch; Ủy ban nhân dân cấp xã trên địa bàn tỉnh Cà Mau",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Cà Mau",
+    "AGENCY_ID": "408562",
+    "AMOUNT": "23039",
+    "ROW_STT": "32"
+  },
+  {
+    "ID": "115139",
+    "CODE": "1748/QĐ-UBND",
+    "NAME": "công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực Thiết bị y tế, Giám định thuộc phạm vi chức năng quản lý của Sở Y tế tỉnh Quảng Ngãi",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Quảng Ngãi",
+    "AGENCY_ID": "365792",
+    "AMOUNT": "23039",
+    "ROW_STT": "33"
+  },
+  {
+    "ID": "115124",
+    "CODE": "2209/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung trong lĩnh vực Xuất nhập khẩu thuộc thẩm quyền giải quyết của Sở Công Thương tỉnh An Giang",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND tỉnh An Giang",
+    "AGENCY_ID": "398126",
+    "AMOUNT": "23039",
+    "ROW_STT": "34"
+  },
+  {
+    "ID": "114915",
+    "CODE": "2601/QĐ-UBND",
+    "NAME": "Về việc công bố nhóm Danh mục thủ tục hành chính liên thông điện tử gồm: Đăng ký thành lập hộ kinh doanh; Cấp giấy chứng nhận đủ điều kiện về an ninh, trật tự; Cấp giấy phép đủ điều kiện kinh doanh dịch vụ karaoke",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Lạng Sơn",
+    "AGENCY_ID": "417489",
+    "AMOUNT": "23039",
+    "ROW_STT": "35"
+  },
+  {
+    "ID": "115010",
+    "CODE": "2751/QĐ-UBND",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung\n trong lĩnh vực Thiết bị y tế thuộc thẩm quyền giải quyết\n của Sở Y tế tỉnh Điện Biên",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Điện Biên",
+    "AGENCY_ID": "383348",
+    "AMOUNT": "23039",
+    "ROW_STT": "36"
+  },
+  {
+    "ID": "115038",
+    "CODE": "2839/QĐ-UBND",
+    "NAME": "Về việc công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong một số lĩnh vực thuộc phạm vi chức năng quản lý của Sở Văn hóa Thể thao và Du lịch",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Đà Nẵng",
+    "AGENCY_ID": "426100",
+    "AMOUNT": "23039",
+    "ROW_STT": "37"
+  },
+  {
+    "ID": "114914",
+    "CODE": "2840/QĐ-UBND",
+    "NAME": "Về việc công bố danh mục thủ tục hành chính sửa đổi, bổ sung trong lĩnh vực Thiết bị y tế quy định tại Thông tư số 44/2025/TT-BYT\nthuộc phạm vi chức năng quản lý nhà nước của Sở Y tế thành phố Đà Nẵng",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Đà Nẵng",
+    "AGENCY_ID": "426100",
+    "AMOUNT": "23039",
+    "ROW_STT": "38"
+  },
+  {
+    "ID": "115078",
+    "CODE": "2841/QĐ-UBND",
+    "NAME": "Về việc công bố danh mục thủ tục hành chính sửa đổi, bổ sung thuộc phạm vi chức năng quản lý nhà nước của Sở Y tế thành phố\nĐà Nẵng từ lĩnh vực tổ chức cán bộ sang lĩnh vực giám định",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Đà Nẵng",
+    "AGENCY_ID": "426100",
+    "AMOUNT": "23039",
+    "ROW_STT": "39"
+  },
+  {
+    "ID": "114912",
+    "CODE": "3131/QĐ-UBND",
+    "NAME": "về việc công bố thủ tục hành chính được sửa đổi, bổ sung trong một số lĩnh vực thuộc phạm vi chức năng quản lý của Sở Văn hoá, Thể thao và Du lịch",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Sơn La",
+    "AGENCY_ID": "426103",
+    "AMOUNT": "23039",
+    "ROW_STT": "40"
+  },
+  {
+    "ID": "114955",
+    "CODE": "3679/QĐ-UBND",
+    "NAME": "Quyết định Công bố danh mục thủ tục hành chính được sửa đổi, bổ sung trong một số lĩnh vực thuộc phạm vi chức năng quản lý của Sở Văn hóa và Thể thao",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Huế",
+    "AGENCY_ID": "374087",
+    "AMOUNT": "23039",
+    "ROW_STT": "41"
+  },
+  {
+    "ID": "114954",
+    "CODE": "3681/QĐ-UBND",
+    "NAME": "Quyết định Công bố danh mục nhóm thủ tục hành chính liên thông điện tử gồm: Thủ tục đăng ký thành lập hộ kinh doanh; Thủ tục cấp Giấy chứng nhận đủ điều kiện về an ninh, trật tự; Thủ tục cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke trên địa bàn thành phố Huế",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Huế",
+    "AGENCY_ID": "374087",
+    "AMOUNT": "23039",
+    "ROW_STT": "42"
+  },
+  {
+    "ID": "115003",
+    "CODE": "4902/QĐ-UBND",
+    "NAME": "Về việc công bố danh mục thủ tục hành chính sửa đổi, bổ sung trong một số lĩnh vực thuộc phạm vi, chức năng quản lý của Sở Văn hóa, Thể thao và Du lịch trên địa bàn thành phố Hải Phòng.",
+    "PUBLISHING_DATE": "03-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Hải Phòng",
+    "AGENCY_ID": "387628",
+    "AMOUNT": "23039",
+    "ROW_STT": "43"
+  },
+  {
+    "ID": "114481",
+    "CODE": "02200/QĐ-UBND",
+    "NAME": "công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung từ lĩnh vực tổ chức cán bộ sang lĩnh vực giám định thuộc thẩm quyền giải quyết của Sở Y tế",
+    "PUBLISHING_DATE": "02-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Đắk Lắk",
+    "AGENCY_ID": "381137",
+    "AMOUNT": "23039",
+    "ROW_STT": "44"
+  },
+  {
+    "ID": "114913",
+    "CODE": "02204/QĐ-UBND",
+    "NAME": "Thủ tục hành chính liên thông điện tử gồm: Thủ tục đăng ký thành lập hộ kinh doanh; Thủ tục cấp Giấy chứng nhận đủ điều kiện về an ninh trật tự; Thủ tục cấp phép đủ điều kiện kinh doanh dịch vụ Karaoke",
+    "PUBLISHING_DATE": "02-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Đắk Lắk",
+    "AGENCY_ID": "381137",
+    "AMOUNT": "23039",
+    "ROW_STT": "45"
+  },
+  {
+    "ID": "115041",
+    "CODE": "02204/QĐ-UBND.",
+    "NAME": "Thủ tục hành chính liên thông điện tử về cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke",
+    "PUBLISHING_DATE": "02-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Đắk Lắk",
+    "AGENCY_ID": "381137",
+    "AMOUNT": "23039",
+    "ROW_STT": "46"
+  },
+  {
+    "ID": "114823",
+    "CODE": "1442/QĐ-UBND",
+    "NAME": "QUYẾT ĐỊNH Về việc công bố Danh mục thủ tục hành chính được sửa đổi, bổ sung \ncủa ngành Y tế áp dụng trên địa bàn tỉnh Tuyên Quang",
+    "PUBLISHING_DATE": "02-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Tuyên Quang",
+    "AGENCY_ID": "384979",
+    "AMOUNT": "23039",
+    "ROW_STT": "47"
+  },
+  {
+    "ID": "115004",
+    "CODE": "1625/QĐ-UBND",
+    "NAME": "Về việc công bố danh mục nhóm thủ tục hành chính liên thông\nđiện tử gồm: Đăng ký thành lập hộ kinh doanh; Cấp Giấy chứng\nnhận đủ điều kiện về an ninh, trật tự; Cấp Giấy phép đủ điều kiện kinh doanh dịch vụ karaoke",
+    "PUBLISHING_DATE": "02-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Bắc Ninh",
+    "AGENCY_ID": "401621",
+    "AMOUNT": "23039",
+    "ROW_STT": "48"
+  },
+  {
+    "ID": "114801",
+    "CODE": "1635/QĐ-TTPVHCC",
+    "NAME": "Về việc công bố Danh mục thủ tục hành chính lĩnh vực Báo chí, Xuất bản; Văn hóa thuộc phạm vi, chức năng quản lý của Sở Văn hóa và Thể thao thành phố Hà Nội",
+    "PUBLISHING_DATE": "02-12-2025",
+    "AGENCY_NAME": "UBND Thành phố Hà Nội",
+    "AGENCY_ID": "389181",
+    "AMOUNT": "23039",
+    "ROW_STT": "49"
+  },
+  {
+    "ID": "114984",
+    "CODE": "1673/QĐ-UBND",
+    "NAME": "V/v công bố Danh mục thủ tục hành chính sửa đổi, bổ sung \ntrong lĩnh vực Thiết bị y tế thuộc thẩm quyền giải quyết của Sở Y tế",
+    "PUBLISHING_DATE": "02-12-2025",
+    "AGENCY_NAME": "UBND tỉnh Ninh Bình",
+    "AGENCY_ID": "393975",
+    "AMOUNT": "23039",
+    "ROW_STT": "50"
+  }
+]
