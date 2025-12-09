@@ -160,6 +160,82 @@ class DecisionDetailCrawler {
   }
 
   /**
+   * Download attachment file
+   */
+  async downloadAttachment(attachment, decisionId) {
+    try {
+      const response = await fetch(attachment.download_url);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const buffer = await response.arrayBuffer();
+      return Buffer.from(buffer);
+    } catch (error) {
+      console.error(`Error downloading ${attachment.filename}:`, error.message);
+      return null;
+    }
+  }
+
+  /**
+   * Download all attachments for a decision
+   */
+  async downloadDecisionAttachments(decision) {
+    if (!decision.ATTACHMENTS || decision.ATTACHMENTS.length === 0) {
+      return;
+    }
+
+    const decisionDir = path.join(__dirname, '..', '..', '..', '..', '..', '..', 'result', 'thutuc.dichvucong.gov.vn', 'p', 'home', 'dvc-tthc-quyet-dinh-cong-bo', 'attachments', decision.ID);
+    
+    if (!fs.existsSync(decisionDir)) {
+      fs.mkdirSync(decisionDir, { recursive: true });
+    }
+
+    console.log(`  Downloading ${decision.ATTACHMENTS.length} attachment(s) for decision ${decision.ID}...`);
+
+    for (const attachment of decision.ATTACHMENTS) {
+      const filePath = path.join(decisionDir, attachment.filename);
+      
+      // Skip if file already exists
+      if (fs.existsSync(filePath)) {
+        console.log(`    Skipped (exists): ${attachment.filename}`);
+        continue;
+      }
+
+      const fileBuffer = await this.downloadAttachment(attachment, decision.ID);
+      
+      if (fileBuffer) {
+        fs.writeFileSync(filePath, fileBuffer);
+        console.log(`    Downloaded: ${attachment.filename}`);
+        await this.delay(500); // Delay between downloads
+      } else {
+        console.log(`    Failed: ${attachment.filename}`);
+      }
+    }
+  }
+
+  /**
+   * Download attachments for all decisions
+   */
+  async downloadAllAttachments() {
+    console.log('\n=== Downloading Attachments ===');
+    
+    let totalDownloaded = 0;
+    let totalSkipped = 0;
+    let totalFailed = 0;
+
+    for (const decision of this.detailedDecisions) {
+      if (decision.ATTACHMENTS && decision.ATTACHMENTS.length > 0) {
+        await this.downloadDecisionAttachments(decision);
+        await this.delay(1000); // Delay between decisions
+      }
+    }
+
+    console.log(`\nAttachment download completed!`);
+  }
+
+  /**
    * Extract attachments from HTML content
    */
   extractAttachments(html) {
@@ -545,6 +621,13 @@ async function main() {
     const args = process.argv.slice(2);
     let decisions = [];
     let testMode = false;
+    let downloadMode = false;
+
+    // Parse arguments
+    if (args.includes('--download')) {
+      downloadMode = true;
+      args.splice(args.indexOf('--download'), 1);
+    }
 
     if (args.length > 0 && args[0] === '--test') {
       // Test mode: use provided decision IDs
@@ -554,11 +637,15 @@ async function main() {
       if (testIds.length === 0) {
         console.error('Error: Please provide decision IDs for testing.');
         console.log('Usage: node decision_details.js --test 115010 115187 115178');
+        console.log('       node decision_details.js --test 115010 --download');
         process.exit(1);
       }
 
       console.log(`\n=== TEST MODE ===`);
-      console.log(`Testing with ${testIds.length} decision ID(s): ${testIds.join(', ')}\n`);
+      console.log(`Testing with ${testIds.length} decision ID(s): ${testIds.join(', ')}`);
+      if (downloadMode) {
+        console.log(`Download mode: ENABLED\n`);
+      }
 
       // Create mock decision objects from IDs
       decisions = testIds.map(id => ({
@@ -577,17 +664,26 @@ async function main() {
         console.error('Error: raw_result.json not found. Please run crawl_decisions.js first.');
         console.log('\nAlternatively, use test mode:');
         console.log('  node decision_details.js --test 115010 115187');
+        console.log('  node decision_details.js --test 115010 --download');
         process.exit(1);
       }
 
       decisions = JSON.parse(fs.readFileSync(rawResultPath, 'utf-8'));
       console.log(`Loaded ${decisions.length} decisions from raw_result.json`);
+      if (downloadMode) {
+        console.log(`Download mode: ENABLED`);
+      }
     }
 
     // Crawl details
     await crawler.crawlAllDetails(decisions, {
       batchSize: testMode ? 3 : 5  // Smaller batch size for testing
     });
+
+    // Download attachments if requested
+    if (downloadMode) {
+      await crawler.downloadAllAttachments();
+    }
 
     if (testMode) {
       // Test mode: print to console
