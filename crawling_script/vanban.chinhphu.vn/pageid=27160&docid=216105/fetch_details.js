@@ -88,7 +88,7 @@ async function downloadFile(url, destPath) {
  * - Details in: table with td.col1 (labels) and adjacent td (values)
  * - Attachments in: div.rp-file with links
  * 
- * Fields extracted:
+ * Fields extracted (without DETAIL_ prefix):
  * - Số ký hiệu (CODE)
  * - Ngày ban hành (ISSUE_DATE)
  * - Ngày có hiệu lực (EFFECTIVE_DATE)
@@ -99,13 +99,17 @@ async function downloadFile(url, destPath) {
  * - Tài liệu đính kèm (ATTACHMENTS)
  */
 function parseDetailHTML(html, pageId, docId) {
-  const detail = {};
+  const detail = {
+    PAGE_ID: pageId,
+    DOC_ID: docId,
+    DETAIL_URL: `https://vanban.chinhphu.vn/?pageid=${pageId}&docid=${docId}`
+  };
 
   // Extract title/summary from h4.title or span#ctrl_190596_91_lb_noidung
   const titleMatch = html.match(/<span[^>]*id="ctrl_\d+_\d+_lb_noidung"[^>]*>(.*?)<\/span>/s) ||
                      html.match(/<h4[^>]*class="[^"]*title[^"]*"[^>]*>.*?<span[^>]*>(.*?)<\/span>/s);
   if (titleMatch) {
-    detail.DETAIL_TITLE = titleMatch[1].replace(/<[^>]*>/g, '').trim();
+    detail.TITLE = titleMatch[1].replace(/<[^>]*>/g, '').trim();
   }
 
   // Extract from table structure: <td class="col1">Label</td><td>Value</td>
@@ -113,43 +117,43 @@ function parseDetailHTML(html, pageId, docId) {
   // Extract document code (Số ký hiệu)
   const codeMatch = html.match(/<td[^>]*class="[^"]*col1[^"]*"[^>]*>Số ký hiệu<\/td>\s*<td[^>]*>(.*?)<\/td>/s);
   if (codeMatch) {
-    detail.DETAIL_CODE = codeMatch[1].replace(/<[^>]*>/g, '').trim();
+    detail.CODE = codeMatch[1].replace(/<[^>]*>/g, '').trim();
   }
 
   // Extract issue date (Ngày ban hành)
   const issueDateMatch = html.match(/<td[^>]*class="[^"]*col1[^"]*"[^>]*>Ngày ban hành<\/td>\s*<td[^>]*>(.*?)<\/td>/s);
   if (issueDateMatch) {
-    detail.DETAIL_ISSUE_DATE = issueDateMatch[1].replace(/<[^>]*>/g, '').trim();
+    detail.ISSUE_DATE = issueDateMatch[1].replace(/<[^>]*>/g, '').trim();
   }
 
   // Extract effective date (Ngày có hiệu lực)
   const effectiveDateMatch = html.match(/<td[^>]*class="[^"]*col1[^"]*"[^>]*>Ngày có hiệu lực<\/td>\s*<td[^>]*>(.*?)<\/td>/s);
   if (effectiveDateMatch) {
-    detail.DETAIL_EFFECTIVE_DATE = effectiveDateMatch[1].replace(/<[^>]*>/g, '').trim();
+    detail.EFFECTIVE_DATE = effectiveDateMatch[1].replace(/<[^>]*>/g, '').trim();
   }
 
   // Extract document type (Loại văn bản)
   const typeMatch = html.match(/<td[^>]*class="[^"]*col1[^"]*"[^>]*>Loại văn bản<\/td>\s*<td[^>]*>(.*?)<\/td>/s);
   if (typeMatch) {
-    detail.DETAIL_DOCUMENT_TYPE = typeMatch[1].replace(/<[^>]*>/g, '').trim();
+    detail.DOCUMENT_TYPE = typeMatch[1].replace(/<[^>]*>/g, '').trim();
   }
 
   // Extract issuing agency (Cơ quan ban hành)
   const agencyMatch = html.match(/<td[^>]*class="[^"]*col1[^"]*"[^>]*>Cơ quan ban hành<\/td>\s*<td[^>]*>(.*?)<\/td>/s);
   if (agencyMatch) {
-    detail.DETAIL_ISSUING_AGENCY = agencyMatch[1].replace(/<[^>]*>/g, '').trim();
+    detail.ISSUING_AGENCY = agencyMatch[1].replace(/<[^>]*>/g, '').trim();
   }
 
   // Extract signer (Người ký)
   const signerMatch = html.match(/<td[^>]*class="[^"]*col1[^"]*"[^>]*>Người ký<\/td>\s*<td[^>]*>(.*?)<\/td>/s);
   if (signerMatch) {
-    detail.DETAIL_SIGNER = signerMatch[1].replace(/<[^>]*>/g, '').trim();
+    detail.SIGNER = signerMatch[1].replace(/<[^>]*>/g, '').trim();
   }
 
   // Extract summary (Trích yếu)
   const summaryMatch = html.match(/<td[^>]*class="[^"]*col1[^"]*"[^>]*>Trích yếu<\/td>\s*<td[^>]*>(.*?)<\/td>/s);
   if (summaryMatch) {
-    detail.DETAIL_SUMMARY = summaryMatch[1].replace(/<[^>]*>/g, '').trim();
+    detail.SUMMARY = summaryMatch[1].replace(/<[^>]*>/g, '').trim();
   }
 
   // Extract attachments from rp-file divs
@@ -167,7 +171,7 @@ function parseDetailHTML(html, pageId, docId) {
       filename
     });
   }
-  detail.DETAIL_ATTACHMENTS = attachments;
+  detail.ATTACHMENTS = attachments;
 
   return detail;
 }
@@ -224,19 +228,13 @@ async function main() {
       // Fetch HTML
       const html = await fetchHTML(url);
       
-      // Parse details
+      // Parse details - now returns complete object with PAGE_ID, DOC_ID, DETAIL_URL
       const detailData = parseDetailHTML(html, PAGE_ID, DOC_ID);
       
-      // Merge raw result with detailed data (keep everything from raw result)
-      const mergedDetail = {
-        ...doc,  // Keep all raw result fields
-        ...detailData  // Add detailed fields with DETAIL_ prefix
-      };
+      detailedResults.push(detailData);
       
-      detailedResults.push(mergedDetail);
-      
-      console.log(`  ✓ Code: ${detailData.DETAIL_CODE || doc.CODE || 'N/A'}`);
-      console.log(`  ✓ Attachments: ${detailData.DETAIL_ATTACHMENTS?.length || 0}`);
+      console.log(`  ✓ Code: ${detailData.CODE || 'N/A'}`);
+      console.log(`  ✓ Attachments: ${detailData.ATTACHMENTS?.length || 0}`);
       
       successCount++;
       
@@ -249,10 +247,12 @@ async function main() {
       console.log(`  ✗ Failed: ${err.message}`);
       failCount++;
       
-      // Add placeholder for failed document (keep raw result data)
+      // Add placeholder for failed document (keep basic info)
       detailedResults.push({
-        ...doc,
-        DETAIL_ERROR: err.message
+        PAGE_ID,
+        DOC_ID,
+        DETAIL_URL: url,
+        ERROR: err.message
       });
     }
   }
@@ -282,16 +282,16 @@ async function main() {
 
     for (let i = 0; i < detailedResults.length; i++) {
       const doc = detailedResults[i];
-      const { PAGE_ID, DOC_ID, DETAIL_ATTACHMENTS } = doc;
+      const { PAGE_ID, DOC_ID, ATTACHMENTS } = doc;
       
-      if (!DETAIL_ATTACHMENTS || DETAIL_ATTACHMENTS.length === 0) {
+      if (!ATTACHMENTS || ATTACHMENTS.length === 0) {
         continue;
       }
 
-      totalAttachments += DETAIL_ATTACHMENTS.length;
+      totalAttachments += ATTACHMENTS.length;
       
       console.log(`\n[${i + 1}/${detailedResults.length}] Document: pageid=${PAGE_ID}&docid=${DOC_ID}`);
-      console.log(`  Attachments: ${DETAIL_ATTACHMENTS.length}`);
+      console.log(`  Attachments: ${ATTACHMENTS.length}`);
       
       const docDir = path.join(DOWNLOAD_BASE_DIR, `pageid=${PAGE_ID}&docid=${DOC_ID}`);
       
@@ -301,7 +301,7 @@ async function main() {
       }
       
       // Download each attachment
-      for (const attachment of DETAIL_ATTACHMENTS) {
+      for (const attachment of ATTACHMENTS) {
         const destPath = path.join(docDir, attachment.filename);
         
         try {
