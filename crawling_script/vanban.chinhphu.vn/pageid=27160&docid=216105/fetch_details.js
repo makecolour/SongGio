@@ -210,6 +210,9 @@ async function main() {
   let successCount = 0;
   let failCount = 0;
 
+  // Phase 1: Fetch all details (without downloading)
+  console.log('\n=== Phase 1: Fetching Document Details ===\n');
+  
   for (let i = 0; i < documentsToProcess.length; i++) {
     const doc = documentsToProcess[i];
     const { PAGE_ID, DOC_ID } = doc;
@@ -235,29 +238,6 @@ async function main() {
       console.log(`  ✓ Code: ${detailData.DETAIL_CODE || doc.CODE || 'N/A'}`);
       console.log(`  ✓ Attachments: ${detailData.DETAIL_ATTACHMENTS?.length || 0}`);
       
-      // Download attachments if enabled
-      if (shouldDownload && detailData.DETAIL_ATTACHMENTS && detailData.DETAIL_ATTACHMENTS.length > 0) {
-        const docDir = path.join(DOWNLOAD_BASE_DIR, `pageid=${PAGE_ID}&docid=${DOC_ID}`);
-        
-        // Create directory if it doesn't exist
-        if (!fs.existsSync(docDir)) {
-          fs.mkdirSync(docDir, { recursive: true });
-        }
-        
-        // Download each attachment
-        for (const attachment of detailData.DETAIL_ATTACHMENTS) {
-          const destPath = path.join(docDir, attachment.filename);
-          
-          try {
-            console.log(`    Downloading: ${attachment.filename}...`);
-            await downloadFile(attachment.url, destPath);
-            console.log(`    ✓ Saved: ${destPath}`);
-          } catch (err) {
-            console.log(`    ✗ Failed to download ${attachment.filename}: ${err.message}`);
-          }
-        }
-      }
-      
       successCount++;
       
       // Delay between requests
@@ -278,7 +258,8 @@ async function main() {
   }
 
   // Save detailed results
-  console.log(`\n\nSaving detailed results to ${DETAILED_RESULT_PATH}...`);
+  console.log(`\n\n=== Saving Results ===`);
+  console.log(`Saving detailed results to ${DETAILED_RESULT_PATH}...`);
   try {
     const resultDir = path.dirname(DETAILED_RESULT_PATH);
     if (!fs.existsSync(resultDir)) {
@@ -291,16 +272,70 @@ async function main() {
     process.exit(1);
   }
 
+  // Phase 2: Download attachments (only if enabled and after JSON is saved)
+  if (shouldDownload) {
+    console.log('\n\n=== Phase 2: Downloading Attachments ===\n');
+    
+    let totalAttachments = 0;
+    let downloadedCount = 0;
+    let failedCount = 0;
+
+    for (let i = 0; i < detailedResults.length; i++) {
+      const doc = detailedResults[i];
+      const { PAGE_ID, DOC_ID, DETAIL_ATTACHMENTS } = doc;
+      
+      if (!DETAIL_ATTACHMENTS || DETAIL_ATTACHMENTS.length === 0) {
+        continue;
+      }
+
+      totalAttachments += DETAIL_ATTACHMENTS.length;
+      
+      console.log(`\n[${i + 1}/${detailedResults.length}] Document: pageid=${PAGE_ID}&docid=${DOC_ID}`);
+      console.log(`  Attachments: ${DETAIL_ATTACHMENTS.length}`);
+      
+      const docDir = path.join(DOWNLOAD_BASE_DIR, `pageid=${PAGE_ID}&docid=${DOC_ID}`);
+      
+      // Create directory if it doesn't exist
+      if (!fs.existsSync(docDir)) {
+        fs.mkdirSync(docDir, { recursive: true });
+      }
+      
+      // Download each attachment
+      for (const attachment of DETAIL_ATTACHMENTS) {
+        const destPath = path.join(docDir, attachment.filename);
+        
+        try {
+          console.log(`    Downloading: ${attachment.filename}...`);
+          await downloadFile(attachment.url, destPath);
+          console.log(`    ✓ Saved: ${destPath}`);
+          downloadedCount++;
+        } catch (err) {
+          console.log(`    ✗ Failed: ${err.message}`);
+          failedCount++;
+        }
+        
+        // Small delay between downloads
+        await sleep(100);
+      }
+    }
+
+    console.log(`\n=== Download Summary ===`);
+    console.log(`Total attachments: ${totalAttachments}`);
+    console.log(`Downloaded: ${downloadedCount}`);
+    console.log(`Failed: ${failedCount}`);
+    console.log(`Download directory: ${DOWNLOAD_BASE_DIR}`);
+  }
+
   // Summary
-  console.log('\n========== SUMMARY ==========');
+  console.log('\n========== FINAL SUMMARY ==========');
   console.log(`Total processed: ${documentsToProcess.length}`);
   console.log(`Success: ${successCount}`);
   console.log(`Failed: ${failCount}`);
   console.log(`Output: ${DETAILED_RESULT_PATH}`);
   if (shouldDownload) {
-    console.log(`Downloads: ${DOWNLOAD_BASE_DIR}`);
+    console.log(`Attachments: ${DOWNLOAD_BASE_DIR}`);
   }
-  console.log('=============================\n');
+  console.log('===================================\n');
 }
 
 // Run main function

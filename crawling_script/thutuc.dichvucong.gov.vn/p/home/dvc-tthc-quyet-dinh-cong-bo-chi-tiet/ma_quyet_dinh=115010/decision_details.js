@@ -181,7 +181,7 @@ class DecisionDetailCrawler {
   /**
    * Download all attachments for a decision
    */
-  async downloadDecisionAttachments(decision) {
+  async downloadDecisionAttachments(decision, stats) {
     if (!decision.ATTACHMENTS || decision.ATTACHMENTS.length === 0) {
       return;
     }
@@ -192,14 +192,13 @@ class DecisionDetailCrawler {
       fs.mkdirSync(decisionDir, { recursive: true });
     }
 
-    console.log(`  Downloading ${decision.ATTACHMENTS.length} attachment(s) for decision ${decision.ID}...`);
-
     for (const attachment of decision.ATTACHMENTS) {
       const filePath = path.join(decisionDir, attachment.filename);
       
       // Skip if file already exists
       if (fs.existsSync(filePath)) {
         console.log(`    Skipped (exists): ${attachment.filename}`);
+        stats.skipped++;
         continue;
       }
 
@@ -207,32 +206,56 @@ class DecisionDetailCrawler {
       
       if (fileBuffer) {
         fs.writeFileSync(filePath, fileBuffer);
-        console.log(`    Downloaded: ${attachment.filename}`);
+        console.log(`    ✓ Downloaded: ${attachment.filename}`);
+        stats.downloaded++;
         await this.delay(100); // Delay between downloads
       } else {
-        console.log(`    Failed: ${attachment.filename}`);
+        console.log(`    ✗ Failed: ${attachment.filename}`);
+        stats.failed++;
       }
     }
   }
 
   /**
-   * Download attachments for all decisions
+   * Download attachments for all decisions (Phase 2)
    */
   async downloadAllAttachments() {
-    console.log('\n=== Downloading Attachments ===');
+    console.log('\n\n=== Phase 2: Downloading Attachments ===\n');
     
-    let totalDownloaded = 0;
-    let totalSkipped = 0;
-    let totalFailed = 0;
+    const stats = {
+      total: 0,
+      downloaded: 0,
+      skipped: 0,
+      failed: 0
+    };
 
+    // Count total attachments
     for (const decision of this.detailedDecisions) {
       if (decision.ATTACHMENTS && decision.ATTACHMENTS.length > 0) {
-        await this.downloadDecisionAttachments(decision);
+        stats.total += decision.ATTACHMENTS.length;
+      }
+    }
+
+    console.log(`Total attachments to download: ${stats.total}\n`);
+
+    let processedDecisions = 0;
+    for (const decision of this.detailedDecisions) {
+      if (decision.ATTACHMENTS && decision.ATTACHMENTS.length > 0) {
+        processedDecisions++;
+        console.log(`[${processedDecisions}] Decision ${decision.ID} (${decision.CODE})`);
+        console.log(`  Attachments: ${decision.ATTACHMENTS.length}`);
+        
+        await this.downloadDecisionAttachments(decision, stats);
         await this.delay(100); // Delay between decisions
       }
     }
 
-    console.log(`\nAttachment download completed!`);
+    console.log('\n=== Download Summary ===');
+    console.log(`Total attachments: ${stats.total}`);
+    console.log(`Downloaded: ${stats.downloaded}`);
+    console.log(`Skipped (already exists): ${stats.skipped}`);
+    console.log(`Failed: ${stats.failed}`);
+    console.log(`Success rate: ${stats.total > 0 ? ((stats.downloaded + stats.skipped) / stats.total * 100).toFixed(1) : 0}%`);
   }
 
   /**
@@ -457,7 +480,7 @@ class DecisionDetailCrawler {
   async crawlAllDetails(decisions, options = {}) {
     const { limit = null, startIndex = 0, batchSize = 5 } = options;
     
-    console.log('\n=== Starting Detail Crawl ===');
+    console.log('\n=== Phase 1: Fetching Decision Details ===');
     console.log(`Total decisions to process: ${limit || decisions.length}`);
     console.log(`Batch size: ${batchSize}`);
     console.log(`Start index: ${startIndex}\n`);
@@ -675,16 +698,12 @@ async function main() {
       }
     }
 
-    // Crawl details
+    // Phase 1: Crawl details
     await crawler.crawlAllDetails(decisions, {
       batchSize: testMode ? 3 : 5  // Smaller batch size for testing
     });
 
-    // Download attachments if requested
-    if (downloadMode) {
-      await crawler.downloadAllAttachments();
-    }
-
+    // Save results to JSON first
     if (testMode) {
       // Test mode: print to console
       console.log('\n=== TEST RESULTS ===\n');
@@ -694,6 +713,11 @@ async function main() {
       // Normal mode: save to file
       const outputPath = path.join(__dirname, '..', '..', '..', '..', '..', '..', 'result', 'thutuc.dichvucong.gov.vn', 'p', 'home', 'dvc-tthc-quyet-dinh-cong-bo', 'detailed_result.json');
       crawler.saveResults(outputPath);
+    }
+
+    // Phase 2: Download attachments (only after JSON is saved)
+    if (downloadMode) {
+      await crawler.downloadAllAttachments();
     }
 
     // Print statistics
