@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" /> 
+  <title>Cổng Dịch vụ c&ocirc;ng Quốc gia</title> 
+  <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />  
+  <meta name="description" content="Cổng Dịch vụ c&ocirc;ng Quốc gia hỗ trợ th&ocirc;ng tin, đăng k&yacute; thủ tục h&agrave;nh ch&iacute;nh như đổi giấy ph&eacute;p l&aacute;i xe, nộp thuế điện tử, th&ocirc;ng b&aacute;o khuyến mại, cấp lại thẻ BHYT, cấp điện mới..." /> 
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />  
+  <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />  
+  <meta content="index, follow" name="ROBOTS" /> 
+  <link rel="stylesheet" href="theme/vendor/font-awesome/css/font-awesome.min.css" /> 
+  <link rel="stylesheet" href="theme/vendor/iconsax/style.css" /> 
+  <!-- <link rel="stylesheet" href="../vendor/iconsax/style.css"> --> 
+  <link rel="stylesheet" type="text/css" href="theme/vendor/ap8/css/style.css" /> 
+  <link rel="stylesheet" type="text/css" href="theme/vendor/slick/slick.css" /> 
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="theme/vendor/typeahead/style.css" /> 
+  <link rel="stylesheet" href="vendor/toastr/toastr.min.css" /> 
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrapValidator.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="theme/vendor/swiper/css/swiper.min.css" /> 
+  <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" /> 
+  <link rel="stylesheet" href="vendor/bootstrap-timepicker/css/timepicker.css" /> 
+  <link rel="stylesheet" href="theme/css/style.css?version=9" /> 
+  <link rel="shortcut icon" href="img/header/quoc_huy.png" /> 
+  <script type="text/javascript" src="theme/vendor/jquery/jquery.2.1.1.min.js"></script> 
+  <script type="text/javascript" src="theme/vendor/bootstrap/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="vendor/bootstrap/js/bootstrapValidator.js"></script> 
+  <script type="text/javascript" src="theme/vendor/slick/slick.min.js"></script> 
+  <script type="text/javascript" src="theme/vendor/highchart/highcharts.js"></script> 
+  <script type="text/javascript" src="theme/vendor/highchart/modules/variable-pie.js"></script> 
+  <script type="text/javascript" src="theme/vendor/highchart/highcharts-more.js"></script> 
+  <script type="text/javascript" src="vendor/toastr/toastr.min.js"></script> 
+  <script type="text/javascript" src="vendor/slimscroll/jquery.slimscroll.min.js"></script> 
+  <script type="text/javascript" src="vendor/jq-paginator.js"></script> 
+  <script type="text/javascript" src="vendor/bootbox.all.min.js"></script> 
+  <script type="text/javascript" src="vendor/select2.min.js"></script> 
+  <script type="text/javascript" src="vendor/mime.js"></script> 
+  <script type="text/javascript" src="vendor/jquery/jquery-iframe-auto-height.min.js"></script> 
+  <script type="text/javascript" src="vendor/jquery/jquery.browser.js"></script> 
+  <link rel="stylesheet" href="vendor/select2.min.css" /> 
+  <script src="./js/ApiService.js?version=18"></script> 
+  <script src="./js/CommonUtil.js?version=16"></script> 
+  <script src="./js/Constants.js"></script> 
+  <script type="text/javascript" src="vendor/typeahead/index.js"></script> 
+  <script type="text/javascript" src="vendor/typeahead/handlebars.js"></script> 
+  <script type="text/javascript" src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script> 
+  <script type="text/javascript" src="vendor/bootstrap-timepicker/js/bootstrap-timepicker.js"></script> 
+  <script src="./js/base64.js"></script> 
+  <script type="text/javascript" src="vendor/d3.v4.min.js"></script> 
+  <script>
+		initApiService();
+	</script> 
+ </head> 
+ <body> 
+  <div class="loading-all" id="loading-all" style="display:none"> 
+   <div class="icon"> 
+    <img src="img/loading.png" alt="" /> 
+    <span style="color:blue">Đang xử l&yacute;...<span> </span></span>
+   </div> 
+   <style type="text/css">
+			.loading-all {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 10000;
+				background: #dbdcdc40;
+			}
+			.loading-all .icon {
+				width: 100px;
+				position: absolute;
+				top: 0px;
+				height: 100px;
+				bottom: 0px;
+				right: 0px;
+				margin: auto;
+				left: 0px;
+			}
+
+		</style> 
+  </div> 
+  <!--DEFINE CONSTANT --> 
+  <!--END CONSTANT--> 
+  <div class="overlay-common"></div> 
+  <!-- /mtv/ Log propertise--> 
+  <div class="header"> 
+   <div class="container"> 
+    <div class="relative content"> 
+     <div class="logo-text"> 
+      <a href="dvc-trang-chu.html" class="logo"> <img src="theme/img/header/logo.png" alt="" /> </a> 
+     </div> 
+     <div class="nav-toggle"> 
+      <span class="-ap icon icon-menu"></span> 
+     </div> 
+     <div class="header-account"> 
+      <div class="buttons"> 
+       <a href="https://dangky.dichvucong.gov.vn/register" class="btn btn-login">Đăng k&yacute;</a> 
+       <a href="https://xacthuc.dichvucong.gov.vn/oauth2/authorize?response_type=code&amp;client_id=0vFpdFtniMwmiWOUnWfOFYZcNdAa&amp;scope=openid&amp;redirect_uri=https://dichvucong.gov.vn/p/home/dvc-trang-chu.html" class="btn btn-register">Đăng nhập</a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <nav class="header-nav"> 
+   <div class="container"> 
+    <ul id="main-menu" class="pull-left menus"> 
+     <li class="active" id="home-page"><a href="dvc-trang-chu.html"><span class="-ap icon icon-home4"></span></a></li> 
+     <!-- <li><a href="dvc-gioi-thieu.html">Giới thiệu</a></li> --> 
+     <li> <a href="#">Th&ocirc;ng tin v&agrave; dịch vụ</a> 
+      <ul class="dropdown-menu"> 
+       <!-- <li><a href="dvc-trang-chu-cong-dan.html">Công dân</a></li> --> 
+       <!-- <li><a href="dvc-trang-chu-doanh-nghiep.html">Doanh nghiệp</a></li> --> 
+       <li> <a href="#">Thủ tục h&agrave;nh ch&iacute;nh</a> 
+        <ul class="dropdown-menu"> 
+         <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-trang-chu.html">Tra cứu TTHC</a></li> 
+         <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục h&agrave;nh ch&iacute;nh</a></li> 
+         <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html">Thủ tục h&agrave;nh ch&iacute;nh li&ecirc;n th&ocirc;ng</a></li> 
+         <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-quyet-dinh-cong-bo.html">Quyết định c&ocirc;ng bố</a></li> 
+         <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-co-quan.html">Cơ quan</a></li> 
+        </ul> </li> 
+       <li><a href="dvc-dich-vu-cong-truc-tuyen.html">Dịch vụ c&ocirc;ng trực tuyến</a></li> 
+       <li><a href="dvc-dich-vu-cong-noi-bat.html">Dịch vụ c&ocirc;ng nổi bật</a></li> 
+       <li><a href="dvc-tra-cuu-ho-so.html">Tra cứu hồ sơ</a></li> 
+       <li><a href="dvc-tra-cuu-ban-an.html">T&ograve;a &aacute;n nh&acirc;n d&acirc;n</a></li> 
+       <li><a href="dvc-cau-hoi-pho-bien.html">C&acirc;u hỏi thường gặp</a></li> 
+      </ul> </li> 
+     <li> <a href="dvc-thanh-toan-truc-tuyen.html">Thanh to&aacute;n trực tuyến</a> 
+      <!-- <ul class="dropdown-menu">
+						<li><a href="dvc-thanh-toan.html">Nộp thuế doanh nghiệp</a></li>
+						<li><a href="dvc-thanh-toan-thue-ca-nhan.html">Nộp thuế cá nhân/Trước bạ</a></li>
+						<li>
+							<a href="#">Thanh toán vi phạm hành chính</a>
+							<ul class="dropdown-menu">
+								<li><a href="dvc-thanh-toan-vi-pham-giao-thong.html">Tra cứu/Thanh toán vi phạm giao thông</a></li>
+								<li><a href="dvc-thanh-toan-vi-pham-xay-dung.html">Tra cứu/Thanh toán vi phạm xây dựng</a></li>
+							</ul>
+						</li>
+						<li><a href="dvc-thanh-toan-phi-le-phi-ho-so.html">Thanh toán phí/lệ phí dịch vụ công</a></li>
+						<li><a href="dvc-thanh-toan-bhxh-bhyt.html">Đóng tiếp BHXH tự nguyện, gia hạn BHYT</a></li>
+						<li><a href="dvc-thanh-toan-bhxh-doanh-nghiep.html">Đóng BHXH, BHYT, BHTN, BHTNLĐ-BNN</a></li>
+						<li><a href="dvc-thanh-toan-thue-dat-dai.html">Thanh toán nghĩa vụ tài chính về đất đai</a></li>
+						<li><a href="dvc-thanh-toan-dien.html">Thanh toán tiền điện</a></li>
+						<li><a href="dvc-thanh-toan-vien-phi.html">Thanh toán viện phí</a></li>
+						<li><a href="dvc-thanh-toan-an-phi.html">Thanh toán tạm ứng án phí</a></li>
+					</ul> --> </li> 
+     <li> <a href="#">Phản &aacute;nh kiến nghị</a> 
+      <ul class="dropdown-menu"> 
+       <li><a href="/p/phananhkiennghi/pakn-gui-pakn.html">Gửi PAKN</a></li> 
+       <li><a href="/p/phananhkiennghi/pakn-search.html">Tra cứu kết quả trả lời</a></li> 
+      </ul> </li> 
+     <li><a href="dvc-index-tinhthanhpho-tonghop.html">Đ&aacute;nh gi&aacute; chất lượng phục vụ</a></li> 
+     <!-- <li>
+				  <a href="#">Thủ tục hành chính</a>
+				  <ul class="dropdown-menu">
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-trang-chu.html">Tra cứu TTHC</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục hành chính</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html">Thủ tục hành chính liên thông</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-quyet-dinh-cong-bo.html">Quyết định công bố</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-co-quan.html">Cơ quan</a></li>
+				  </ul>
+				</li> --> 
+     <li class=""> <a href="#">Hỗ trợ</a> 
+      <ul class="dropdown-menu"> 
+       <li><a href="dvc-gioi-thieu.html">Giới thiệu</a></li> 
+       <li><a href="dvc-dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li> 
+       <li><a href="dvc-huong-dan-cong-dan-doanh-nghiep.html">Hướng dẫn sử dụng</a></li> 
+       <li><a href="dvc-tin-tuc.html">Th&ocirc;ng b&aacute;o</a></li> 
+      </ul> </li> 
+    </ul> 
+    <div class="header-account mobile-ds"> 
+     <div class="buttons"> 
+      <a href="https://xacthuc.dichvucong.gov.vn/oauth2/authorize?response_type=code&amp;client_id=0vFpdFtniMwmiWOUnWfOFYZcNdAa&amp;scope=openid&amp;redirect_uri=https://dichvucong.gov.vn/p/home/dvc-trang-chu.html" class="btn btn-login">Đăng nhập</a> 
+      <a href="https://dangky.dichvucong.gov.vn/register" class="btn btn-register">Đăng k&yacute;</a> 
+     </div> 
+    </div> 
+   </div> 
+  </nav> 
+  <div class="header-bottom"> 
+   <div class="container"> 
+    <ul id="list-dropdown"> 
+    </ul> 
+   </div> 
+  </div> 
+ </body>
+</html><html>
+ <head></head> 
+ <body> 
+  <div class="section-cong-dan"> 
+   <div class="container"> 
+    <ul class="breadcrumb"> 
+     <li><a href="dvc-trang-chu.html">Trang chủ</a></li> 
+     <li><a href="">Chi tiết thủ tục h&agrave;nh ch&iacute;nh</a></li> 
+    </ul> 
+    <div class="row"> 
+     <div class="col-sm-8 col-xs-12"> 
+      <h1 class="main-title -none" style="margin-bottom: 10px;">Cấp điện mới từ lưới điện hạ &aacute;p (220/380V)</h1> 
+      <a class="url" data-toggle="modal" href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=7603">Xem chi tiết</a> 
+      <div class="divider-gray"></div> 
+      <h2 class="main-title-sub">Tr&igrave;nh tự thực hiện</h2>
+      <div class="list-expand">
+       <div>
+        <div class="item active">
+         <div class="title" title=" "> 
+         </div>
+         <div class="content">
+          <p>Tiếp nhận y&ecirc;u cầu</p>
+          <p>Khảo s&aacute;t</p>
+          <p>Lắp đặt nghiệm thu thiết bị đo đếm, k&yacute; HĐMBĐ</p>
+         </div>
+        </div>
+       </div>
+      </div> 
+      <div class="divider-gray"></div> 
+      <h2 class="main-title-sub">C&aacute;ch thức thực hiện</h2>
+      <br />
+      <table class="table-result-tthc table-result">  
+       <thead>
+        <tr>
+         <th>H&igrave;nh thức nộp</th>
+         <th>Thời hạn giải quyết</th>
+         <th>Ph&iacute;, lệ ph&iacute;</th>
+         <th>M&ocirc; tả</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td style="text-align: left;" data-title="H&igrave;nh thức nộp">Trực tiếp</td>
+         <td data-title="Thời hạn giải quyết">7 Ng&agrave;y l&agrave;m việc</td>
+         <td style="min-width: 130px;text-align: left;" data-title="Ph&iacute;, lệ ph&iacute;"></td>
+         <td style="min-width:180px" data-title="M&ocirc; tả"></td>
+        </tr>
+        <tr>
+         <td style="text-align: left;" data-title="H&igrave;nh thức nộp">Trực tuyến</td>
+         <td data-title="Thời hạn giải quyết">7 Ng&agrave;y l&agrave;m việc</td>
+         <td style="min-width: 130px;text-align: left;" data-title="Ph&iacute;, lệ ph&iacute;"></td>
+         <td style="min-width:180px" data-title="M&ocirc; tả"></td>
+        </tr>
+       </tbody>
+      </table> 
+      <div class="divider-gray"></div> 
+      <h2 class="main-title-sub">Th&agrave;nh phần hồ sơ</h2>
+      <div class="list-expand">
+       <div class="item active">
+        <div class="title" title="Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha)">
+         Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha)
+        </div>
+        <div class="content">
+         <table class="table table-result">
+          <thead>
+           <tr>
+            <th>T&ecirc;n giấy tờ</th>
+            <th>Mẫu đơn, tờ khai</th>
+            <th>Số lượng</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy đề nghị mua điện</td>
+            <td data-title="Mẫu đơn, tờ khai" style="cursor: pointer; color: #283593;"><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feb864dfdb7c754">Giay de nghi mua dien.docx</a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 1 - Bản sao: 0</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ t&ugrave;y th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div class="item">
+        <div class="title" title="Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha), sử dụng chung c&ocirc;ng tơ">
+         Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha), sử dụng chung c&ocirc;ng tơ
+        </div>
+        <div class="content">
+         <table class="table table-result">
+          <thead>
+           <tr>
+            <th>T&ecirc;n giấy tờ</th>
+            <th>Mẫu đơn, tờ khai</th>
+            <th>Số lượng</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy đề nghị mua điện</td>
+            <td data-title="Mẫu đơn, tờ khai" style="cursor: pointer; color: #283593;"><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feb864dfdb7c754">Giay de nghi mua dien.docx</a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 1 - Bản sao: 0</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ t&ugrave;y th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Sổ hộ khẩu/sổ tạm tr&uacute;/x&aacute;c nhận c&ocirc;ng an quản l&yacute; tr&ecirc;n địa b&agrave;n của c&aacute;c hộ d&ugrave;ng chung</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy ủy quyền c&oacute; chữ k&yacute; của c&aacute;c hộ d&ugrave;ng chung</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 1 - Bản sao: 0</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div class="item">
+        <div class="title" title="Kh&aacute;ch h&agrave;ng t&aacute;ch c&ocirc;ng tơ d&ugrave;ng chung">
+         Kh&aacute;ch h&agrave;ng t&aacute;ch c&ocirc;ng tơ d&ugrave;ng chung
+        </div>
+        <div class="content">
+         <table class="table table-result">
+          <thead>
+           <tr>
+            <th>T&ecirc;n giấy tờ</th>
+            <th>Mẫu đơn, tờ khai</th>
+            <th>Số lượng</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy đề nghị mua điện</td>
+            <td data-title="Mẫu đơn, tờ khai" style="cursor: pointer; color: #283593;"><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feb864dfdb7c754">Giay de nghi mua dien.docx</a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 1 - Bản sao: 0</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ t&ugrave;y th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">4. Giấy cam kết thanh to&aacute;n hết nợ tiền điện với chủ HĐMBĐ đang d&ugrave;ng chung</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 1 - Bản sao: 0</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div class="item">
+        <div class="title" title="Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha), c&oacute; c&ocirc;ng suất lớn nhất &lt; 40kW">
+         Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha), c&oacute; c&ocirc;ng suất...
+        </div>
+        <div class="content">
+         <table class="table table-result">
+          <thead>
+           <tr>
+            <th>T&ecirc;n giấy tờ</th>
+            <th>Mẫu đơn, tờ khai</th>
+            <th>Số lượng</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy đề nghị mua điện</td>
+            <td data-title="Mẫu đơn, tờ khai" style="cursor: pointer; color: #283593;"><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feb864dfdb7c754">Giay de nghi mua dien.docx</a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 1 - Bản sao: 0</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ t&ugrave;y th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ x&aacute;c định mục đ&iacute;ch sử dụng điện l&agrave; một trong những loại giấy tờ sau: Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị; Bi&ecirc;n bản khảo s&aacute;t cấp điện của Điện lực/C&ocirc;ng ty Điện lực; Th&ocirc;ng tin của doanh nghiệp tr&ecirc;n Cổng th&ocirc;ng tin đăng k&yacute; doanh nghiệp quốc gia tại địa chỉ http://www.dangkykinhdoanh.gov.vn</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+       <div class="item">
+        <div class="title" title="Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha), c&oacute; c&ocirc;ng suất lớn nhất ≥ 40kW">
+         Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha), c&oacute; c&ocirc;ng suất...
+        </div>
+        <div class="content">
+         <table class="table table-result">
+          <thead>
+           <tr>
+            <th>T&ecirc;n giấy tờ</th>
+            <th>Mẫu đơn, tờ khai</th>
+            <th>Số lượng</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy đề nghị mua điện</td>
+            <td data-title="Mẫu đơn, tờ khai" style="cursor: pointer; color: #283593;"><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3feb864dfdb7c754">Giay de nghi mua dien.docx</a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 1 - Bản sao: 0</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ t&ugrave;y th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Giấy tờ x&aacute;c định mục đ&iacute;ch sử dụng điện l&agrave; một trong những loại giấy tờ sau: Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị; Bi&ecirc;n bản khảo s&aacute;t cấp điện của Điện lực/C&ocirc;ng ty Điện lực; Th&ocirc;ng tin của doanh nghiệp tr&ecirc;n Cổng th&ocirc;ng tin đăng k&yacute; doanh nghiệp quốc gia tại địa chỉ http://www.dangkykinhdoanh.gov.vn.</td>
+            <td><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma="></a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 0 - Bản sao: 1</td>
+           </tr>
+           <tr>
+            <td data-title="T&ecirc;n giấy tờ">Bản đăng k&yacute; biểu đồ phụ tải. (Trường hợp kh&aacute;ch h&agrave;ng sản xuất, kinh doanh dịch vụ)</td>
+            <td data-title="Mẫu đơn, tờ khai" style="cursor: pointer; color: #283593;"><a href="https://csdl.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=3fe38b4b3a7dfdad">BẢNG K&Ecirc; C&Ocirc;NG SUẤT THIẾT BỊ SỬ DỤNG ĐIỆN.docx</a></td>
+            <td style="white-space:nowrap;" data-title="Số lượng">Bản ch&iacute;nh: 1 - Bản sao: 0</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div> 
+      <div class="divider-gray"></div> 
+      <h2 class="main-title-sub">Cơ quan thực hiện</h2>
+      <div class="article">
+       <p>Tập đo&agrave;n Điện lực Việt Nam</p>
+      </div> 
+      <div class="divider-gray"></div> 
+      <h2 class="main-title-sub">Y&ecirc;u cầu, điều kiện thực hiện</h2>
+      <div class="article">
+       <p id="7603">Kh&ocirc;ng c&oacute; y&ecirc;u cầu điều kiện</p>
+      </div> 
+     </div> 
+     <div class="col-sm-4 col-xs-12"> 
+      <div class="sidebar-congdan"> 
+       <div class="head">
+         Chọn cơ quan thực hiện 
+       </div> 
+       <div class="body"> 
+        <div class="list-check form-group"> 
+         <div class="check-action"> 
+          <input type="radio" class="check" name="cap_thuc_hien_tthc" value="tinhthanhpho_tthc" id="tinhthanhpho_tthc" /> 
+          <span class="name">Tỉnh/Th&agrave;nh phố</span> 
+         </div> 
+         <div class="check-action"> 
+          <input type="radio" class="check" name="cap_thuc_hien_tthc" value="bonganh_tthc" id="bonganh_tthc" /> 
+          <span class="name">Bộ ng&agrave;nh</span> 
+         </div> 
+        </div> 
+        <div class="form-group"> 
+         <div class=""> 
+          <select class="form-control" id="cboTINH_THANH_TTHC"> </select> 
+          <select class="form-control" id="cboBO_NGANH_TTHC" style="display:none"> </select> 
+         </div> 
+        </div> 
+        <div class="list-check form-group" id="hide_for_bo_nganh_tthc"> 
+         <div class="check-action"> 
+          <input type="radio" class="check" value="quan/huyen_tthc" name="quan_huyen_or_so_tthc" id="quan_huyen_tthc" /> 
+          <span class="name">Phường/X&atilde;</span> 
+         </div> 
+         <div class="check-action"> 
+          <input type="radio" id="so_tthc" class="check" value="so_tthc" name="quan_huyen_or_so_tthc" /> 
+          <span class="name">Sở</span> 
+         </div> 
+        </div> 
+        <div class="form-group"> 
+         <div class=""> 
+          <select name="" id="cboQUAN_HUYEN_TTHC" class="form-control"> <option value="-1">--Chọn Phường/X&atilde;--</option> </select> 
+          <select name="" id="cboSO_TTHC" class="form-control" style="display:none"> </select> 
+         </div> 
+        </div> 
+        <!-- <div class="form-group">
+								<div class="">
+                              <select name="" id="cboPHUONG_XA_TTHC" class="form-control">
+                                 </select>
+								</div>
+							</div> --> 
+        <button class="btn btn-main w100" id="btnSearchTTHC">Đồng &yacute;</button> 
+        <br /> 
+        <br /> 
+        <p id="error_msg" style="display:none; color: red;">Hệ thống chỉ hiển thị những cơ quan (Sở/x&atilde; đ&atilde; &aacute;p dụng dịch vụ c&ocirc;ng)</p> 
+       </div> 
+      </div> 
+      <div style="width: 100%;"> 
+       <a href="https://vnexpress.net/tra-cuu-3-321-phuong-xa-tren-ca-nuoc-sau-sap-xep-4903454.html" target="_blank"> <img src="theme/img/header/tracuu.png" alt="Tra cứu x&atilde; phường 2 cấp" style="width: 100%; height: auto;" /> </a> 
+      </div> 
+      <br /> 
+      <div class="sidebar-congdan -bncq" id="ds-co-quan-thuc-hien" style="display:none"> 
+       <div class="head">
+         Bộ, cơ quan, địa phương cung cấp dịch vụ c&ocirc;ng trực tuyến 
+       </div> 
+       <div class="body"> 
+        <ul class="dvc-list" id="ds-co-quan-thuc-hien-content"> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="modal" id="showFeeDes"> 
+   <div class="popup-box" style="max-width: 768px;"> 
+    <div class="close -ap icon-close" id="" data-dismiss="modal"> 
+    </div> 
+    <div class="head"> 
+     <div class="title">
+       Th&ocirc;ng tin ph&iacute;, lệ ph&iacute; 
+     </div> 
+    </div> 
+    <div> 
+     <table class="table table-result-tthc table-result"> 
+      <thead> 
+       <tr> 
+        <th>Ph&iacute;</th> 
+        <th>Đơn vị t&iacute;nh</th> 
+        <th>Văn bản</th> 
+        <th style="min-width: 140px">M&ocirc; tả</th> 
+       </tr> 
+      </thead> 
+      <tbody id="detailFeeDes"> 
+      </tbody> 
+     </table> 
+    </div> 
+    <div class="form-group" style="float: right;"> 
+     <button class="btn btn-main" data-dismiss="modal">Đ&oacute;ng</button> 
+    </div> 
+   </div> 
+  </div> 
+  <script>
+
+	$(document).ready(function(){
+		$('#cboQUAN_HUYEN_TTHC').val();
+		initLoad();
+		$('.table-result').on('click', function() {
+			event.stopPropagation();
+		});
+	});
+
+	var level_bo = 0;
+	var level_tinh = 1;
+	var level_huyen = 2;
+	var level_xa = 3;
+	var level_chua_xac_dinh = 5;
+	//
+	var procedure_code = '3.000001';
+	var procedure_id = '7603';
+	var RootProcedureCode = '3.000001';
+	var RootProcedureID = '7603';
+	var IsRoot = '1';
+	var IsParticular = '0';
+	var boNganhID = '364400';
+
+	//
+	function downloadMaudon(id){
+		if (id == '' || id == undefined) return;
+		var obj = {
+			id: base64.encode(id)
+		};
+		var url = "/jsp/alfresco/download.jsp?" + $.param(obj);
+		window.open(url, '_blank');
+	}
+
+	//
+	function initLoad(){
+		bindEventTTHC();
+		$('#btnSearchTTHC').on('click', function() {
+			var rdoBO = $("input[name='cap_thuc_hien_tthc']:checked").val();
+			var rdoSO = $("input[name='quan_huyen_or_so_tthc']:checked").val();
+			if (rdoBO != 'bonganh_tthc' && $('#cboTINH_THANH_TTHC').val() && $('#cboTINH_THANH_TTHC').val() != '-1' && ($('#cboQUAN_HUYEN_TTHC').val() == '-1' || !$('#cboQUAN_HUYEN_TTHC').val()) && ($('#cboSO_TTHC').val() == '-1' || !$('#cboSO_TTHC').val()) && ($('#cboPHUONG_XA_TTHC').val() == '-1' || !$('#cboPHUONG_XA_TTHC').val())) {
+				var params = "tukhoa=";
+				params += "&tinh_thanh=" + (($('#cboTINH_THANH_TTHC').val() == '-1' || !$('#cboTINH_THANH_TTHC').val() || rdoBO == 'bonganh_tthc') ? "" : $('#cboTINH_THANH_TTHC option:selected').text());
+				//get procedure local
+				var obj = new Object();
+				obj.service = 'dvcqg_get_procedure_local_by_parent_id_service_v2';
+				obj.parent_code = RootProcedureCode;
+				obj.province_id = $('#cboTINH_THANH_TTHC').val();
+				obj.type = 'qry';
+				var result = apiservice.AjaxJson.executeQuery(obj);
+				console.log(result);
+
+				if (result && result.length >= 1) {
+					var procedureLocal = result[0].PROCEDURE_CODE;
+					var params = "ma_thu_tuc=" + procedureLocal;
+					params += "&tinh_thanh=" + $('#cboTINH_THANH_TTHC').val();
+					params += "&id_tinh_thanh=" + $('#cboTINH_THANH_TTHC').val();
+					params += "&id_quan_huyen=" + $('#cboQUAN_HUYEN_TTHC').val();
+					params += "&id_phuong_xa=" + $('#cboPHUONG_XA_TTHC').val();
+					params += "&id_so=" + $('#cboSO_TTHC').val();
+					params += "&id_bo_nganh=" + $('#cboBO_NGANH_TTHC').val();
+
+					window.location = 'dvc-chi-tiet-thu-tuc-hanh-chinh.html?' + params;
+				}
+				else {
+
+					if (IsRoot == 0 && $('#cboTINH_THANH_TTHC').val() != -1) {
+						toastr.warning('Bạn vui lòng chọn Quận/ Huyện hoặc Sở để tìm dịch vụ công');
+						return;
+					}
+					if ($('#cboTINH_THANH_TTHC').val() != -1) {
+						if(IsParticular == 1) {
+							toastr.warning('Thủ tục hiện tại là thủ tục đặc thù của đơn vị hoặc đã được địa phương hóa, vui lòng chọn thêm thông tin để tìm dịch vụ công tương ứng!');
+						} else {
+							toastr.warning($('#cboTINH_THANH_TTHC').find(":selected").text() + ' chưa công khai thủ tục hành chính');
+						}
+						
+					}
+				}
+			} else {
+				var rdoBO = $("input[name='cap_thuc_hien_tthc']:checked").val();
+				var params = "tu_khoa=";
+				params += "&bo_nganh=" + (($('#cboBO_NGANH_TTHC').val() == '-1' || !$('#cboBO_NGANH_TTHC').val() || rdoBO != 'bonganh_tthc') ? "" : $('#cboBO_NGANH_TTHC option:selected').text());
+				params += "&tinh_thanh=" + (($('#cboTINH_THANH_TTHC').val() == '-1' || !$('#cboTINH_THANH_TTHC').val() || rdoBO == 'bonganh_tthc') ? "" : $('#cboTINH_THANH_TTHC option:selected').text());
+				params += "&so=" + (($('#cboSO_TTHC').val() == '-1' || !$('#cboSO_TTHC').val() || rdoSO != 'so_tthc') ? "" : $('#cboSO_TTHC option:selected').text());
+				params += "&quan_huyen=" + (($('#cboQUAN_HUYEN_TTHC').val() == '-1' || !$('#cboQUAN_HUYEN_TTHC').val() || rdoSO == 'so_tthc') ? "" : $('#cboQUAN_HUYEN_TTHC option:selected').text());
+				params += "&phuong_xa=" + (($('#cboPHUONG_XA_TTHC').val() == '-1' || !$('#cboPHUONG_XA_TTHC').val() || rdoSO == 'so_tthc') ? "" : $('#cboPHUONG_XA_TTHC option:selected').text());
+				params += "&ma_tt=" + RootProcedureCode;
+				params += "&id_tinh_thanh=" + $('#cboTINH_THANH_TTHC').val();
+				params += "&id_quan_huyen=" + $('#cboQUAN_HUYEN_TTHC').val();
+				params += "&id_phuong_xa=" + $('#cboPHUONG_XA_TTHC').val();
+				params += "&id_so=" + $('#cboSO_TTHC').val();
+				
+				if(rdoBO == 'bonganh_tthc')
+					params += "&id_bo_nganh=" + $('#cboBO_NGANH_TTHC').val();
+				else
+					params += "&id_bo_nganh=-1";
+
+				window.location = 'dvc-danh-sach-dich-vu-cong.html?' + params;
+			}
+			console.log(params);
+		});
+
+		// Hide all
+		$('#bonganh_tthc').parent().hide();
+		$('#tinhthanhpho_tthc').parent().hide();
+		$('#so_tthc').parent().hide();
+
+		if ('1' == 1) {
+			$('#tinhthanhpho_tthc').click();
+			$('#tinhthanhpho_tthc').parent().show();
+		}
+
+		if ('1' == 1) {
+			$('#so_tthc').parent().show();
+		}
+
+		if ('1' == 1){
+			$('#bonganh_tthc').click();
+			$('#bonganh_tthc').parent().show();
+			if (boNganhID != -1){
+				$('#cboBO_NGANH_TTHC').val(boNganhID);
+			}
+			$('#cboBO_NGANH_TTHC').select2().next().show();
+		}
+
+		// Case bo nhanh / Tinh TP
+		if ('1' == 1 && '$idBoNganh' == -1) {
+			$('#tinhthanhpho_tthc').click();
+			$('#cboTINH_THANH_TTHC').val('-1');
+			$('#cboTINH_THANH_TTHC').select2();
+		}
+
+		// Set TTp (Hiển thị TTp công bố, Quận/Huyện, Xã Phương theo TTp)
+		if ('-1' != '-1' && '364400' == -1) {
+			$('#tinhthanhpho_tthc').click();
+			$('#cboTINH_THANH_TTHC').val('-1');
+			$('#cboTINH_THANH_TTHC').select2();
+			$('#quan_huyen_tthc').click();
+			getCoQuanThucHienTTHC("get_danh_sach_so_quan_huyen", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboQUAN_HUYEN_TTHC", procedure_code);
+			// getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboQUAN_HUYEN_TTHC");	// luan cmt
+			$('#cboPHUONG_XA_TTHC').select2().next().show();
+		}
+	}
+
+
+	function bindEventTTHC() {
+		$("#cboTINH_THANH_TTHC,#cboQUAN_HUYEN_TTHC,#cboPHUONG_XA_TTHC,#cboSO_TTHC,#cboBO_NGANH_TTHC").select2({
+			allowClear: true,
+			width: "100%",
+		});
+
+		// set default display
+		if ($("input[name='quan_huyen_or_so_tthc']:checked")) {
+			if (this.value == 'quan/huyen_tthc') {
+				$('#cboQUAN_HUYEN_TTHC,#cboPHUONG_XA_TTHC').select2().next().show();
+			} else if (this.value == 'so_tthc') {
+				$('#cboSO_TTHC').select2().next().show();
+			} else {
+				$('#cboQUAN_HUYEN_TTHC,#cboPHUONG_XA_TTHC').select2().next().hide();
+				$('#cboSO_TTHC').select2().next().hide();
+			}
+		}
+
+		$('#cboSO_TTHC,#cboBO_NGANH_TTHC').select2().next().hide();
+		$('input[type=radio][name=quan_huyen_or_so_tthc]').change(function () {
+			
+			if (this.value == 'quan/huyen_tthc') {
+				console.log("Radio quan_huyen_or_so_tthc change quan/huyen_tthc");
+				$('#cboQUAN_HUYEN_TTHC,#cboPHUONG_XA_TTHC').select2().next().show();
+				$('#cboSO_TTHC').select2().next().hide();
+				// getLocation("dvcqg_get_tinh_thanh_by_selected", null, null, "cboTINH_THANH_TTHC");
+				// getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboQUAN_HUYEN_TTHC");	//luan cmt
+				getCoQuanThucHienTTHC("get_danh_sach_so_quan_huyen", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboQUAN_HUYEN_TTHC", procedure_code);
+				// getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", $("#cboQUAN_HUYEN_TTHC").val(), "cboPHUONG_XA_TTHC");	//luan cmt
+				getXaThucHienTTHC("get_danh_sach_so_phuong_xa","tinh_id", $("#cboTINH_THANH_TTHC").val(), "huyen_id", $("#cboQUAN_HUYEN_TTHC").val(), "cboPHUONG_XA_TTHC",procedure_code);
+			} else if (this.value == 'so_tthc') {
+				console.log("Radio quan_huyen_or_so_tthc change so_tthc");
+				$('#cboQUAN_HUYEN_TTHC,#cboPHUONG_XA_TTHC').select2().next().hide();
+				$('#cboSO_TTHC').select2().next().show();
+				getCoQuanThucHienTTHC("get_danh_sach_so_ban_nganh", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboSO_TTHC", procedure_code);
+				// getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboSO_TTHC"); luan cmt
+			}
+			showOrHideErrorMessage();
+			
+		});
+
+		$("#cboTINH_THANH_TTHC").change(function () {
+
+
+			let result_cap_thuc_hien = checkCapThucHienTthc("get_cap_thuc_hien_tthc",procedure_code,$("#cboTINH_THANH_TTHC").val());
+			console.log("result_cap_thuc_hien: ",result_cap_thuc_hien);
+			if(result_cap_thuc_hien && result_cap_thuc_hien == 1){
+				// $("#so_tthc").attr("checked", "checked");
+				$('#so_tthc').prop('checked', true);
+				ShowQuanHuyenXa(false);
+			}
+			else if(result_cap_thuc_hien && result_cap_thuc_hien == -1){
+				// $("#quan_huyen_tthc").attr("checked", "checked");
+				$('#quan_huyen_tthc').prop('checked', true);
+				ShowQuanHuyenXa(true);
+			}
+
+			if ($("input[name='quan_huyen_or_so_tthc']:checked").val() == "so_tthc") {
+				console.log("=======thay doi tinh thanh=======so_tthc: ",$("input[name='quan_huyen_or_so_tthc']:checked").val());
+				getCoQuanThucHienTTHC("get_danh_sach_so_ban_nganh", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboSO_TTHC", procedure_code);
+				// getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboSO_TTHC"); luan cmt
+			} else {
+				console.log("=======thay doi tinh thanh=======quan_huyen: ",$("input[name='quan_huyen_or_so_tthc']:checked").val());
+				// getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboQUAN_HUYEN_TTHC");	//luan cmt
+				getCoQuanThucHienTTHC("get_danh_sach_so_quan_huyen", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboQUAN_HUYEN_TTHC", procedure_code);
+				if ($("input[name='quan_huyen_or_so_tthc']:checked").val() == "quan/huyen_tthc") {
+					$('#cboQUAN_HUYEN_TTHC').select2().next().show();
+				} else {
+					$('#cboQUAN_HUYEN_TTHC').select2().next().hide();
+				}
+				if ($("#cboQUAN_HUYEN_TTHC").val() == null || $("#cboQUAN_HUYEN_TTHC").val() == undefined) {
+					// getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA_TTHC");	//uan cmt
+					getXaThucHienTTHC("get_danh_sach_so_phuong_xa", "huyen_id", $("#cboQUAN_HUYEN_TTHC").val(), "tinh_id",$("#cboTINH_THANH_TTHC").val(),"cboPHUONG_XA_TTHC",procedure_code);
+				}
+				else 
+					// getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", $("#cboQUAN_HUYEN_TTHC").val(), "cboPHUONG_XA_TTHC");	//luan cmt
+					getXaThucHienTTHC("get_danh_sach_so_phuong_xa","tinh_id", $("#cboTINH_THANH_TTHC").val(), "huyen_id", $("#cboQUAN_HUYEN_TTHC").val(), "cboPHUONG_XA_TTHC",procedure_code);
+			}
+			// getSelectSoNganh(); //luan cmt
+
+			showOrHideErrorMessage();			
+
+		});
+		$("#cboQUAN_HUYEN_TTHC").change(function () {
+			if ($("#cboQUAN_HUYEN_TTHC").val() != "-1" && $("#cboQUAN_HUYEN_TTHC").val() != "") {
+				// getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", $("#cboQUAN_HUYEN_TTHC").val(), "cboPHUONG_XA_TTHC");	//luan cmt
+				getXaThucHienTTHC("get_danh_sach_so_phuong_xa","tinh_id", $("#cboTINH_THANH_TTHC").val(), "huyen_id", $("#cboQUAN_HUYEN_TTHC").val(), "cboPHUONG_XA_TTHC",procedure_code);
+			}
+		});
+
+
+		$('input[type=radio][name=cap_thuc_hien_tthc]').change(function () {
+			if (this.value == 'tinhthanhpho_tthc') {
+				$('#hide_for_bo_nganh_tthc').show();
+				$('#cboTINH_THANH_TTHC').select2().next().show();
+				getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH_TTHC");
+				$('#cboBO_NGANH_TTHC').val(-1);
+				$('#cboBO_NGANH_TTHC').select2().next().hide();
+
+			} else if (this.value == 'bonganh_tthc') {
+				$('#hide_for_bo_nganh_tthc').hide();
+				$('#cboTINH_THANH_TTHC, #cboQUAN_HUYEN_TTHC, #cboPHUONG_XA_TTHC').select2().next().hide();
+				getLocationRef("dvcqg_get_bo_nganh_by_selected_v4", null, null, "cboBO_NGANH_TTHC");
+				$('#cboBO_NGANH_TTHC').val(boNganhID);
+				$('#cboBO_NGANH_TTHC').select2().next().show();
+				$('#cboSO_TTHC').select2().next().hide();
+			}
+		});
+		var radioValue = $("input[name='cap_thuc_hien_tthc']:checked").val();
+		if (radioValue == "tinhthanhpho_tthc") {
+			getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH_TTHC");
+		}
+
+		//auto set level implementation
+		if (0 === level_bo) {
+			$('#bonganh_tthc').prop('checked', true);
+			$('#hide_for_bo_nganh_tthc').hide();
+			$('#cboBO_NGANH_TTHC').select2().next().show();
+			$('#cboTINH_THANH_TTHC').select2().next().hide();
+			getLocationRef("dvcqg_get_bo_nganh_by_selected_v4", null, null, "cboBO_NGANH_TTHC");
+		}
+		else if (0 === level_tinh) {
+			$('#tinhthanhpho_tthc').prop('checked', true);
+			$('#hide_for_bo_nganh_tthc').show();
+			$('#cboBO_NGANH_TTHC').select2().next().hide();
+			$('#cboTINH_THANH_TTHC').select2().next().show();
+			getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH_TTHC");
+		}
+		else if (0 === level_huyen || 0 === level_xa) {
+			$('#quan_huyen_tthc').prop('checked', true);
+			$('#tinhthanhpho_tthc').prop('checked', true);
+			$('#hide_for_bo_nganh_tthc').show();
+			$('#cboBO_NGANH_TTHC').select2().next().hide();
+			$('#cboTINH_THANH_TTHC').select2().next().show();
+			getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH_TTHC");
+		} else {
+
+			//$('#quan_huyen_tthc').prop('checked', true);
+			$('#tinhthanhpho_tthc').prop('checked', true);
+			//$('#hide_for_bo_nganh_tthc').show();
+			$('#cboBO_NGANH_TTHC').select2().next().hide();
+			$('#cboTINH_THANH_TTHC').select2().next().show();
+			getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH_TTHC");
+		}
+
+		
+		var idTinhThanh = '';
+		if (idTinhThanh != 'null' && idTinhThanh != -1 && idTinhThanh.trim() != '') {
+			console.log("Truong hop truyen tinh_thanh id: ",idTinhThanh);
+			$('#cboTINH_THANH_TTHC').val(idTinhThanh);
+			$('#cboQUAN_HUYEN_TTHC').select2().next().show();
+			$('#cboTINH_THANH_TTHC').trigger('change');
+		} else {
+			//get acency info
+			if (0 != level_bo) {
+				getAgencyHasSerice();
+			}
+		}
+		
+
+	}
+
+	// Select So
+	function getSelectSoNganh() {
+		var obj = new Object();
+		obj.service = 'dvcqg_get_department_by_province';
+		obj.procedure_code = procedure_code;
+		obj.province_id = $('#cboTINH_THANH_TTHC').val();
+		obj.type = 'ref';
+		if ($('#cboTINH_THANH_TTHC').val() != -1) {
+			var result = apiservice.AjaxJson.executeQuery(obj);
+			console.log(result);
+			if (result != null && result.length > 0) {
+				$('#so_tthc').prop('checked', true);
+				$('#cboQUAN_HUYEN_TTHC, #cboPHUONG_XA_TTHC').select2().next().hide();
+				// getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboSO_TTHC");	luan cmt
+				getCoQuanThucHienTTHC("get_danh_sach_so_ban_nganh", "tinh_id", $("#cboTINH_THANH_TTHC").val(), "cboSO_TTHC", procedure_code);
+				// $("#cboSO_TTHC").val(result[0].AGENCY_ID);
+				$('#cboSO_TTHC').select2().next().show();
+			}
+		}
+	}
+
+	// Xem chi tiet mo ta phi
+	function showMoreDes(id) {
+		var obj = new Object();
+		obj.service = 'dvcqg_get_fee_by_id_service_v2';
+		obj.id = id;
+		obj.type = 'ref';
+		var result = apiservice.AjaxJson.executeQuery(obj, true);
+		console.log(result);
+		$('#detailFeeDes').html();
+		if (result && result.length == 1) {
+			$('#showFeeDes').modal('show');
+			var _html = '<tr>' +
+								'<td> ' + validStr(result[0].FEE_NAME) + ": " + validStr(result[0].AMOUNT) + '</td>' + 
+								'<td> ' + validStr(result[0].CURRENCY) + '</td>' + 
+								'<td> ' + validStr(result[0].HREF)+'</td>' + 
+								'<td> ' + validStr(result[0].DESCRIPTION) + '</td>' + 
+							'</td>';
+			$('#detailFeeDes').html(_html);
+		}
+	}
+
+	function getAgencyHasSerice(){
+		var obj = new Object();
+		obj.service = 'get_ds_coquan_da_congbo_dvc_service';
+		obj.p_ma_tthc = procedure_code;
+		obj.type = 'ref';
+		var result = apiservice.AjaxJson.executeQuery(obj, true);
+		if (result && result.length > 0) {
+			$("#ds-co-quan-thuc-hien").show();
+			var content = '';
+			for(i = 0; i < result.length; i++) {
+				content += '<li><a href="#">' + (i + 1) + '. ' + result[i].TEN + '</a></li>';
+			}
+			$("#ds-co-quan-thuc-hien-content").html(content);
+			if(result.length==1){
+				$('#cboTINH_THANH_TTHC').val(result[0].TINHID);
+				$('#cboQUAN_HUYEN_TTHC').select2().next().show();
+				$('#cboTINH_THANH_TTHC').trigger('change');
+			}
+		}
+	}
+
+
+	function getCoQuanThucHienTTHC(service,parent_field,parent_id, html_id ,ma_tthc ){
+		console.log("====================getCoQuanThucHienTTHC==========================");
+		console.log("service: ",service);
+		console.log("parent_field: ",parent_field);
+		console.log("parent_id: ",parent_id);
+		var obj = new Object();
+		obj.service = service;
+		obj.type="ref";
+		obj.ma_tthc = ma_tthc;
+		if (parent_field) {
+			obj[parent_field]=parent_id;
+		}
+		var res="";
+		if (parent_id != '-1') {
+			var result = apiservice.AjaxJson.executeQuery(obj);
+			console.log("so/ban nganh: ",result);
+			if(result && result != "[null]") {
+				for(var i=0;i<result.length;i++){
+					res+="<option unit_code="+result[i].UNIT_CODE+" value="+result[i].ID+">"+result[i].TEN+"</option>";
+				}
+			}
+		}
+		$('#'+html_id).html(res);
+		$('#'+html_id).select2({
+			allowClear: true,
+			width: "100%",
+		});
+	};
+
+	function getXaThucHienTTHC(service,parent_field_1,parent_id_1,parent_field_2,parent_id_2, html_id ,ma_tthc ){
+		console.log("====================getXaThucHienTTHC==========================");
+		console.log("parent_field: ",parent_field_1);
+		console.log("parent_id: ",parent_id_1);
+		var obj = new Object();
+		obj.service = service;
+		obj.type="ref";
+		obj.ma_tthc = ma_tthc;
+		if (parent_field_1) {
+			obj[parent_field_1]=parent_id_1;
+		}
+		if (parent_field_2) {
+			obj[parent_field_2]=parent_id_2;
+		}
+
+		var res="";
+		if (parent_id_1 != '-1') {
+			var result = apiservice.AjaxJson.executeQuery(obj);
+			console.log("xa thuc hien tthc: ",result);
+			if(result && result != "[null]") {
+				for(var i=0;i<result.length;i++){
+					res+="<option unit_code="+result[i].UNIT_CODE+" value="+result[i].ID+">"+result[i].TEN+"</option>";
+				}
+			}
+		}
+		$('#'+html_id).html(res);
+		$('#'+html_id).select2({
+			allowClear: true,
+			width: "100%",
+		});
+	};
+
+	function checkCapThucHienTthc(service,ma_tthc,tinh_id){
+		let obj = new Object();
+		obj.type="ref";
+		obj.service = service;
+		obj.ma_tthc = ma_tthc;
+		obj.tinh_id = tinh_id;
+
+		let checkCapThucHien = 0; 	// 1 la so, -2 cap huyen, 0,-1 la mac dinh,
+		let result = apiservice.AjaxJson.executeQuery(obj);
+
+		let isTinh = 0;
+		let isHuyen = 0;
+		let isXa = 0;
+		console.log("result: ",result);
+		for(let i=0; result && i<result.length;i++){
+			if(result[i].CAPTHUCHIEN == "Cấp Tỉnh"){
+				isTinh = 1;
+			}
+			else if(result[i].CAPTHUCHIEN == "Cấp Huyện"){
+				isHuyen = 1;
+			}
+			else if(result[i].CAPTHUCHIEN == "Cấp Xã"){
+				isXa = 1;
+			}
+		}
+		if(isTinh == 1){
+			if(isHuyen == 1 || isXa == 1)
+				return "0";
+			if(isHuyen == 0 && isXa == 0)
+				return "1";
+		}
+		else{
+			if(isHuyen == 1 || isXa == 1)
+				return "-1";
+			if(isHuyen == 0 && isXa == 0)
+				return "0";
+		}
+
+		return checkCapThucHien;
+	}
+
+	function ShowQuanHuyenXa(isOn){
+		if(isOn == true){
+			$('#cboQUAN_HUYEN_TTHC').select2().next().show();
+			$('#cboPHUONG_XA_TTHC').select2().next().show();
+			$('#cboSO_TTHC').select2().next().hide();
+		}
+		else{
+			$('#cboQUAN_HUYEN_TTHC').select2().next().hide();
+			$('#cboPHUONG_XA_TTHC').select2().next().hide();
+			$('#cboSO_TTHC').select2().next().show();
+		}
+	}
+
+	function showOrHideErrorMessage(){
+		if($("input[name='quan_huyen_or_so_tthc']:checked").val() == "so_tthc"){
+				if($('#cboSO_TTHC').val() == null){
+					$('#error_msg').show();
+				}
+				else{
+					$('#error_msg').hide();
+				}
+			}
+			else{
+				if($('#cboQUAN_HUYEN_TTHC').val() == null){
+					$('#error_msg').show();
+				}
+				else{
+					$('#error_msg').hide();
+				}
+			}
+	}
+</script> 
+  <div class="section section-menu-bottom"> 
+   <div class="container"> 
+    <div class="pull-left"> 
+     <a class="wrap" onclick="goToQuestion()"> 
+      <div class="icon"> 
+       <img src="img/home/trongdong.png" alt="" /> 
+      </div> 
+      <div class="text">
+        C&acirc;u hỏi thường gặp 
+      </div> </a> 
+    </div> 
+    <div class="pull-right"> 
+     <a class="wrap" href="dvc-huong-dan-cong-dan-doanh-nghiep.html"> 
+      <div class="icon"> 
+       <img src="img/home/trongdong.png" alt="" /> 
+      </div> 
+      <div class="text">
+        Hướng dẫn sử dụng 
+      </div> </a> 
+    </div> 
+    <div class="clearfix"></div> 
+   </div> 
+  </div> 
+  <script type="text/javascript">
+
+	function goToQuestion(){
+		var path = window.location.pathname;
+		var targetPage = 'dvc-cau-hoi-pho-bien.html';
+		if (path == '/p/home/dvc-trang-chu-doanh-nghiep.html'
+				|| path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-doanh-nghiep.html'
+				|| path == '/p/home/dvc-chi-tiet-dich-vu-cho-doanh-nghiep.html'
+				|| path == '/p/home/dvc-ket-qua-thu-tuc-cho-doanh-nghiep.html'
+			){
+			targetPage += '?pObject=5';
+		}else {
+			targetPage += '?pObject=1'
+		}
+		window.location.href = targetPage;
+	}
+</script> 
+  <style>
+   .slider {
+      display: none;
+   }
+
+   .linkVM {
+	border-radius: 4px;
+    min-width: 160px;
+    font-size: 18px;
+	color: #F35B46;
+	cursor: pointer;
+	display: inline-block;
+}
+
+</style>  
+ </body>
+</html><html>
+ <head></head>
+ <body>
+  <div class="loading" id="loading" style="display:none"> 
+   <div class="icon"> 
+    <img src="img/loading.svg" alt="" /> 
+   </div> 
+   <style type="text/css">
+			.loading {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 1000;
+			}
+			.loading .icon {
+				width: 100px;
+				position: absolute;
+				top: 0px;
+				height: 100px;
+				bottom: 0px;
+				right: 0px;
+				margin: auto;
+				left: 0px;
+			}
+
+		</style> 
+  </div> 
+  <footer class="footer"> 
+   <div class="footer-bottom"> 
+    <div class="container"> 
+     <div class="add"> 
+      <p>Cơ quan chủ quản: Văn ph&ograve;ng Ch&iacute;nh phủ</p> 
+     </div> 
+     <div class="add"> 
+      <p>www.dichvucong.gov.vn</p> 
+     </div> 
+     <div class="add"> 
+      <p>Tổng đ&agrave;i hỗ trợ: 18001096</p> 
+     </div> 
+     <div class="add"> 
+      <p> Email: dichvucong@chinhphu.vn</p> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <script type="text/javascript" src="theme/vendor/typeahead/index.js"></script> 
+  <script type="text/javascript" src="theme/vendor/typeahead/handlebars.js"></script> 
+  <script type="text/javascript" src="theme/js/custom.js"></script> 
+  <script type="text/javascript">
+    function showLoading() {
+        $("#loading-all").show();
+    }
+    function hideLoading(){
+        $("#loading-all").hide();
+    }
+
+    function goToPage(url){
+        window.location.href = url;
+    }
+
+    function goToPage_blank(url){
+        window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    $(".targetgroup-box .btn-readmore").click(function(e){
+        e.preventDefault();
+        if($(this).hasClass("active")){
+            $(this).html('Xem tiếp <span class="-ap icon-chevron-thin-down icon"></span>');
+            $(this).parents(".targetgroup-box").find(".links").css({"height":"250px"});
+            $(this).removeClass("active");
+        }else{
+            $(this).html('Thu gọn <span class="-ap icon-chevron-thin-up icon"></span>');
+            $(this).parents(".targetgroup-box").find(".links").css({"height":"auto"});
+            $(this).addClass("active");
+        }
+    });
+    var links = [
+            
+        ];
+
+
+    function searchProcedure(){
+        var key = getWords($("#searchKeyWord").val(), 100);
+		console.log(key);
+        // if($("#searchKeyWord").val()) {
+        var href = 'dvc-ket-qua-thu-tuc.html?originKey=' + encodeURIComponent(key) + '&tukhoa=' + key.replace(/[&\/\\#,+()$~%'":*?<>{}^]/g, ' ').trim() + '&tinh_thanh=';
+        window.location.href = href;
+        //}
+    }
+
+function showAdvSearch() {
+    getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH");
+}
+
+function doAdvSearch(){
+
+    let mess = '';
+    let keyWord = $('#txtKEYWORD').val().trim();
+    keyWord = getWords(keyWord, 100);
+    if (!keyWord) {
+        mess += 'Bạn vui lòng nhập từ khóa tìm kiếm!\n';
+    }
+    let tinhThanhValue = $('#cboTINH_THANH').val();
+    let boNganhValue = $('#cboBO_NGANH').val();
+    var rdoBO = $("input[name='cap_thuc_hien']:checked").val();
+
+    if (((!tinhThanhValue || '-1' == tinhThanhValue) && rdoBO != 'bonganh') || (rdoBO == 'bonganh' && (!boNganhValue || '-1' == boNganhValue))) {
+        mess += 'Bạn phải chọn ít nhất một Tỉnh/ Thành phố hoặc một Bộ ngành!\n';
+    }
+
+    if (mess) {
+        toastr.warning(mess);
+        return;
+    }
+
+    var rdoSO = $("input[name='quan_huyen_or_so']:checked").val();
+    if (rdoBO != 'bonganh' && $('#cboTINH_THANH').val() && $('#cboTINH_THANH').val() != '-1' && ($('#cboQUAN_HUYEN').val() == '-1' || !$('#cboQUAN_HUYEN').val()) && ($('#cboSO').val() == '-1' || !$('#cboSO').val()) && ($('#cboPHUONG_XA').val() == '-1' || !$('#cboPHUONG_XA').val())) {
+
+        var params = 'originKey=' + encodeURIComponent(keyWord) + '&tukhoa=' + keyWord.replace(/[&\/\\#,+()$~%'":*?<>{}^]/g,' ').trim()
+        params+= "&tinh_thanh="+(($('#cboTINH_THANH').val() == '-1' || !$('#cboTINH_THANH').val()  || rdoBO == 'bonganh') ? "" : $('#cboTINH_THANH option:selected').text());
+        window.location = 'dvc-ket-qua-thu-tuc.html?' + params;
+    } else {
+
+        var params = "tu_khoa=" + keyWord;
+        //params += "&bo_nganh="+(($('#cboBO').val() != '-1' || !$('#cboBO').val() || rdoBO != 'bonganh') ? "" : $('#cboBO option:selected').text());
+        params += "&bo_nganh=" + ($('#cboBO_NGANH option:selected').text());
+        params += "&tinh_thanh=" + (($('#cboTINH_THANH').val() == '-1' || !$('#cboTINH_THANH').val() || rdoBO == 'bonganh') ? "" : $('#cboTINH_THANH option:selected').text());
+        params += "&so=" + (($('#cboSO').val() == '-1' || !$('#cboSO').val() || rdoSO != 'so') ? "" : $('#cboSO option:selected').text());
+        params += "&quan_huyen=" + (($('#cboQUAN_HUYEN').val() == '-1' || !$('#cboQUAN_HUYEN').val() || rdoSO == 'so') ? "" : $('#cboQUAN_HUYEN option:selected').text());
+        params += "&phuong_xa=" + (($('#cboPHUONG_XA').val() == '-1' || !$('#cboPHUONG_XA').val() || rdoSO == 'so') ? "" : $('#cboPHUONG_XA option:selected').text());
+        params += "&id_tinh_thanh=" + $('#cboTINH_THANH').val();
+        params += "&id_quan_huyen=" + $('#cboQUAN_HUYEN').val();
+        params += "&id_phuong_xa=" + $('#cboPHUONG_XA').val();
+        params += "&id_so=" + $('#cboSO').val();
+        params += "&id_bo_nganh=" + $('#cboBO_NGANH').val();
+        window.location = 'dvc-danh-sach-dich-vu-cong.html?' + params;
+    }
+
+    $('#advsearch').modal('hide');
+}
+$(document).ready(function(){
+    $("#searchKeyWord").keyup(function (e){
+        if (e.which == 13) {
+            searchProcedure();
+        }
+    });
+    bindEvent();
+});
+
+function changeHeight(){
+    var vl = 1 - $('#popupChange').attr('height');
+    $('#popupChange').attr('height', vl);
+    $('#popupChange').css('height', vl + "px");
+}
+
+function bindEvent(){
+    $('#searchKeyWord').keydown(function(e){
+        if (e.keyCode == 13) {
+            searchProcedure();
+        }
+    });
+    $('#advsearch').on('hidden.bs.modal', function () {
+        $('#divClosePopupSearch').click();
+    });
+    $('#divClosePopupSearch').click(function(){
+        $("#txtKEYWORD").val('');
+        $('#rdoTINH_THANH').click();
+        $('#rdoQUAN_HUYEN').click();
+        $("#cboTINH_THANH").change();
+        getLocation("dvcqg_get_phuong_xa_by_selected", "huyen_id", -1, "cboPHUONG_XA");
+        $('#advsearch').modal('hide');
+
+    });
+
+    $('#rdoTINH_THANH').click(function(){
+        changeHeight();
+        $('#hide_for_bo_nganh').show();
+        $('#cboBO_NGANH').select2().next().hide();
+        $('#cboTINH_THANH').select2().next().show();
+        getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH");
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", -1, "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", -1, "cboSO");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+        if ($("input[name='quan_huyen_or_so']:checked").val() == "so") {
+
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+            $('#cboSO').select2().next().show();
+        } else {
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+            $('#cboSO').select2().next().hide();
+
+        }
+    });
+    $('#rdoBO_NGANH').click(function(){
+        changeHeight();
+        $('#hide_for_bo_nganh').hide();
+        $('#cboBO_NGANH').select2().next().show();
+        $('#cboTINH_THANH').select2().next().hide();
+        getLocation("dvcqg_get_bo_nganh_by_selected_v2", null, null, "cboBO_NGANH");
+    });
+
+    $('#rdoQUAN_HUYEN').click(function(){
+        $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+        $('#cboSO').select2().next().hide();
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+    });
+
+    $('#rdoSO').click(function(){
+        $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+        $('#cboSO').select2().next().show();
+        getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboSO");
+    });
+
+    $("#cboTINH_THANH,#cboQUAN_HUYEN,#cboPHUONG_XA,#cboSO,#cboBO_NGANH").select2({
+        allowClear: true,
+        width: "100%",
+    });
+    $('#cboSO,#cboBO_NGANH').select2().next().hide();
+
+    $("#cboTINH_THANH").change(function () {
+        getLocation("dvcqg_get_so_by_selected", "tinh_id", $("#cboTINH_THANH").val(), "cboSO");
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+        if ($("input[name='quan_huyen_or_so']:checked").val() == "so") {
+
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+            $('#cboSO').select2().next().show();
+        } else {
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+            $('#cboSO').select2().next().hide();
+
+        }
+
+    });
+    $("#cboQUAN_HUYEN").change(function () {
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", $("#cboQUAN_HUYEN").val(), "cboPHUONG_XA");
+    });
+}
+
+//suggestion search
+function sugggestProcedure(keyword) {
+    var obj = new Object();
+    obj.key_search = 'al:"' + keyword +'"~5';
+    obj.page_size = 5;
+    obj.start_row = 0;
+    obj.source_data = "thu_tuc_v1";
+    obj.type = "fts";
+    var result = apiservice.AjaxJson.executeQuery(obj);
+    var dataMap = result.response.docs.map(function (i) {
+        return {
+            name: i.ten_thu_tuc,
+            link: i.ten_thu_tuc,
+            id: i.ma_thu_tuc
+        }
+    });
+
+    return dataMap;
+}
+
+jQuery(document).ready(function($) {
+
+    var engine = new Bloodhound({
+        remote: {
+            url: '/jsp/procedure-typehead.jsp?keyword=al:"%QUERY%"~5',
+            wildcard: '%QUERY%'
+        },
+        datumTokenizer: Bloodhound.tokenizers.whitespace('keyword'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace
+    });
+
+    $(".search-input").typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 3
+    }, {
+        source: engine.ttAdapter(),
+        displayKey: 'ten_thu_tuc',
+        name: 'usersList',
+        templates: {
+            empty: [
+                '<div class="list-group search-results-dropdown"><div class="list-group-item">Không có kết quả phù hợp.</div></div>'
+            ],
+            header: [
+                '<div class="list-group search-results-dropdown">'
+            ],
+            suggestion: function (data) {
+                console.log(data);
+                if (data.isnganhdoc == 1) {
+                    return '<a href="dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }else if(data.isdungchung == 1){
+                    return '<a href="dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }else{
+                    return '<a href="dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }
+                
+            }
+        }
+    });
+    $('#searchKeyWord:text:visible:first').focus();
+});
+
+</script> 
+  <script type="text/javascript">
+
+    //
+    function autoSetmenu() {
+        var path = window.location.pathname;
+        var isRemoveDropdown = false;
+
+        // Cau hoi
+        if (path == '/p/home/dvc-chi-tiet-cau-hoi.html'){
+            path = '/p/home/dvc-cau-hoi-pho-bien.html';
+        }
+
+        // Huong dan su dung
+        if (path == '/p/home/dvc-huong-dan-bo-nganh-dia-phuong.html' || path == '/p/home/dvc-phan-mem-ho-tro.html' || path == '/p/home/dvc-thiet-ke-giao-dien.html' ||
+            path == '/p/home/dvc-nop-tien-dien.html' || path == '/p/home/dvc-liet-ket-giao-duc.html'
+            ){
+            path = '/p/dvc-huong-dan-cong-dan-doanh-nghiep.html';
+        }
+
+        // Thu tuc hanh hinh cong dan - doanh nghiep
+        if (path == '/p/home/dvc-ket-qua-thu-tuc-cho-cong-dan.html'
+                || path == '/p/home/dvc-chi-tiet-dich-vu-cho-cong-dan.html'
+                || path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-cong-dan.html'
+            ){
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+        }else if (path == '/p/home/dvc-ket-qua-thu-tuc-cho-doanh-nghiep.html'
+                || path == '/p/home/dvc-chi-tiet-dich-vu-cho-doanh-nghiep.html'
+                || path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-doanh-nghiep.html'
+            ){
+            path = '/p/home/dvc-trang-chu-doanh-nghiep.html';
+        }else if (path == '/p/home/dvc-danh-sach-thu-tuc-theo-nhom-su-kien.html'
+                || path == '/p/home/dvc-danh-sach-cau-hoi-theo-nhom-su-kien.html'
+            ) {
+            var objectId = GetURLParameter('objectId');
+            if (objectId == 1){
+                path = '/p/home/dvc-trang-chu-cong-dan.html';
+            }else if(objectId == 5){
+                path = '/p/home/dvc-trang-chu-doanh-nghiep.html';
+            }
+        }
+
+        // DVC trực tuyến & đăng ký xe
+        if (path == '/p/home/dvc-dich-vu-cong-truc-tuyen-ds.html'
+                || path == '/p/home/dvc-dich-vu-cong-truc-tuyen.html'
+                || path == '/p/home/dvc-dang-ky-xe.html'
+            ) {
+            path = '/p/home/dvc-dich-vu-cong-truc-tuyen.html';
+        }
+
+        // Chi tiet TTHC va DVC
+        if (path == '/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html' 
+                || path == '/p/home/dvc-danh-sach-dich-vu-cong.html'
+                || path == '/p/home/dvc-danh-sach-thu-tuc-theo-su-kien.html'
+                || path == '/p/home/dvc-ket-qua-thu-tuc.html'
+            ) {
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+            isRemoveDropdown = true;
+        }
+
+        // module TTHC
+        if (path == '/p/home/dvc-tthc-category.html') {
+            path = '/p/home/dvc-tthc-trang-chu.html';
+        }
+        if (path == '/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-thu-tuc-hanh-chinh.html';
+        }
+        if (path == '/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html';
+        }
+        if (path == '/p/home/dvc-tthc-quyet-dinh-cong-bo-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-quyet-dinh-cong-bo.html';
+        }
+        if (path == '/p/home/dvc-tthc-bonganh-tinhtp.html') {
+            path = '/p/home/dvc-tthc-co-quan.html';
+        }
+
+        if (path == '/p/home/dvc-chi-tiet-tin-tuc.html') {
+            path = '/p/home/dvc-tin-tuc.html';
+        }
+
+        // dvc-cap-ban-sao-tu-ban-chinh
+        if (path == '/p/home/dvc-cap-ban-sao-tu-ban-chinh.html'){
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+        }
+        //  Đặt lịch hẹn
+        if (path == '/p/home/dvc-cap-ban-sao-tu-ban-chinh-dlh.html'){
+            path = '/p/home/dvc-tra-cuu-ho-so.html';
+        }
+        // Active main menu
+        $("#main-menu li").each(function () {
+            var link = $(this).find(">a").attr("href");
+            if (path.indexOf(link) != -1) {
+                $(this).parents('li').siblings().removeClass("active");
+                $(this).parents('li').addClass("active");
+                $(this).parents('li').find("li").removeClass("active");
+                $(this).addClass("active");
+            }
+        });
+
+        // Active dropdownmenu
+        $("#main-menu > li").each(function () {
+            if ($(this).hasClass("active")) {
+                var html = $(this).find(">ul").html();
+                $(this).addClass("active");
+                $(this).find(">ul").addClass("hidden");
+                $("#list-dropdown").html(html);
+                if($("#bn-ttp").hasClass("active")){
+                    $("#coquan").addClass("active");
+                }
+            }
+        });
+
+        // Remove
+        if (isRemoveDropdown) {
+            $('#list-dropdown > li').removeClass('active');
+        }
+    }
+
+    var pathHDSD = window.location.pathname;
+    $("#regionleft-introduce li").removeClass('active');
+    $("#left-introduce li a").each(function () {
+        var href = $(this).attr('href');
+        if (pathHDSD.indexOf(href) != -1) {
+            $(this).parent().addClass('active');
+        }
+    });
+    $('#left-introduce li:first-child').removeClass('active');
+    $('.child-menus a').each(function(){
+        var href = $(this).attr('href');
+        if (pathHDSD.indexOf(href) != -1) {
+            $(this).parent().addClass('active');
+        }
+    });
+
+    $(document).ready(function(){
+        autoSetmenu();
+    })
+
+
+</script> 
+  <style>
+    .bootbox .modal-footer .btn + .btn {
+        margin-bottom: 0;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    .input-captcha .code .number {
+        height: 100%;
+        padding: 2px;
+    }
+</style>   
+ </body>
+</html>

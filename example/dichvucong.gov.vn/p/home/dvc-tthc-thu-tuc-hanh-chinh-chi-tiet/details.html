@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Cổng Dịch vụ c&ocirc;ng Quốc gia</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />
+    <meta name="description"
+        content="Cổng Dịch vụ c&ocirc;ng Quốc gia hỗ trợ th&ocirc;ng tin, đăng k&yacute; thủ tục h&agrave;nh ch&iacute;nh như đổi giấy ph&eacute;p l&aacute;i xe, nộp thuế điện tử, th&ocirc;ng b&aacute;o khuyến mại, cấp lại thẻ BHYT, cấp điện mới..." />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />
+    <meta content="index, follow" name="ROBOTS" />
+    <link rel="stylesheet" href="theme/vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="theme/vendor/iconsax/style.css" />
+    <!-- <link rel="stylesheet" href="../vendor/iconsax/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="theme/vendor/ap8/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="theme/vendor/slick/slick.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="theme/vendor/typeahead/style.css" />
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrapValidator.min.css" />
+    <link rel="stylesheet" type="text/css" href="theme/vendor/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-timepicker/css/timepicker.css" />
+    <link rel="stylesheet" href="theme/css/style.css?version=9" />
+    <link rel="shortcut icon" href="img/header/quoc_huy.png" />
+    <script type="text/javascript" src="theme/vendor/jquery/jquery.2.1.1.min.js"></script>
+    <script type="text/javascript" src="theme/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrapValidator.js"></script>
+    <script type="text/javascript" src="theme/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="theme/vendor/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="theme/vendor/highchart/modules/variable-pie.js"></script>
+    <script type="text/javascript" src="theme/vendor/highchart/highcharts-more.js"></script>
+    <script type="text/javascript" src="vendor/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="vendor/slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="vendor/jq-paginator.js"></script>
+    <script type="text/javascript" src="vendor/bootbox.all.min.js"></script>
+    <script type="text/javascript" src="vendor/select2.min.js"></script>
+    <script type="text/javascript" src="vendor/mime.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery-iframe-auto-height.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/jquery.browser.js"></script>
+    <link rel="stylesheet" href="vendor/select2.min.css" />
+    <script src="./js/ApiService.js?version=18"></script>
+    <script src="./js/CommonUtil.js?version=16"></script>
+    <script src="./js/Constants.js"></script>
+    <script type="text/javascript" src="vendor/typeahead/index.js"></script>
+    <script type="text/javascript" src="vendor/typeahead/handlebars.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+    <script src="./js/base64.js"></script>
+    <script type="text/javascript" src="vendor/d3.v4.min.js"></script>
+    <script>
+        initApiService();
+    </script>
+</head>
+
+<body>
+    <div class="loading-all" id="loading-all" style="display:none">
+        <div class="icon">
+            <img src="img/loading.png" alt="" />
+            <span style="color:blue">Đang xử l&yacute;...<span> </span></span>
+        </div>
+        <style type="text/css">
+            .loading-all {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                z-index: 10000;
+                background: #dbdcdc40;
+            }
+
+            .loading-all .icon {
+                width: 100px;
+                position: absolute;
+                top: 0px;
+                height: 100px;
+                bottom: 0px;
+                right: 0px;
+                margin: auto;
+                left: 0px;
+            }
+        </style>
+    </div>
+    <!--DEFINE CONSTANT -->
+    <!--END CONSTANT-->
+    <div class="overlay-common"></div>
+    <!-- /mtv/ Log propertise-->
+    <div class="header">
+        <div class="container">
+            <div class="relative content">
+                <div class="logo-text">
+                    <a href="dvc-trang-chu.html" class="logo"> <img src="theme/img/header/logo.png" alt="" /> </a>
+                </div>
+                <div class="nav-toggle">
+                    <span class="-ap icon icon-menu"></span>
+                </div>
+                <div class="header-account">
+                    <div class="buttons">
+                        <a href="https://dangky.dichvucong.gov.vn/register" class="btn btn-login">Đăng k&yacute;</a>
+                        <a href="https://xacthuc.dichvucong.gov.vn/oauth2/authorize?response_type=code&amp;client_id=0vFpdFtniMwmiWOUnWfOFYZcNdAa&amp;scope=openid&amp;redirect_uri=https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
+                            class="btn btn-register">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="header-nav">
+        <div class="container">
+            <ul id="main-menu" class="pull-left menus">
+                <li class="active" id="home-page"><a
+                        href="dvc-trang-chu.html"><span class="-ap icon icon-home4"></span></a></li>
+                <!-- <li><a href="dvc-gioi-thieu.html">Giới thiệu</a></li> -->
+                <li> <a href="#">Th&ocirc;ng tin v&agrave; dịch vụ</a>
+                    <ul class="dropdown-menu">
+                        <!-- <li><a href="dvc-trang-chu-cong-dan.html">Công dân</a></li> -->
+                        <!-- <li><a href="dvc-trang-chu-doanh-nghiep.html">Doanh nghiệp</a></li> -->
+                        <li> <a href="#">Thủ tục h&agrave;nh ch&iacute;nh</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-trang-chu.html">Tra cứu
+                                        TTHC</a></li>
+                                <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh.html">Thủ
+                                        tục h&agrave;nh ch&iacute;nh</a></li>
+                                <li><a
+                                        href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html">Thủ
+                                        tục h&agrave;nh ch&iacute;nh li&ecirc;n th&ocirc;ng</a></li>
+                                <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-quyet-dinh-cong-bo.html">Quyết
+                                        định c&ocirc;ng bố</a></li>
+                                <li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-co-quan.html">Cơ quan</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="dvc-dich-vu-cong-truc-tuyen.html">Dịch vụ c&ocirc;ng trực tuyến</a></li>
+                        <li><a href="dvc-dich-vu-cong-noi-bat.html">Dịch vụ c&ocirc;ng nổi bật</a></li>
+                        <li><a href="dvc-tra-cuu-ho-so.html">Tra cứu hồ sơ</a></li>
+                        <li><a href="dvc-tra-cuu-ban-an.html">T&ograve;a &aacute;n nh&acirc;n d&acirc;n</a></li>
+                        <li><a href="dvc-cau-hoi-pho-bien.html">C&acirc;u hỏi thường gặp</a></li>
+                    </ul>
+                </li>
+                <li> <a href="dvc-thanh-toan-truc-tuyen.html">Thanh to&aacute;n trực tuyến</a>
+                    <!-- <ul class="dropdown-menu">
+						<li><a href="dvc-thanh-toan.html">Nộp thuế doanh nghiệp</a></li>
+						<li><a href="dvc-thanh-toan-thue-ca-nhan.html">Nộp thuế cá nhân/Trước bạ</a></li>
+						<li>
+							<a href="#">Thanh toán vi phạm hành chính</a>
+							<ul class="dropdown-menu">
+								<li><a href="dvc-thanh-toan-vi-pham-giao-thong.html">Tra cứu/Thanh toán vi phạm giao thông</a></li>
+								<li><a href="dvc-thanh-toan-vi-pham-xay-dung.html">Tra cứu/Thanh toán vi phạm xây dựng</a></li>
+							</ul>
+						</li>
+						<li><a href="dvc-thanh-toan-phi-le-phi-ho-so.html">Thanh toán phí/lệ phí dịch vụ công</a></li>
+						<li><a href="dvc-thanh-toan-bhxh-bhyt.html">Đóng tiếp BHXH tự nguyện, gia hạn BHYT</a></li>
+						<li><a href="dvc-thanh-toan-bhxh-doanh-nghiep.html">Đóng BHXH, BHYT, BHTN, BHTNLĐ-BNN</a></li>
+						<li><a href="dvc-thanh-toan-thue-dat-dai.html">Thanh toán nghĩa vụ tài chính về đất đai</a></li>
+						<li><a href="dvc-thanh-toan-dien.html">Thanh toán tiền điện</a></li>
+						<li><a href="dvc-thanh-toan-vien-phi.html">Thanh toán viện phí</a></li>
+						<li><a href="dvc-thanh-toan-an-phi.html">Thanh toán tạm ứng án phí</a></li>
+					</ul> -->
+                </li>
+                <li> <a href="#">Phản &aacute;nh kiến nghị</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/p/phananhkiennghi/pakn-gui-pakn.html">Gửi PAKN</a></li>
+                        <li><a href="/p/phananhkiennghi/pakn-search.html">Tra cứu kết quả trả lời</a></li>
+                    </ul>
+                </li>
+                <li><a href="dvc-index-tinhthanhpho-tonghop.html">Đ&aacute;nh gi&aacute; chất lượng phục vụ</a></li>
+                <!-- <li>
+				  <a href="#">Thủ tục hành chính</a>
+				  <ul class="dropdown-menu">
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-trang-chu.html">Tra cứu TTHC</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục hành chính</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html">Thủ tục hành chính liên thông</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-quyet-dinh-cong-bo.html">Quyết định công bố</a></li>
+					<li><a href="https://thutuc.dichvucong.gov.vn/p/home/dvc-tthc-co-quan.html">Cơ quan</a></li>
+				  </ul>
+				</li> -->
+                <li class=""> <a href="#">Hỗ trợ</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dvc-gioi-thieu.html">Giới thiệu</a></li>
+                        <li><a href="dvc-dieu-khoan-su-dung.html">Điều khoản sử dụng</a></li>
+                        <li><a href="dvc-huong-dan-cong-dan-doanh-nghiep.html">Hướng dẫn sử dụng</a></li>
+                        <li><a href="dvc-tin-tuc.html">Th&ocirc;ng b&aacute;o</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="header-account mobile-ds">
+                <div class="buttons">
+                    <a href="https://xacthuc.dichvucong.gov.vn/oauth2/authorize?response_type=code&amp;client_id=0vFpdFtniMwmiWOUnWfOFYZcNdAa&amp;scope=openid&amp;redirect_uri=https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
+                        class="btn btn-login">Đăng nhập</a>
+                    <a href="https://dangky.dichvucong.gov.vn/register" class="btn btn-register">Đăng k&yacute;</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="header-bottom">
+        <div class="container">
+            <ul id="list-dropdown">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<html>
+
+<head></head>
+
+<body>
+    <style>
+        /* .list-expand > .item > .content {
+        padding-bottom: 50px;
+    } */
+
+        .tphs {
+            margin-left: 20px;
+        }
+
+        .ttth {
+            margin-left: 20px;
+        }
+    </style>
+    <div class="tthc">
+        <div class="section-tthc">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="dvc-trang-chu.html">Trang chủ</a></li>
+                    <li><a href="dvc-tthc-thu-tuc-hanh-chinh.html">Thủ tục h&agrave;nh ch&iacute;nh</a></li>
+                    <li><a href="#">Chi tiết thủ tục</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col-sm-9 col-xs-12">
+                        <h1 class="main-title -none" style="margin-bottom: 10px;"> Cấp điện mới từ lưới điện hạ
+                            &aacute;p </h1>
+                        <div class="box-form-result">
+                            <div class="pull-left">
+                                <a class="url thick" data-toggle="modal" href="#popupChitietTTHC">Xem chi tiết</a>
+                            </div>
+                            <div class="pull-right">
+                                <div class="text-result">
+                                    <a href="/jsp/tthc/export/export_word_detail_tthc.jsp?maTTHC=3.000001&amp;idTTHC=7603"
+                                        title="Tải xuống chi tiết thủ tục"><i class="fa fa-2x fa-file-word-o" aria-hidden="true" style="color:red"></i></a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div id="dataList"></div>
+                        </div>
+                        <div class="divider-gray"></div>
+                        <h2 class="main-title-sub">C&aacute;ch thức thực hiện</h2>
+                        <table class="table-data" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th style="width:10%;">H&igrave;nh thức nộp</th>
+                                    <th style="width:15%;">Thời hạn giải quyết</th>
+                                    <th style="width:25%;">Ph&iacute;, lệ ph&iacute;</th>
+                                    <th style="width:50%;">M&ocirc; tả</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-title="H&igrave;nh thức nộp">Trực tiếp</td>
+                                    <td data-title="Thời hạn giải quyết"> 7 Ng&agrave;y l&agrave;m việc </td>
+                                    <td data-title="Ph&iacute;, lệ ph&iacute;"> </td>
+                                    <td data-title="M&ocirc; tả"></td>
+                                </tr>
+                                <tr>
+                                    <td data-title="H&igrave;nh thức nộp">Trực tuyến</td>
+                                    <td data-title="Thời hạn giải quyết"> 7 Ng&agrave;y l&agrave;m việc </td>
+                                    <td data-title="Ph&iacute;, lệ ph&iacute;"> </td>
+                                    <td data-title="M&ocirc; tả"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="divider-gray"></div>
+                        <h2 class="main-title-sub">Th&agrave;nh phần hồ sơ</h2>
+                        <!-- Doan nay da duoc fix -->
+                        <div class="list-expand">
+                            <div class="item">
+                                <div class="title f18 tphs"
+                                    title="Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha), c&oacute; c&ocirc;ng suất lớn nhất &lt; 40kW"
+                                    style="font-size: 17px; font-weight: 400;">
+                                    Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha), c&oacute;
+                                    c&ocirc;ng suất lớn nhất &lt; 40kW
+                                </div>
+                                <div class="content">
+                                    <table class="table-data tphs" style="width:fit-content;">
+                                        <thead>
+                                            <tr>
+                                                <th>Loại giấy tờ</th>
+                                                <th>Bản ch&iacute;nh</th>
+                                                <th>Bản sao</th>
+                                                <th>Mẫu đơn, tờ khai</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy đề nghị mua điện</td>
+                                                <td data-title="Bản ch&iacute;nh">1</td>
+                                                <td data-title="Bản sao">0</td>
+                                                <td data-title="Mẫu đơn, tờ khai">
+                                                    <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754')">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ t&ugrave;y
+                                                    th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp
+                                                    ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau:
+                                                    Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội
+                                                    nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu
+                                                    hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an
+                                                    phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).
+                                                </td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ x&aacute;c định
+                                                    chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute;
+                                                    t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện
+                                                    sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận
+                                                    quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng
+                                                    mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute;
+                                                    thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở
+                                                    hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản
+                                                    l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa
+                                                    điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ x&aacute;c định
+                                                    mục đ&iacute;ch sử dụng điện l&agrave; một trong những loại giấy tờ
+                                                    sau: Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận
+                                                    đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh
+                                                    doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh,
+                                                    văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định
+                                                    th&agrave;nh lập đơn vị; Bi&ecirc;n bản khảo s&aacute;t cấp điện của
+                                                    Điện lực/C&ocirc;ng ty Điện lực; Th&ocirc;ng tin của doanh nghiệp
+                                                    tr&ecirc;n Cổng th&ocirc;ng tin đăng k&yacute; doanh nghiệp quốc gia
+                                                    tại địa chỉ http://www.dangkykinhdoanh.gov.vn</td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Doan nay da duoc fix -->
+                        <div class="list-expand">
+                            <div class="item">
+                                <div class="title f18 tphs"
+                                    title="Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha), c&oacute; c&ocirc;ng suất lớn nhất ≥ 40kW"
+                                    style="font-size: 17px; font-weight: 400;">
+                                    Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha), c&oacute;
+                                    c&ocirc;ng suất lớn nhất ≥ 40kW
+                                </div>
+                                <div class="content">
+                                    <table class="table-data tphs" style="width:fit-content;">
+                                        <thead>
+                                            <tr>
+                                                <th>Loại giấy tờ</th>
+                                                <th>Bản ch&iacute;nh</th>
+                                                <th>Bản sao</th>
+                                                <th>Mẫu đơn, tờ khai</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy đề nghị mua điện</td>
+                                                <td data-title="Bản ch&iacute;nh">1</td>
+                                                <td data-title="Bản sao">0</td>
+                                                <td data-title="Mẫu đơn, tờ khai">
+                                                    <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754')">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ t&ugrave;y
+                                                    th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp
+                                                    ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau:
+                                                    Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội
+                                                    nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu
+                                                    hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an
+                                                    phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).
+                                                </td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ x&aacute;c định
+                                                    chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute;
+                                                    t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện
+                                                    sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận
+                                                    quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng
+                                                    mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute;
+                                                    thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở
+                                                    hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản
+                                                    l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa
+                                                    điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ x&aacute;c định
+                                                    mục đ&iacute;ch sử dụng điện l&agrave; một trong những loại giấy tờ
+                                                    sau: Giấy chứng nhận đăng k&yacute; doanh nghiệp; Giấy chứng nhận
+                                                    đăng k&yacute; kinh doanh; Giấy chứng nhận đăng k&yacute; hộ kinh
+                                                    doanh; Giấy chứng nhận đăng k&yacute; hoạt động chi nh&aacute;nh,
+                                                    văn ph&ograve;ng đại diện; Giấy ph&eacute;p đầu tư; Quyết định
+                                                    th&agrave;nh lập đơn vị; Bi&ecirc;n bản khảo s&aacute;t cấp điện của
+                                                    Điện lực/C&ocirc;ng ty Điện lực; Th&ocirc;ng tin của doanh nghiệp
+                                                    tr&ecirc;n Cổng th&ocirc;ng tin đăng k&yacute; doanh nghiệp quốc gia
+                                                    tại địa chỉ http://www.dangkykinhdoanh.gov.vn.</td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Bản đăng k&yacute; biểu đồ
+                                                    phụ tải. (Trường hợp kh&aacute;ch h&agrave;ng sản xuất, kinh doanh
+                                                    dịch vụ)</td>
+                                                <td data-title="Bản ch&iacute;nh">1</td>
+                                                <td data-title="Bản sao">0</td>
+                                                <td data-title="Mẫu đơn, tờ khai">
+                                                    <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3fe38b4b3a7dfdad')">BẢNG K&Ecirc; C&Ocirc;NG SUẤT THIẾT BỊ SỬ DỤNG ĐIỆN.docx</span><br />
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Doan nay da duoc fix -->
+                        <div class="list-expand">
+                            <div class="item">
+                                <div class="title f18 tphs"
+                                    title="Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha)"
+                                    style="font-size: 17px; font-weight: 400;">
+                                    Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha)
+                                </div>
+                                <div class="content">
+                                    <table class="table-data tphs" style="width:fit-content;">
+                                        <thead>
+                                            <tr>
+                                                <th>Loại giấy tờ</th>
+                                                <th>Bản ch&iacute;nh</th>
+                                                <th>Bản sao</th>
+                                                <th>Mẫu đơn, tờ khai</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy đề nghị mua điện</td>
+                                                <td data-title="Bản ch&iacute;nh">1</td>
+                                                <td data-title="Bản sao">0</td>
+                                                <td data-title="Mẫu đơn, tờ khai">
+                                                    <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754')">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ t&ugrave;y
+                                                    th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp
+                                                    ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau:
+                                                    Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội
+                                                    nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu
+                                                    hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an
+                                                    phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).
+                                                </td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ x&aacute;c định
+                                                    chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute;
+                                                    t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện
+                                                    sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận
+                                                    quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng
+                                                    mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute;
+                                                    thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở
+                                                    hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản
+                                                    l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa
+                                                    điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Doan nay da duoc fix -->
+                        <div class="list-expand">
+                            <div class="item">
+                                <div class="title f18 tphs"
+                                    title="Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha), sử dụng chung c&ocirc;ng tơ"
+                                    style="font-size: 17px; font-weight: 400;">
+                                    Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha), sử dụng chung
+                                    c&ocirc;ng tơ
+                                </div>
+                                <div class="content">
+                                    <table class="table-data tphs" style="width:fit-content;">
+                                        <thead>
+                                            <tr>
+                                                <th>Loại giấy tờ</th>
+                                                <th>Bản ch&iacute;nh</th>
+                                                <th>Bản sao</th>
+                                                <th>Mẫu đơn, tờ khai</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy đề nghị mua điện</td>
+                                                <td data-title="Bản ch&iacute;nh">1</td>
+                                                <td data-title="Bản sao">0</td>
+                                                <td data-title="Mẫu đơn, tờ khai">
+                                                    <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754')">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ t&ugrave;y
+                                                    th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp
+                                                    ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau:
+                                                    Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội
+                                                    nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu
+                                                    hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an
+                                                    phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).
+                                                </td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ x&aacute;c định
+                                                    chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute;
+                                                    t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện
+                                                    sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận
+                                                    quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng
+                                                    mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute;
+                                                    thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở
+                                                    hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản
+                                                    l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa
+                                                    điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Sổ hộ khẩu/sổ tạm
+                                                    tr&uacute;/x&aacute;c nhận c&ocirc;ng an quản l&yacute; tr&ecirc;n
+                                                    địa b&agrave;n của c&aacute;c hộ d&ugrave;ng chung</td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy ủy quyền c&oacute;
+                                                    chữ k&yacute; của c&aacute;c hộ d&ugrave;ng chung</td>
+                                                <td data-title="Bản ch&iacute;nh">1</td>
+                                                <td data-title="Bản sao">0</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Doan nay da duoc fix -->
+                        <div class="list-expand">
+                            <div class="item">
+                                <div class="title f18 tphs"
+                                    title="Kh&aacute;ch h&agrave;ng t&aacute;ch c&ocirc;ng tơ d&ugrave;ng chung"
+                                    style="font-size: 17px; font-weight: 400;">
+                                    Kh&aacute;ch h&agrave;ng t&aacute;ch c&ocirc;ng tơ d&ugrave;ng chung
+                                </div>
+                                <div class="content">
+                                    <table class="table-data tphs" style="width:fit-content;">
+                                        <thead>
+                                            <tr>
+                                                <th>Loại giấy tờ</th>
+                                                <th>Bản ch&iacute;nh</th>
+                                                <th>Bản sao</th>
+                                                <th>Mẫu đơn, tờ khai</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy đề nghị mua điện</td>
+                                                <td data-title="Bản ch&iacute;nh">1</td>
+                                                <td data-title="Bản sao">0</td>
+                                                <td data-title="Mẫu đơn, tờ khai">
+                                                    <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754')">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ t&ugrave;y
+                                                    th&acirc;n của c&aacute; nh&acirc;n hoặc người đại diện hợp
+                                                    ph&aacute;p của tổ chức; l&agrave; một trong những loại giấy tờ sau:
+                                                    Giấy chứng minh nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội
+                                                    nh&acirc;n d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu
+                                                    hoặc Giấy x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an
+                                                    phường, x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).
+                                                </td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">Giấy tờ x&aacute;c định
+                                                    chủ thể HĐMBĐ l&agrave; một trong c&aacute;c loại giấy tờ c&oacute;
+                                                    t&ecirc;n của Tổ chức/c&aacute; nh&acirc;n tại địa điểm mua điện
+                                                    sau: Hộ khẩu thường tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận
+                                                    quyền sở hữu nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng
+                                                    mua b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute;
+                                                    thời hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở
+                                                    hữu; Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản
+                                                    l&yacute; v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa
+                                                    điểm v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td data-title="Bản ch&iacute;nh">0</td>
+                                                <td data-title="Bản sao">1</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Loại giấy tờ" class="justify">4. Giấy cam kết thanh
+                                                    to&aacute;n hết nợ tiền điện với chủ HĐMBĐ đang d&ugrave;ng chung
+                                                </td>
+                                                <td data-title="Bản ch&iacute;nh">1</td>
+                                                <td data-title="Bản sao">0</td>
+                                                <td data-title="Mẫu đơn, tờ khai"> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider-gray"></div>
+                        <h2 class="main-title-sub">Tr&igrave;nh tự thực hiện</h2>
+                        <div class="cls-impl-orders">
+                        </div>
+                        <div class="divider-gray" style="margin: 20px 0px 0px 0px;"></div>
+                        <div class="list-expand">
+                            <div class="item">
+                                <div class="title">
+                                    Cơ quan thực hiện
+                                </div>
+                                <div class="content">
+                                    <div class="article">
+                                        Tập đo&agrave;n Điện lực Việt Nam
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="title">
+                                    Y&ecirc;u cầu, điều kiện
+                                </div>
+                                <div class="content">
+                                    <div class="article cls-requires" style="white-space: pre-wrap;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="main-title-sub -none">Thủ tục h&agrave;nh ch&iacute;nh li&ecirc;n quan</h2>
+                        <ul id="list-related-procedures" class="links">
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="sidebar">
+                            <div class="head">
+                                T&igrave;m kiếm nhiều nhất
+                            </div>
+                            <div class="body">
+                                <ul class="links">
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1480"
+                                            title="Cấp Giấy x&aacute;c nhận nh&acirc;n sự của c&ocirc;ng d&acirc;n Việt Nam ở nước ngo&agrave;i (thực hiện tại cấp Trung ương)">Cấp
+                                            Giấy x&aacute;c nhận nh&acirc;n sự của c&ocirc;ng d&acirc;n Việt Nam ở nước
+                                            ngo&agrave;i (thực hiện tại cấp Trung ương)</a>
+                                        <p class="unit">Bộ C&ocirc;ng an</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1330"
+                                            title="Cấp giấy ph&eacute;p xuất khẩu, nhập khẩu h&oacute;a chất Bảng 1">Cấp
+                                            giấy ph&eacute;p xuất khẩu, nhập khẩu h&oacute;a chất Bảng 1</a>
+                                        <p class="unit">Bộ C&ocirc;ng thương</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1399"
+                                            title="Cấp lại Giấy ph&eacute;p th&agrave;nh lập Văn ph&ograve;ng đại diện của thương nh&acirc;n nước ngo&agrave;i tại Việt Nam">Cấp
+                                            lại Giấy ph&eacute;p th&agrave;nh lập Văn ph&ograve;ng đại diện của thương
+                                            nh&acirc;n nước ngo&agrave;i tại Việt Nam</a>
+                                        <p class="unit">Bộ C&ocirc;ng thương</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1393"
+                                            title="Cấp lại giấy ph&eacute;p hoạt động dự b&aacute;o, cảnh b&aacute;o kh&iacute; tượng thủy văn (cấp tỉnh)">Cấp
+                                            lại giấy ph&eacute;p hoạt động dự b&aacute;o, cảnh b&aacute;o kh&iacute;
+                                            tượng thủy văn (cấp tỉnh)</a>
+                                        <p class="unit">Bộ N&ocirc;ng nghiệp v&agrave; M&ocirc;i trường</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1243"
+                                            title="Thủ tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với m&ocirc;n Judo">Thủ
+                                            tục cấp Giấy chứng nhận đủ điều kiện kinh doanh hoạt động thể thao đối với
+                                            m&ocirc;n Judo</a>
+                                        <p class="unit">Bộ Văn h&oacute;a, Thể thao v&agrave; Du lịch</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1241"
+                                            title="Thủ tục cấp Giấy miễn thị thực tại Cơ quan đại diện VIệt Nam ở nước ngo&agrave;i">Thủ
+                                            tục cấp Giấy miễn thị thực tại Cơ quan đại diện VIệt Nam ở nước
+                                            ngo&agrave;i</a>
+                                        <p class="unit">Bộ Ngoại giao</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1484"
+                                            title="Thủ tục gia hạn Giấy chứng nhận đăng k&yacute; th&agrave;nh lập v&agrave; hoạt động của cơ sở văn h&oacute;a nước ngo&agrave;i tại Việt Nam">Thủ
+                                            tục gia hạn Giấy chứng nhận đăng k&yacute; th&agrave;nh lập v&agrave; hoạt
+                                            động của cơ sở văn h&oacute;a nước ngo&agrave;i tại Việt Nam</a>
+                                        <p class="unit">Bộ Văn h&oacute;a, Thể thao v&agrave; Du lịch</p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1338"
+                                            title="Thủ tục ph&ecirc; duyệt cho hộ ngh&egrave;o, hộ cận ngh&egrave;o, hộ mới tho&aacute;t ngh&egrave;o bị rủi ro do nguy&ecirc;n nh&acirc;n kh&aacute;ch quan vay bổ sung vốn để kh&ocirc;i phục sản xuất, kinh doanh">Thủ
+                                            tục ph&ecirc; duyệt cho hộ ngh&egrave;o, hộ cận ngh&egrave;o, hộ mới
+                                            tho&aacute;t ngh&egrave;o bị rủi ro do nguy&ecirc;n nh&acirc;n kh&aacute;ch
+                                            quan vay bổ sung vốn để kh&ocirc;i phục sản xuất, kinh doanh</a>
+                                        <p class="unit">Ng&acirc;n h&agrave;ng Ch&iacute;nh s&aacute;ch x&atilde; hội
+                                        </p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1483"
+                                            title="Thủ tục trả nợ, trả l&atilde;i trực tiếp bằng tiền mặt của người vay l&agrave; tổ vi&ecirc;n Tổ Tiết kiệm v&agrave; vay vốn">Thủ
+                                            tục trả nợ, trả l&atilde;i trực tiếp bằng tiền mặt của người vay l&agrave;
+                                            tổ vi&ecirc;n Tổ Tiết kiệm v&agrave; vay vốn</a>
+                                        <p class="unit">Ng&acirc;n h&agrave;ng Ch&iacute;nh s&aacute;ch x&atilde; hội
+                                        </p>
+                                    </li>
+                                    <li> <a class="link"
+                                            href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=1392"
+                                            title="Trả lại giấy ph&eacute;p nhận ch&igrave;m (cấp tỉnh)">Trả lại giấy
+                                            ph&eacute;p nhận ch&igrave;m (cấp tỉnh)</a>
+                                        <p class="unit">Bộ N&ocirc;ng nghiệp v&agrave; M&ocirc;i trường</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="sidebar -statis">
+    <div class="head">Số liệu thống kê </div>
+    <div class="body">
+                <div class="info">
+            <span class="value" style="color: #7C964C;">
+                                5768
+                            </span>
+            <div class="key">Tổng số TTHC</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                2947
+                            </span>
+            <div class="key">TTHC thực hiện tại Bộ, cơ quan</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                989
+                            </span>
+            <div class="key">TTHC thực hiện tại địa phương</div>
+        </div>
+        <div class="divider-gray" style="margin: 10px 0px;"></div>
+        <div class="info">
+            <span class="value" style="color: #F2A634;">
+                                1637
+                            </span>
+            <div class="key">TTHC ngành dọc tại địa phương</div>
+        </div>
+    </div>
+</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popupChitietTTHC" class="modal fade popupChitietTTHC box-chitiettthc-phienban" role="dialog">
+            <div class="modal-dialog" style="max-width: 991px;width: 100%;">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="close" data-dismiss="modal">
+                            <span id="btnCLOSE_POPUP" class="-ap icon icon-close"></span>
+                        </div>
+                        <h2 class="main-title">Chi tiết thủ tục h&agrave;nh ch&iacute;nh:</h2>
+                        <div class="content">
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    M&atilde; thủ tục:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    3.000001
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Số quyết định:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    4221/EVN-KDMBD
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    T&ecirc;n thủ tục:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Cấp điện mới từ lưới điện hạ &aacute;p
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cấp thực hiện:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Cấp Bộ, Cơ quan kh&aacute;c
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Loại thủ tục:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Loại kh&aacute;c
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Lĩnh vực:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Dịch vụ cung cấp điện mới
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Tr&igrave;nh tự thực hiện:
+                                </div>
+                                <div class="col-sm-9 col-xs-12 cls-impl-orders" style="white-space: pre-wrap;">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    C&aacute;ch thức thực hiện:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <div class="table-content">
+                                        <table class="table-data">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:10%;">H&igrave;nh thức nộp</th>
+                                                    <th style="width:15%;">Thời hạn giải quyết</th>
+                                                    <th style="width:25%;">Ph&iacute;, lệ ph&iacute;</th>
+                                                    <th style="width:50%;">M&ocirc; tả</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Trực tiếp</td>
+                                                    <td> 7 Ng&agrave;y l&agrave;m việc </td>
+                                                    <td> </td>
+                                                    <td style="white-space: pre-wrap;" class="content"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trực tuyến</td>
+                                                    <td> 7 Ng&agrave;y l&agrave;m việc </td>
+                                                    <td> </td>
+                                                    <td style="white-space: pre-wrap;" class="content"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Th&agrave;nh phần hồ sơ:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <!-- Doan nay da duoc fix -->
+                                    <div class="key">
+                                        Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha),
+                                        c&oacute; c&ocirc;ng suất lớn nhất &lt; 40kW
+                                    </div>
+                                    <table class="table-data" style="width:100%;">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:65%;">T&ecirc;n giấy tờ</th>
+                                                <th style="width:15%;">Mẫu đơn, tờ khai</th>
+                                                <th style="width:20%;">Số lượng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="justify">Giấy đề nghị mua điện</td>
+                                                <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754');">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                                <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ t&ugrave;y th&acirc;n của c&aacute;
+                                                    nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức;
+                                                    l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n
+                                                    d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n
+                                                    d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy
+                                                    x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường,
+                                                    x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một
+                                                    trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ
+                                                    chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường
+                                                    tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu
+                                                    nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua
+                                                    b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời
+                                                    hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu;
+                                                    Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute;
+                                                    v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm
+                                                    v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ x&aacute;c định mục đ&iacute;ch sử dụng điện
+                                                    l&agrave; một trong những loại giấy tờ sau: Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị;
+                                                    Bi&ecirc;n bản khảo s&aacute;t cấp điện của Điện lực/C&ocirc;ng ty
+                                                    Điện lực; Th&ocirc;ng tin của doanh nghiệp tr&ecirc;n Cổng
+                                                    th&ocirc;ng tin đăng k&yacute; doanh nghiệp quốc gia tại địa chỉ
+                                                    http://www.dangkykinhdoanh.gov.vn</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+                                    <!-- Doan nay da duoc fix -->
+                                    <div class="key">
+                                        Kh&aacute;ch h&agrave;ng mua điện ngo&agrave;i sinh hoạt (01 pha, 03 pha),
+                                        c&oacute; c&ocirc;ng suất lớn nhất ≥ 40kW
+                                    </div>
+                                    <table class="table-data" style="width:100%;">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:65%;">T&ecirc;n giấy tờ</th>
+                                                <th style="width:15%;">Mẫu đơn, tờ khai</th>
+                                                <th style="width:20%;">Số lượng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="justify">Giấy đề nghị mua điện</td>
+                                                <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754');">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                                <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ t&ugrave;y th&acirc;n của c&aacute;
+                                                    nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức;
+                                                    l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n
+                                                    d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n
+                                                    d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy
+                                                    x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường,
+                                                    x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một
+                                                    trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ
+                                                    chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường
+                                                    tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu
+                                                    nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua
+                                                    b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời
+                                                    hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu;
+                                                    Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute;
+                                                    v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm
+                                                    v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ x&aacute;c định mục đ&iacute;ch sử dụng điện
+                                                    l&agrave; một trong những loại giấy tờ sau: Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị;
+                                                    Bi&ecirc;n bản khảo s&aacute;t cấp điện của Điện lực/C&ocirc;ng ty
+                                                    Điện lực; Th&ocirc;ng tin của doanh nghiệp tr&ecirc;n Cổng
+                                                    th&ocirc;ng tin đăng k&yacute; doanh nghiệp quốc gia tại địa chỉ
+                                                    http://www.dangkykinhdoanh.gov.vn.</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Bản đăng k&yacute; biểu đồ phụ tải. (Trường hợp
+                                                    kh&aacute;ch h&agrave;ng sản xuất, kinh doanh dịch vụ)</td>
+                                                <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3fe38b4b3a7dfdad');">BẢNG K&Ecirc; C&Ocirc;NG SUẤT THIẾT BỊ SỬ DỤNG ĐIỆN.docx</span><br />
+                                                </td>
+                                                <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+                                    <!-- Doan nay da duoc fix -->
+                                    <div class="key">
+                                        Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha)
+                                    </div>
+                                    <table class="table-data" style="width:100%;">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:65%;">T&ecirc;n giấy tờ</th>
+                                                <th style="width:15%;">Mẫu đơn, tờ khai</th>
+                                                <th style="width:20%;">Số lượng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="justify">Giấy đề nghị mua điện</td>
+                                                <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754');">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                                <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ t&ugrave;y th&acirc;n của c&aacute;
+                                                    nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức;
+                                                    l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n
+                                                    d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n
+                                                    d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy
+                                                    x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường,
+                                                    x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một
+                                                    trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ
+                                                    chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường
+                                                    tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu
+                                                    nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua
+                                                    b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời
+                                                    hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu;
+                                                    Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute;
+                                                    v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm
+                                                    v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+                                    <!-- Doan nay da duoc fix -->
+                                    <div class="key">
+                                        Kh&aacute;ch h&agrave;ng mua điện sinh hoạt (01 pha, 03 pha), sử dụng chung
+                                        c&ocirc;ng tơ
+                                    </div>
+                                    <table class="table-data" style="width:100%;">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:65%;">T&ecirc;n giấy tờ</th>
+                                                <th style="width:15%;">Mẫu đơn, tờ khai</th>
+                                                <th style="width:20%;">Số lượng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="justify">Giấy đề nghị mua điện</td>
+                                                <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754');">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                                <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ t&ugrave;y th&acirc;n của c&aacute;
+                                                    nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức;
+                                                    l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n
+                                                    d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n
+                                                    d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy
+                                                    x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường,
+                                                    x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một
+                                                    trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ
+                                                    chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường
+                                                    tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu
+                                                    nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua
+                                                    b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời
+                                                    hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu;
+                                                    Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute;
+                                                    v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm
+                                                    v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Sổ hộ khẩu/sổ tạm tr&uacute;/x&aacute;c nhận
+                                                    c&ocirc;ng an quản l&yacute; tr&ecirc;n địa b&agrave;n của
+                                                    c&aacute;c hộ d&ugrave;ng chung</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy ủy quyền c&oacute; chữ k&yacute; của c&aacute;c
+                                                    hộ d&ugrave;ng chung</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+                                    <!-- Doan nay da duoc fix -->
+                                    <div class="key">
+                                        Kh&aacute;ch h&agrave;ng t&aacute;ch c&ocirc;ng tơ d&ugrave;ng chung
+                                    </div>
+                                    <table class="table-data" style="width:100%;">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:65%;">T&ecirc;n giấy tờ</th>
+                                                <th style="width:15%;">Mẫu đơn, tờ khai</th>
+                                                <th style="width:20%;">Số lượng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="justify">Giấy đề nghị mua điện</td>
+                                                <td> <span class="link" style="cursor: pointer;" onclick="downloadMaudon('3feb864dfdb7c754');">Giay de nghi mua dien.docx</span><br />
+                                                </td>
+                                                <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ t&ugrave;y th&acirc;n của c&aacute;
+                                                    nh&acirc;n hoặc người đại diện hợp ph&aacute;p của tổ chức;
+                                                    l&agrave; một trong những loại giấy tờ sau: Giấy chứng minh
+                                                    nh&acirc;n d&acirc;n; Giấy chứng minh c&ocirc;ng an nh&acirc;n
+                                                    d&acirc;n; Giấy chứng minh sỹ quan qu&acirc;n đội nh&acirc;n
+                                                    d&acirc;n; Thẻ căn cước c&ocirc;ng d&acirc;n; Hộ chiếu hoặc Giấy
+                                                    x&aacute;c nhận nh&acirc;n th&acirc;n của c&ocirc;ng an phường,
+                                                    x&atilde; (c&oacute; ảnh đ&oacute;ng dấu gi&aacute;p lai).</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">Giấy tờ x&aacute;c định chủ thể HĐMBĐ l&agrave; một
+                                                    trong c&aacute;c loại giấy tờ c&oacute; t&ecirc;n của Tổ
+                                                    chức/c&aacute; nh&acirc;n tại địa điểm mua điện sau: Hộ khẩu thường
+                                                    tr&uacute;; Sổ tạm tr&uacute;; Giấy chứng nhận quyền sở hữu
+                                                    nh&agrave;; Quyết định ph&acirc;n nh&agrave;; Hợp đồng mua
+                                                    b&aacute;n nh&agrave;; Hợp đồng thu&ecirc; nh&agrave; c&oacute; thời
+                                                    hạn từ 01 năm trở l&ecirc;n v&agrave; đồng &yacute; của chủ sở hữu;
+                                                    Giấy chứng nhận quyền sử dụng đất; Hợp đồng ủy quyền quản l&yacute;
+                                                    v&agrave; sử dụng nh&agrave;/đất; Hợp đồng thu&ecirc; địa điểm
+                                                    v&agrave; đồng &yacute; của chủ sở hữu; Giấy chứng nhận đăng
+                                                    k&yacute; doanh nghiệp; Giấy chứng nhận đăng k&yacute; kinh doanh;
+                                                    Giấy chứng nhận đăng k&yacute; hộ kinh doanh; Giấy chứng nhận đăng
+                                                    k&yacute; hoạt động chi nh&aacute;nh, văn ph&ograve;ng đại diện;
+                                                    Giấy ph&eacute;p đầu tư; Quyết định th&agrave;nh lập đơn vị.</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 0<br />Bản sao: 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="justify">4. Giấy cam kết thanh to&aacute;n hết nợ tiền điện
+                                                    với chủ HĐMBĐ đang d&ugrave;ng chung</td>
+                                                <td> </td>
+                                                <td>Bản ch&iacute;nh: 1<br />Bản sao: 0</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Đối tượng thực hiện:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    C&ocirc;ng d&acirc;n Việt Nam, Người nước ngo&agrave;i, Doanh nghiệp, Doanh nghiệp
+                                    c&oacute; vốn đầu tư nước ngo&agrave;i, Tổ chức (kh&ocirc;ng bao gồm doanh nghiệp,
+                                    HTX), Tổ chức nước ngo&agrave;i, Hợp t&aacute;c x&atilde;
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cơ quan thực hiện:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Tập đo&agrave;n Điện lực Việt Nam
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cơ quan c&oacute; thẩm quyền:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Tập đo&agrave;n Điện lực Việt Nam
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Địa chỉ tiếp nhận HS:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Kh&ocirc;ng c&oacute; th&ocirc;ng tin
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cơ quan được ủy quyền:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Kh&ocirc;ng c&oacute; th&ocirc;ng tin
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Cơ quan phối hợp:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Kh&ocirc;ng c&oacute; th&ocirc;ng tin
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Kết quả thực hiện:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Hợp đồng mua b&aacute;n điện
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Căn cứ ph&aacute;p l&yacute;:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <div class="table-content">
+                                        <table class="table-data" style="width: 100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 20%;">Số k&yacute; hiệu</th>
+                                                    <th style="width: 45%;">Tr&iacute;ch yếu</th>
+                                                    <th style="width: 10%;">Ng&agrave;y ban h&agrave;nh</th>
+                                                    <th style="width: 25%;">Cơ quan ban h&agrave;nh</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>61/2024/QH15</td>
+                                                    <td>Luật điện lực</td>
+                                                    <td>30-11-2024</td>
+                                                    <td>Quốc Hội</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18/2025/NĐ-CP</td>
+                                                    <td>Nghị định 18</td>
+                                                    <td>18-02-2025</td>
+                                                    <td>Ch&iacute;nh phủ</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Y&ecirc;u cầu, điều kiện thực hiện:
+                                </div>
+                                <div class="col-sm-9 col-xs-12 cls-requires" style="white-space: pre-wrap;">
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    Từ kh&oacute;a:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Kh&ocirc;ng c&oacute; th&ocirc;ng tin
+                                </div>
+                            </div>
+                            <div class="row info-row">
+                                <div class="col-sm-3 col-xs-12 key">
+                                    M&ocirc; tả:
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    Kh&ocirc;ng c&oacute; th&ocirc;ng tin
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(() => {
+
+        $("#li-tthc").addClass("active");
+
+        loadImplOrders();
+        loadRequires();
+        loadRelatedProcedures();
+
+        // open pop-up after loading page
+        if (getUrlParameter("open_popup") == 1) {
+            $('#popupChitietTTHC').modal('show');
+
+            // $('#btnCLOSE_POPUP').click(() => {
+            //     window.location.replace('dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=' + '3.000001');
+            // });
+
+            // $('#popupChitietTTHC').on('hidden.bs.modal', function () {
+            //     $('#btnCLOSE_POPUP').click();
+            // });
+        }
+
+        $(".list-expand .item .title").unbind().click(function(){
+                    if($(this).parent().hasClass("active")){
+                        // $(this).parent().siblings().removeClass("active");
+                        $(this).parent().removeClass("active");
+                    }else{
+                        $(this).parent().addClass("active");
+                        // $(this).parent().siblings().removeClass("active");
+                    }
+
+        });
+
+    });
+
+    let searchParams = new URLSearchParams(window.location.search);
+    function getUrlParameter(sParam) {
+        return searchParams.get(sParam);
+    }
+
+    function loadImplOrders() {
+
+        var obj = new Object();
+        obj.service = "procedure_get_impl_orders_by_proc_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = '7603';
+        obj.parent_id = '';
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        var listScenario = [];
+        if (result && result.length > 0) {
+            result.forEach(item => {
+                // if (item.SCENARIO) {
+                    if (!listScenario.includes(item.SCENARIO))
+                        listScenario.push(item.SCENARIO);
+                // }
+            });
+        }
+
+        if (result && result.length > 0) {
+
+            if (listScenario.length == 0) {
+
+                var htmlText = '';
+
+                htmlText += `<div style="white-space: pre-wrap;">`;
+                result.forEach(item => {
+                    htmlText += item.CONTENT + '<br />';
+                });
+                htmlText += `</div>`;
+
+                $(".cls-impl-orders").html(htmlText);
+            
+            } else {
+
+                var htmlText = '';
+                var htmlTextPopup = '';
+
+                htmlText += '<div class="list-expand">';
+                listScenario.forEach(item => {
+
+                    var htmlContent = '';
+                    result.forEach(e => {
+                        if (e.SCENARIO == item)
+                            htmlContent += e.CONTENT + '<br />';
+                    });
+
+                    if (item) {
+                        htmlText += `<div class="item">
+                                    <div class="title f18 ttth" title="${item}" style="font-size: 17px; font-weight: 400;">${item}</div>
+                                    <div class="content ttth" style="white-space: pre-line;">
+                                        ${htmlContent}
+                                    </div>
+                                </div>`;
+
+                        htmlTextPopup += `<div class="key">${item}</div><div style="white-space: pre-wrap;">${htmlContent}</div><br />`;
+                    
+                    } else {
+                        htmlText += `<div class="ttth" style="white-space: pre-line;">
+                                        ${htmlContent}
+                                    </div>`;
+
+                        htmlTextPopup += `<div style="white-space: pre-wrap;">${htmlContent}</div><br />`;
+                    
+                    }
+
+                });
+                htmlText += '</div>';
+
+                $(".cls-impl-orders").html(htmlText);
+
+                $(".info-row > .cls-impl-orders").html(htmlTextPopup);
+
+            }
+
+        } else {
+            $(".cls-impl-orders").html("Không có thông tin");
+        }
+
+    }
+
+    function loadRequires() {
+
+        var obj = new Object();
+        obj.service = "procedure_get_requires_by_procedure_id_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = '7603';
+        obj.parent_id = '';
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        if(result == undefined){
+            console.log("oke");
+        }
+        if (result && result.length > 0) {
+
+            var htmlText = '';
+            result.forEach(item => {
+
+                htmlText += item.REQUIRE_NAME;
+            });
+            $(".cls-requires").html(htmlText);
+        
+        } else {
+            $(".cls-requires").html("Không có thông tin");
+        }
+    }
+
+    function loadRelatedProcedures() {
+
+        var obj = new Object();
+        obj.service = "procedure_get_related_procedures_service_v2";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        obj.id = '7603';
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+
+        if (result && result.length > 0) {
+
+            var htmlText = '';
+            result.forEach(item => {
+
+                if (item.ISLIENTHONG == 1)
+                    htmlText += '<li><a href="dvc-tthc-thu-tuc-hanh-chinh-lien-thong-chi-tiet.html?ma_thu_tuc=' + item.ID + '" class="link f16">' + item.PROCEDURE_NAME + '</a></li>';
+                else
+                    htmlText += '<li><a href="dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html?ma_thu_tuc=' + item.ID + '" class="link f16">' + item.PROCEDURE_NAME + '</a></li>';
+
+            });
+            $("#list-related-procedures").html(htmlText);
+
+        } else {
+            $("#list-related-procedures").html("Không có thông tin");
+        }
+    }
+
+    function getUrlDownload(procedureCode) {
+
+        var obj = new Object();
+        obj.service = "get_url_downfile";
+        obj.provider = "dvcquocgia";
+        obj.type = "ref";
+
+        var result = apiservice.AjaxJson.executeQuery(obj);
+        return result[0].URL_DOWNLOAD;
+       
+    }
+
+    function downloadMaudon(code){
+		// if (id == '' || id == undefined) return;
+		// var obj = {
+		// 	id: base64.encode(id)
+		// };
+		// var url = "http://10.193.72.20:7005/web/jsp/download_file.jsp?ma=" + $.param(obj);
+        // var url = "https://csdltest.dichvucong.gov.vn/web/jsp/download_file.jsp?ma=" +code;
+        var url = getUrlDownload() + "?ma=" +code;
+		window.open(url, '_blank');
+	}
+
+    // phản ánh kiến nghị
+    function sendPAKN(id, code, name) {
+        submissionCodePA = code;
+        var orgCode = extractAgencyCode(submissionCodePA);
+        var title = 'Phản ánh kiến nghị về hồ sơ: "' + submissionCodePA + '"';
+        var url = '/jsp/reflection.jsp?';
+        url += '&title=' + title;
+        url += '&orgCode=' + orgCode;
+        url += '&orgName=' + name;
+        url += '&object=' + "";
+        url += '&address=' + "";
+        url += '&name=' + "";
+        url += '&email=' + "";
+        url += '&phone=' + "";
+        $.ajax({
+            type: 'GET',
+            url: url,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                var result = JSON.parse(response);
+                if (result.error_code != "-1") {
+                    window.location.href = "/p/phananhkiennghi/pakn-gui-pakn.html";
+                } else {
+                    toastr.error('Thực hiện không thành công.');
+                }
+            },
+            error: function (error) {
+                toastr.error('Thực hiện không thành công.');
+            }
+        });
+    }
+
+    function extractAgencyCode(input) {
+        //V1V2V3.Z1Z2.Y1Y2.MX1X2-YYMMDD-XXXX
+        if (input !== "") {
+            var str = input.split("-");
+            return str[0];
+        }
+
+        return "";
+    }
+    // phản ánh kiến nghị: end
+    </script>
+</body>
+
+</html>
+<html>
+
+<head></head>
+
+<body>
+    <div class="loading" id="loading" style="display:none">
+        <div class="icon">
+            <img src="img/loading.svg" alt="" />
+        </div>
+        <style type="text/css">
+            .loading {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                z-index: 1000;
+            }
+
+            .loading .icon {
+                width: 100px;
+                position: absolute;
+                top: 0px;
+                height: 100px;
+                bottom: 0px;
+                right: 0px;
+                margin: auto;
+                left: 0px;
+            }
+        </style>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="add">
+                    <p>Cơ quan chủ quản: Văn ph&ograve;ng Ch&iacute;nh phủ</p>
+                </div>
+                <div class="add">
+                    <p>www.dichvucong.gov.vn</p>
+                </div>
+                <div class="add">
+                    <p>Tổng đ&agrave;i hỗ trợ: 18001096</p>
+                </div>
+                <div class="add">
+                    <p> Email: dichvucong@chinhphu.vn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="theme/vendor/typeahead/index.js"></script>
+    <script type="text/javascript" src="theme/vendor/typeahead/handlebars.js"></script>
+    <script type="text/javascript" src="theme/js/custom.js"></script>
+    <script type="text/javascript">
+        function showLoading() {
+        $("#loading-all").show();
+    }
+    function hideLoading(){
+        $("#loading-all").hide();
+    }
+
+    function goToPage(url){
+        window.location.href = url;
+    }
+
+    function goToPage_blank(url){
+        window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    $(".targetgroup-box .btn-readmore").click(function(e){
+        e.preventDefault();
+        if($(this).hasClass("active")){
+            $(this).html('Xem tiếp <span class="-ap icon-chevron-thin-down icon"></span>');
+            $(this).parents(".targetgroup-box").find(".links").css({"height":"250px"});
+            $(this).removeClass("active");
+        }else{
+            $(this).html('Thu gọn <span class="-ap icon-chevron-thin-up icon"></span>');
+            $(this).parents(".targetgroup-box").find(".links").css({"height":"auto"});
+            $(this).addClass("active");
+        }
+    });
+    var links = [
+            
+        ];
+
+
+    function searchProcedure(){
+        var key = getWords($("#searchKeyWord").val(), 100);
+		console.log(key);
+        // if($("#searchKeyWord").val()) {
+        var href = 'dvc-ket-qua-thu-tuc.html?originKey=' + encodeURIComponent(key) + '&tukhoa=' + key.replace(/[&\/\\#,+()$~%'":*?<>{}^]/g, ' ').trim() + '&tinh_thanh=';
+        window.location.href = href;
+        //}
+    }
+
+function showAdvSearch() {
+    getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH");
+}
+
+function doAdvSearch(){
+
+    let mess = '';
+    let keyWord = $('#txtKEYWORD').val().trim();
+    keyWord = getWords(keyWord, 100);
+    if (!keyWord) {
+        mess += 'Bạn vui lòng nhập từ khóa tìm kiếm!\n';
+    }
+    let tinhThanhValue = $('#cboTINH_THANH').val();
+    let boNganhValue = $('#cboBO_NGANH').val();
+    var rdoBO = $("input[name='cap_thuc_hien']:checked").val();
+
+    if (((!tinhThanhValue || '-1' == tinhThanhValue) && rdoBO != 'bonganh') || (rdoBO == 'bonganh' && (!boNganhValue || '-1' == boNganhValue))) {
+        mess += 'Bạn phải chọn ít nhất một Tỉnh/ Thành phố hoặc một Bộ ngành!\n';
+    }
+
+    if (mess) {
+        toastr.warning(mess);
+        return;
+    }
+
+    var rdoSO = $("input[name='quan_huyen_or_so']:checked").val();
+    if (rdoBO != 'bonganh' && $('#cboTINH_THANH').val() && $('#cboTINH_THANH').val() != '-1' && ($('#cboQUAN_HUYEN').val() == '-1' || !$('#cboQUAN_HUYEN').val()) && ($('#cboSO').val() == '-1' || !$('#cboSO').val()) && ($('#cboPHUONG_XA').val() == '-1' || !$('#cboPHUONG_XA').val())) {
+
+        var params = 'originKey=' + encodeURIComponent(keyWord) + '&tukhoa=' + keyWord.replace(/[&\/\\#,+()$~%'":*?<>{}^]/g,' ').trim()
+        params+= "&tinh_thanh="+(($('#cboTINH_THANH').val() == '-1' || !$('#cboTINH_THANH').val()  || rdoBO == 'bonganh') ? "" : $('#cboTINH_THANH option:selected').text());
+        window.location = 'dvc-ket-qua-thu-tuc.html?' + params;
+    } else {
+
+        var params = "tu_khoa=" + keyWord;
+        //params += "&bo_nganh="+(($('#cboBO').val() != '-1' || !$('#cboBO').val() || rdoBO != 'bonganh') ? "" : $('#cboBO option:selected').text());
+        params += "&bo_nganh=" + ($('#cboBO_NGANH option:selected').text());
+        params += "&tinh_thanh=" + (($('#cboTINH_THANH').val() == '-1' || !$('#cboTINH_THANH').val() || rdoBO == 'bonganh') ? "" : $('#cboTINH_THANH option:selected').text());
+        params += "&so=" + (($('#cboSO').val() == '-1' || !$('#cboSO').val() || rdoSO != 'so') ? "" : $('#cboSO option:selected').text());
+        params += "&quan_huyen=" + (($('#cboQUAN_HUYEN').val() == '-1' || !$('#cboQUAN_HUYEN').val() || rdoSO == 'so') ? "" : $('#cboQUAN_HUYEN option:selected').text());
+        params += "&phuong_xa=" + (($('#cboPHUONG_XA').val() == '-1' || !$('#cboPHUONG_XA').val() || rdoSO == 'so') ? "" : $('#cboPHUONG_XA option:selected').text());
+        params += "&id_tinh_thanh=" + $('#cboTINH_THANH').val();
+        params += "&id_quan_huyen=" + $('#cboQUAN_HUYEN').val();
+        params += "&id_phuong_xa=" + $('#cboPHUONG_XA').val();
+        params += "&id_so=" + $('#cboSO').val();
+        params += "&id_bo_nganh=" + $('#cboBO_NGANH').val();
+        window.location = 'dvc-danh-sach-dich-vu-cong.html?' + params;
+    }
+
+    $('#advsearch').modal('hide');
+}
+$(document).ready(function(){
+    $("#searchKeyWord").keyup(function (e){
+        if (e.which == 13) {
+            searchProcedure();
+        }
+    });
+    bindEvent();
+});
+
+function changeHeight(){
+    var vl = 1 - $('#popupChange').attr('height');
+    $('#popupChange').attr('height', vl);
+    $('#popupChange').css('height', vl + "px");
+}
+
+function bindEvent(){
+    $('#searchKeyWord').keydown(function(e){
+        if (e.keyCode == 13) {
+            searchProcedure();
+        }
+    });
+    $('#advsearch').on('hidden.bs.modal', function () {
+        $('#divClosePopupSearch').click();
+    });
+    $('#divClosePopupSearch').click(function(){
+        $("#txtKEYWORD").val('');
+        $('#rdoTINH_THANH').click();
+        $('#rdoQUAN_HUYEN').click();
+        $("#cboTINH_THANH").change();
+        getLocation("dvcqg_get_phuong_xa_by_selected", "huyen_id", -1, "cboPHUONG_XA");
+        $('#advsearch').modal('hide');
+
+    });
+
+    $('#rdoTINH_THANH').click(function(){
+        changeHeight();
+        $('#hide_for_bo_nganh').show();
+        $('#cboBO_NGANH').select2().next().hide();
+        $('#cboTINH_THANH').select2().next().show();
+        getLocation("dvcqg_get_tinh_thanh_by_selected_v2", null, null, "cboTINH_THANH");
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", -1, "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", -1, "cboSO");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+        if ($("input[name='quan_huyen_or_so']:checked").val() == "so") {
+
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+            $('#cboSO').select2().next().show();
+        } else {
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+            $('#cboSO').select2().next().hide();
+
+        }
+    });
+    $('#rdoBO_NGANH').click(function(){
+        changeHeight();
+        $('#hide_for_bo_nganh').hide();
+        $('#cboBO_NGANH').select2().next().show();
+        $('#cboTINH_THANH').select2().next().hide();
+        getLocation("dvcqg_get_bo_nganh_by_selected_v2", null, null, "cboBO_NGANH");
+    });
+
+    $('#rdoQUAN_HUYEN').click(function(){
+        $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+        $('#cboSO').select2().next().hide();
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+    });
+
+    $('#rdoSO').click(function(){
+        $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+        $('#cboSO').select2().next().show();
+        getLocation("dvcqg_get_so_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboSO");
+    });
+
+    $("#cboTINH_THANH,#cboQUAN_HUYEN,#cboPHUONG_XA,#cboSO,#cboBO_NGANH").select2({
+        allowClear: true,
+        width: "100%",
+    });
+    $('#cboSO,#cboBO_NGANH').select2().next().hide();
+
+    $("#cboTINH_THANH").change(function () {
+        getLocation("dvcqg_get_so_by_selected", "tinh_id", $("#cboTINH_THANH").val(), "cboSO");
+        getLocation("dvcqg_get_quan_huyen_by_selected_v2", "tinh_id", $("#cboTINH_THANH").val(), "cboQUAN_HUYEN");
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", -1, "cboPHUONG_XA");
+        if ($("input[name='quan_huyen_or_so']:checked").val() == "so") {
+
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().hide();
+            $('#cboSO').select2().next().show();
+        } else {
+            $('#cboQUAN_HUYEN,#cboPHUONG_XA').select2().next().show();
+            $('#cboSO').select2().next().hide();
+
+        }
+
+    });
+    $("#cboQUAN_HUYEN").change(function () {
+        getLocation("dvcqg_get_phuong_xa_by_selected_v2", "huyen_id", $("#cboQUAN_HUYEN").val(), "cboPHUONG_XA");
+    });
+}
+
+//suggestion search
+function sugggestProcedure(keyword) {
+    var obj = new Object();
+    obj.key_search = 'al:"' + keyword +'"~5';
+    obj.page_size = 5;
+    obj.start_row = 0;
+    obj.source_data = "thu_tuc_v1";
+    obj.type = "fts";
+    var result = apiservice.AjaxJson.executeQuery(obj);
+    var dataMap = result.response.docs.map(function (i) {
+        return {
+            name: i.ten_thu_tuc,
+            link: i.ten_thu_tuc,
+            id: i.ma_thu_tuc
+        }
+    });
+
+    return dataMap;
+}
+
+jQuery(document).ready(function($) {
+
+    var engine = new Bloodhound({
+        remote: {
+            url: '/jsp/procedure-typehead.jsp?keyword=al:"%QUERY%"~5',
+            wildcard: '%QUERY%'
+        },
+        datumTokenizer: Bloodhound.tokenizers.whitespace('keyword'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace
+    });
+
+    $(".search-input").typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 3
+    }, {
+        source: engine.ttAdapter(),
+        displayKey: 'ten_thu_tuc',
+        name: 'usersList',
+        templates: {
+            empty: [
+                '<div class="list-group search-results-dropdown"><div class="list-group-item">Không có kết quả phù hợp.</div></div>'
+            ],
+            header: [
+                '<div class="list-group search-results-dropdown">'
+            ],
+            suggestion: function (data) {
+                console.log(data);
+                if (data.isnganhdoc == 1) {
+                    return '<a href="dvc-chi-tiet-thu-tuc-nganh-doc.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }else if(data.isdungchung == 1){
+                    return '<a href="dvc-chi-tiet-thu-tuc-dung-chung.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }else{
+                    return '<a href="dvc-chi-tiet-thu-tuc-hanh-chinh.html?ma_thu_tuc=' + data.ma_thu_tuc + '" class="list-group-item">' + data.ten_thu_tuc + '</a>'
+                }
+                
+            }
+        }
+    });
+    $('#searchKeyWord:text:visible:first').focus();
+});
+
+    </script>
+    <script type="text/javascript">
+        //
+    function autoSetmenu() {
+        var path = window.location.pathname;
+        var isRemoveDropdown = false;
+
+        // Cau hoi
+        if (path == '/p/home/dvc-chi-tiet-cau-hoi.html'){
+            path = '/p/home/dvc-cau-hoi-pho-bien.html';
+        }
+
+        // Huong dan su dung
+        if (path == '/p/home/dvc-huong-dan-bo-nganh-dia-phuong.html' || path == '/p/home/dvc-phan-mem-ho-tro.html' || path == '/p/home/dvc-thiet-ke-giao-dien.html' ||
+            path == '/p/home/dvc-nop-tien-dien.html' || path == '/p/home/dvc-liet-ket-giao-duc.html'
+            ){
+            path = '/p/dvc-huong-dan-cong-dan-doanh-nghiep.html';
+        }
+
+        // Thu tuc hanh hinh cong dan - doanh nghiep
+        if (path == '/p/home/dvc-ket-qua-thu-tuc-cho-cong-dan.html'
+                || path == '/p/home/dvc-chi-tiet-dich-vu-cho-cong-dan.html'
+                || path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-cong-dan.html'
+            ){
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+        }else if (path == '/p/home/dvc-ket-qua-thu-tuc-cho-doanh-nghiep.html'
+                || path == '/p/home/dvc-chi-tiet-dich-vu-cho-doanh-nghiep.html'
+                || path == '/p/home/dvc-chi-tiet-nhom-su-kien-cho-doanh-nghiep.html'
+            ){
+            path = '/p/home/dvc-trang-chu-doanh-nghiep.html';
+        }else if (path == '/p/home/dvc-danh-sach-thu-tuc-theo-nhom-su-kien.html'
+                || path == '/p/home/dvc-danh-sach-cau-hoi-theo-nhom-su-kien.html'
+            ) {
+            var objectId = GetURLParameter('objectId');
+            if (objectId == 1){
+                path = '/p/home/dvc-trang-chu-cong-dan.html';
+            }else if(objectId == 5){
+                path = '/p/home/dvc-trang-chu-doanh-nghiep.html';
+            }
+        }
+
+        // DVC trực tuyến & đăng ký xe
+        if (path == '/p/home/dvc-dich-vu-cong-truc-tuyen-ds.html'
+                || path == '/p/home/dvc-dich-vu-cong-truc-tuyen.html'
+                || path == '/p/home/dvc-dang-ky-xe.html'
+            ) {
+            path = '/p/home/dvc-dich-vu-cong-truc-tuyen.html';
+        }
+
+        // Chi tiet TTHC va DVC
+        if (path == '/p/home/dvc-chi-tiet-thu-tuc-hanh-chinh.html' 
+                || path == '/p/home/dvc-danh-sach-dich-vu-cong.html'
+                || path == '/p/home/dvc-danh-sach-thu-tuc-theo-su-kien.html'
+                || path == '/p/home/dvc-ket-qua-thu-tuc.html'
+            ) {
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+            isRemoveDropdown = true;
+        }
+
+        // module TTHC
+        if (path == '/p/home/dvc-tthc-category.html') {
+            path = '/p/home/dvc-tthc-trang-chu.html';
+        }
+        if (path == '/p/home/dvc-tthc-thu-tuc-hanh-chinh-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-thu-tuc-hanh-chinh.html';
+        }
+        if (path == '/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-thu-tuc-hanh-chinh-lien-thong.html';
+        }
+        if (path == '/p/home/dvc-tthc-quyet-dinh-cong-bo-chi-tiet.html') {
+            path = '/p/home/dvc-tthc-quyet-dinh-cong-bo.html';
+        }
+        if (path == '/p/home/dvc-tthc-bonganh-tinhtp.html') {
+            path = '/p/home/dvc-tthc-co-quan.html';
+        }
+
+        if (path == '/p/home/dvc-chi-tiet-tin-tuc.html') {
+            path = '/p/home/dvc-tin-tuc.html';
+        }
+
+        // dvc-cap-ban-sao-tu-ban-chinh
+        if (path == '/p/home/dvc-cap-ban-sao-tu-ban-chinh.html'){
+            path = '/p/home/dvc-trang-chu-cong-dan.html';
+        }
+        //  Đặt lịch hẹn
+        if (path == '/p/home/dvc-cap-ban-sao-tu-ban-chinh-dlh.html'){
+            path = '/p/home/dvc-tra-cuu-ho-so.html';
+        }
+        // Active main menu
+        $("#main-menu li").each(function () {
+            var link = $(this).find(">a").attr("href");
+            if (path.indexOf(link) != -1) {
+                $(this).parents('li').siblings().removeClass("active");
+                $(this).parents('li').addClass("active");
+                $(this).parents('li').find("li").removeClass("active");
+                $(this).addClass("active");
+            }
+        });
+
+        // Active dropdownmenu
+        $("#main-menu > li").each(function () {
+            if ($(this).hasClass("active")) {
+                var html = $(this).find(">ul").html();
+                $(this).addClass("active");
+                $(this).find(">ul").addClass("hidden");
+                $("#list-dropdown").html(html);
+                if($("#bn-ttp").hasClass("active")){
+                    $("#coquan").addClass("active");
+                }
+            }
+        });
+
+        // Remove
+        if (isRemoveDropdown) {
+            $('#list-dropdown > li').removeClass('active');
+        }
+    }
+
+    var pathHDSD = window.location.pathname;
+    $("#regionleft-introduce li").removeClass('active');
+    $("#left-introduce li a").each(function () {
+        var href = $(this).attr('href');
+        if (pathHDSD.indexOf(href) != -1) {
+            $(this).parent().addClass('active');
+        }
+    });
+    $('#left-introduce li:first-child').removeClass('active');
+    $('.child-menus a').each(function(){
+        var href = $(this).attr('href');
+        if (pathHDSD.indexOf(href) != -1) {
+            $(this).parent().addClass('active');
+        }
+    });
+
+    $(document).ready(function(){
+        autoSetmenu();
+    })
+
+
+    </script>
+    <style>
+        .bootbox .modal-footer .btn+.btn {
+            margin-bottom: 0;
+            margin-left: 5px;
+            margin-top: 0px;
+        }
+
+        .input-captcha .code .number {
+            height: 100%;
+            padding: 2px;
+        }
+    </style>
+</body>
+
+</html>
