@@ -33,7 +33,7 @@ const RAW_RESULT_PATH = path.join(__dirname, '../../../../../result/dichvucong.g
 const DETAILED_RESULT_FILENAME = isDoanhNghiep ? 'doanhnghiep_detailed_result.json' : 'congdan_detailed_result.json';
 const DETAILED_RESULT_PATH = path.join(__dirname, '../../../../../result/dichvucong.gov.vn/p/home/dvc-dich-vu-cong-truc-tuyen-ds', DETAILED_RESULT_FILENAME);
 const DOWNLOAD_BASE_DIR = path.join(__dirname, '../../../../../result/dichvucong.gov.vn/p/home/dvc-dich-vu-cong-truc-tuyen-ds/attachments', isDoanhNghiep ? 'doanhnghiep' : 'congdan');
-const DELAY_MS = 500; // Delay between requests
+const DELAY_MS = 100; // Delay between requests
 const DOWNLOAD_URL_BASE = 'https://dichvucong.gov.vn'; // Will be fetched from API
 
 /**
