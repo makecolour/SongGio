@@ -208,7 +208,7 @@ class DecisionDetailCrawler {
       if (fileBuffer) {
         fs.writeFileSync(filePath, fileBuffer);
         console.log(`    Downloaded: ${attachment.filename}`);
-        await this.delay(500); // Delay between downloads
+        await this.delay(100); // Delay between downloads
       } else {
         console.log(`    Failed: ${attachment.filename}`);
       }
@@ -228,7 +228,7 @@ class DecisionDetailCrawler {
     for (const decision of this.detailedDecisions) {
       if (decision.ATTACHMENTS && decision.ATTACHMENTS.length > 0) {
         await this.downloadDecisionAttachments(decision);
-        await this.delay(1000); // Delay between decisions
+        await this.delay(100); // Delay between decisions
       }
     }
 
@@ -385,7 +385,7 @@ class DecisionDetailCrawler {
       }
 
       pageIndex++;
-      await this.delay(500); // Delay between pages
+      await this.delay(100); // Delay between pages
     }
 
     return allProcedures;
@@ -495,7 +495,7 @@ class DecisionDetailCrawler {
 
       // Delay between batches
       if (i + batchSize < decisionsToProcess.length) {
-        await this.delay(2000);
+        await this.delay(100);
       }
     }
 
