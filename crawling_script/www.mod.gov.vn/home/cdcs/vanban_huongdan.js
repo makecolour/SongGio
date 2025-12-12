@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE_URL = 'https://www.mod.gov.vn/home/cdcs';
-const OUTPUT_DIR = path.join(__dirname, '../../../result/www.mod.gov.vn/home/cdcs');
+const OUTPUT_DIR = path.join(__dirname, '../../../../result/www.mod.gov.vn/home/cdcs');
 
 // Ensure output directory exists
 if (!fs.existsSync(OUTPUT_DIR)) {
